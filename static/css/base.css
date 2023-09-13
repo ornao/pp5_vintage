@@ -465,6 +465,24 @@ section {
   }
 }
 
+.search-button {
+  background-color: black; 
+  color: #fff; 
+  padding: 5px 9px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.search-button:hover {
+  background-color: blue; 
+}
+
+.icon {
+  font-size: 5px; 
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
 @media (min-width: 1280px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
