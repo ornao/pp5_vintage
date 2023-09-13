@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
                 ('brand', models.CharField(max_length=100)),
                 ('date_listed', models.DateTimeField(auto_now_add=True)),
                 ('is_sold', models.BooleanField(default=False)),
-                ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='items.category')),
+                ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.category')),
             ],
         ),
     ]
