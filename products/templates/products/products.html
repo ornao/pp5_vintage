@@ -38,7 +38,7 @@
                         <a href="" data-gallery="portfolio-gallery-app"
                             class="glightbox"><img src="{{ product.image_url }}" class="img-fluid" alt="{{ product.name }}"></a>
                         <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">{{ product.name }}</a></h4>
+                            <h4><a href="{% url 'product_detail' product.id %}" title="More Details">{{ product.name }}</a></h4>
                             <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.condition }} condition </small>
                         </div>
