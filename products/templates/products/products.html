@@ -13,10 +13,7 @@
     <div class="container">
 
         <div class="section-header">
-            <h2>Items</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia
-                reprehenderit sunt deleniti</p>
-            <h1> hello world!</h1>
+            <h2>Clothes</h2>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -25,154 +22,29 @@
             <div>
                 <ul class="portfolio-flters">
                     <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-product">Product</li>
-                    <li data-filter=".filter-branding">Branding</li>
-                    <li data-filter=".filter-books">Books</li>
+                    <li data-filter=".filter-app">Jumpers & Hoodies</li>
+                    <li data-filter=".filter-product">T-shirts</li>
+                    <li data-filter=".filter-branding">Trousers</li>
+                    <li data-filter=".filter-books">Jackets</li>
+                    <li>Acessories</li>
                 </ul><!-- End Portfolio Filters -->
             </div>
 
             <div class="row gy-4 portfolio-container">
 
+                {% for product in products %}
                 <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
+                        <a href="" data-gallery="portfolio-gallery-app"
+                            class="glightbox"><img src="{{ product.image_url }}" class="img-fluid" alt="{{ product.name }}"></a>
                         <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <h1> hello world!</h1>
+                            <h4><a href="portfolio-details.html" title="More Details">{{ product.name }}</a></h4>
+                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.condition }} condition </small>
                         </div>
                     </div>
                 </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/product-1.jpg" class="img-fluid"
-                                alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid"
-                                alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid"
-                                alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid"
-                                alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid"
-                                alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid"
-                                alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                    <div class="portfolio-wrap">
-                        <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
+                {% endfor %}
             </div><!-- End Portfolio Container -->
 
         </div>
