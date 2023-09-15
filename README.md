@@ -99,20 +99,38 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 ## User Goals
 
+- Easily and conveniently browse and purchase vintage fashion items from Times Gone By.
+- Access engaging and informative content on vintage fashion history, styling tips, and featured sellers through the blog.
+- Contact the Times Gone By team with any inquiries or support needs via the contact page.
+- In the future, contribute by listing their own vintage fashion items on the Times Gone By platform.
 
 ## Site Owner Goals
 
+- Generate revenue through the sale of vintage fashion items on the eCommerce platform.
+- Build a strong and loyal customer base by providing a user-friendly platform and high-quality vintage fashion items.
+- Establish Times Gone By as a trusted and respected brand in the vintage fashion industry.
+- Achieve profitability and long-term sustainability while promoting sustainable shopping practices.
 
 <hr>
-
 
 ## User Experience
 
 ### Target Audience
 
+- Fashion-conscious individuals of all backgrounds interested in unique and eco-friendly vintage fashion.
+- Individuals seeking engaging content, fashion history insights, and styling tips related to vintage fashion through the blog.
+- Potential vintage fashion sellers looking to contribute their items to the platform (future feature).
 
 ### User Requirements and Expectations
 
+- User-friendly interface for easy navigation and seamless browsing and purchasing of vintage fashion items.
+- Reliable platform performance without technical glitches.
+- Strong security measures to protect user data and payment information.
+- A diverse range of authentic and high-quality vintage fashion items available for purchase.
+- Accurate and up-to-date information about vintage fashion items and sellers.
+- Competitive pricing for vintage fashion items.
+- Responsive and helpful customer support for inquiries and assistance.
+- Accessibility features to ensure usability for individuals with diverse needs and abilities.
 
 
 ##### Back to [top](#table-of-contents)<hr>
