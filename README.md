@@ -73,32 +73,28 @@ Times Gone By extends beyond an online shop; it's a community of fashion enthusi
 
 ### Web Marketing:
 
+Recognizing the importance of our website as the heart of Times Gone By, we've devised a strategic web marketing plan. This includes utilizing search engine optimization (SEO) techniques to enhance our online visibility, ensuring that vintage fashion enthusiasts can easily discover our platform when searching for unique items. Additionally, we are committed to creating engaging and informative content that showcases our curated collection, highlights featured sellers, and provides fashion history insights to captivate our audience.
+
 ### Social Media Marketing:
 
+Social media platforms play a crucial role in our marketing efforts. Through well-planned social media marketing campaigns, we connect directly with our target audience. By leveraging platforms like Instagram and Facebook, we share visually captivating content, behind-the-scenes glimpses of vintage fashion curations, and interactive posts that foster a sense of community among our users. Building a strong social media presence allows us to spark conversations, gather valuable feedback, and solidify Times Gone By as the ultimate vintage fashion destination.
+
+[Facebook](https://www.facebook.com/)  
+[Instagram](https://www.instagram.com/)
 
 ### Customer Engagement:
 
-### Mewsletter Emails:
+At Times Gone By, we place exceptional customer engagement at the heart of our marketing strategy. Our commitment extends to addressing customer inquiries promptly and professionally through our dedicated contact page. We believe that every interaction with our platform is a valuable opportunity to not only meet but exceed customer expectations, ultimately building trust, fostering loyalty, and encouraging positive word-of-mouth recommendations within our vibrant vintage fashion community.
 
+### Newsletter Emails:
+
+Maintaining a strong connection with our audience is vital to nurturing relationships and driving repeat business. Our newsletter emails, powered by an efficient email marketing platform, serve as a powerful tool to keep subscribers informed about new arrivals, upcoming promotions, exciting blog content, and, in the future, exclusive seller highlights. Through personalized and segmented email campaigns, we deliver content that resonates with individual preferences, further deepening engagement with our brand. As we introduce the seller feature, subscribers can anticipate even more exclusive insights and stories behind the vintage treasures they love.s
 
 ### Conclusion:
 
 In conclusion, Times Gone By is committed to reshaping the fashion industry by connecting individuals with timeless vintage fashion pieces while promoting sustainability and individuality. Our platform invites users to embark on a journey through history, celebrating the charm and significance of pre-loved fashion items. As we expand and grow, we look forward to making Times Gone By a beloved and enduring online vintage shopping destination.
 
 ##### Back to [top](#table-of-contents)<hr>
-
-## Marketing  
-
-### Social Media  
-
-
-[Facebook](https://www.facebook.com/)  
-[Instagram](https://www.instagram.com/)
-
-### Mailing List  
-
-
-
 
 
 ## User Goals
