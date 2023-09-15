@@ -1,3 +1,126 @@
+## Table of Contents
+  - [Executive Summary](#executive-summary)
+     - [Mission and Vision](#mission-and-vision)
+     - [Target Market](#target-market)
+     - [Financial Plan](#financial-plan)
+     - [Products](#products)
+     - [Sales Strategy](#sales-strategy)
+     - [Community and Blog](#community-and-blog)
+     - [Conclusion](#conclusion)
+  - [Marketing Stratedgy](#marketing-stratedgy)
+     - [Web Marketing](#social-media)
+     - [Social Media Marketing](#mailing-list)
+     - [Customer Engagement](#customer-engagement)
+     - [Newsletter Emails](#mailing-list)
+  - [User Goals](#user-goals)
+  - [Site Owner Goals](#site-owner-goals)
+  - [User Experience](#user-experience)
+  - [User Stories](#user-stories)
+  - [Wireframes](#wireframes)
+  - [Design](#design)
+    - [Colors](#colors)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+      - [Website pages](#website-pages)
+      - [AWS](#aws)
+      - [Database](#database)
+      - [Models](#models)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Validation](#validation)
+  - [Testing](#testing)
+    - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
+    - [Tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
+  - [Bugs](#bugs)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
+
+<hr>
+
+## Business Plan  
+### Executive Summary:
+
+Times Gone By is an online platform dedicated to connecting vintage and second-hand fashion enthusiasts with a curated selection of unique and high-quality clothing, accessories, and collectibles. Our mission is to make the world of vintage fashion accessible to all and promote sustainable shopping practices by giving pre-loved items a new life. Our platform not only offers a diverse range of vintage treasures but also provides a seamless shopping experience, inspiring a sense of nostalgia and individuality.
+
+### Mission and Vision:
+
+At Times Gone By, our mission is to celebrate individuality through timeless fashion pieces that tell stories. We envision a world where vintage and second-hand shopping is the norm, reducing fashion waste and contributing to a more sustainable and eco-friendly future. Our platform serves as a bridge between eras, offering a glimpse into the past while shaping a more conscious and stylish present.
+
+### Target Market:
+
+Our primary audience includes fashion-conscious individuals of all ages and backgrounds who appreciate the charm and uniqueness of vintage fashion. We cater to those seeking distinct and eco-friendly clothing options while contributing to the circular economy. Times Gone By targets both buyers, and in the future, sellers, creating a dynamic marketplace where fashion treasures find new homes and stories.
+
+### Finanicial Plan:
+
+Times Gone By generates revenue from sales made through the platform. As our user base expands, we anticipate steady growth in transactions, ensuring a reliable income stream. By fostering a sense of community and trust, we aim to establish Times Gone By as the go-to destination for vintage fashion enthusiasts. Over time, our goal is to enable user-generated listings on the website, further nurturing this community.
+
+### Products:
+
+Our platform boasts a handpicked selection of vintage clothing, accessories, and collectibles from various eras and styles. We focus on quality, authenticity, and style, ensuring that every item tells a unique story. Eventually, Times Gone By will also provide user-friendly tools for sellers to list their items, promoting an inclusive and diverse marketplace.
+
+### Sales Strategy:
+
+Times Gone By operates as a user-friendly online shop. We prioritize user experience by implementing a responsive and intuitive website design. We offer competitive pricing, secure payment options, and reliable customer support to ensure a seamless shopping journey for our users. Building a sense of trust and community is central to our sales strategy, driving repeat business and word-of-mouth referrals.
+
+### Community and Blog
+
+Times Gone By extends beyond an online shop; it's a community of fashion enthusiasts and storytellers. Our blog features captivating content, including interviews with vintage collectors, fashion history insights, and styling tips. By fostering a vibrant community, we aim to create lasting relationships and a shared passion for vintage fashion.
+
+## Marketing Strategy
+
+### Web Marketing:
+
+### Social Media Marketing:
+
+
+### Customer Engagement:
+
+### Mewsletter Emails:
+
+
+### Conclusion:
+
+In conclusion, Times Gone By is committed to reshaping the fashion industry by connecting individuals with timeless vintage fashion pieces while promoting sustainability and individuality. Our platform invites users to embark on a journey through history, celebrating the charm and significance of pre-loved fashion items. As we expand and grow, we look forward to making Times Gone By a beloved and enduring online vintage shopping destination.
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Marketing  
+
+### Social Media  
+
+
+[Facebook](https://www.facebook.com/)  
+[Instagram](https://www.instagram.com/)
+
+### Mailing List  
+
+
+
+
+
+## User Goals
+
+
+## Site Owner Goals
+
+
+<hr>
+
+
+## User Experience
+
+### Target Audience
+
+
+### User Requirements and Expectations
+
+
+
+##### Back to [top](#table-of-contents)<hr>
+
 ## User Stories
 
 
