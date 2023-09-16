@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category, Gender
+from .models import Product, Category
 
 # Create your views here.
 
@@ -14,15 +14,13 @@ def all_products(request):
     gender = None
 
     if request.GET:
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+        if 'gender' in request.GET:
+            selected_genders = request.GET['gender'].split(',')
+            products = products.filter(gender__in=selected_genders)
 
         if 'gender' in request.GET:
-            gender = request.GET['gender'].split(',')
-            products = products.filter(gender__name__in=gender)
-            gender = Gender.objects.filter(name__in=gender)
+            selected_gender = request.GET['gender']
+            products = products.filter(gender=selected_gender)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -37,7 +35,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_gender': gender,
+        'current_gender': selected_genders
     }
 
     return render(request, 'products/products.html', context)
