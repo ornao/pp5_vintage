@@ -57,16 +57,16 @@
                     <li class="dropdown"><a href="{% url 'products' %}"><span>Clothes</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li class="dropdown"><a href="{% url 'products' %}"><span>Men</span> <i
+                            <li class="dropdown"><a href="{% url 'products' %}?category=men"><span>Men</span> <i
                                         class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                     <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
-                                    <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
-                                    <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
+                                    <li><a href="{% url 'products' %}?category=t_shirts,men">T-shirts</a></li>
+                                    <li><a href="{% url 'products' %}?category=trousers,men">Trousers</a></li>
                                     <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
                                     <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
                                 </ul>
-                            <li class="dropdown"><a href="{% url 'products' %}"><span>Women</span> <i
+                            <li class="dropdown"><a href="{% url 'products' %}?category=women"><span>Women</span> <i
                                         class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                     <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
