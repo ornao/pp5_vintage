@@ -646,9 +646,14 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-flters li:hover,
-.portfolio .portfolio-flters li.filter-active {
+.portfolio .portfolio-flters a:hover,
+.portfolio .portfolio-flters a.filter-active {
   color: var(--color-primary);
+}
+
+.portfolio .portfolio-flters a {
+  color: var(--color-default);
+  text-decoration: none;
 }
 
 .portfolio .portfolio-flters li:first-child {

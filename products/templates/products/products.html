@@ -21,12 +21,12 @@
 
             <div>
                 <ul class="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Jumpers & Hoodies</li>
-                    <li data-filter=".filter-product">T-shirts</li>
-                    <li data-filter=".filter-branding">Trousers</li>
-                    <li data-filter=".filter-books">Jackets</li>
-                    <li>Acessories</li>
+                    <li class="filter-active"><a href="{% url 'products' %}">All</a></li>
+                    <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
+                    <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
+                    <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
+                    <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
+                    <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
                 </ul><!-- End Portfolio Filters -->
             </div>
 
