@@ -2,32 +2,35 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 
     {% block meta %}
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     {% endblock %}
 
     {% block extra_css %}
-        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-        <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
-        <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-        <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-        <!-- FontAwesome CDN -->
-        <script src="https://kit.fontawesome.com/eef88ca571.js" crossorigin="anonymous"></script>
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/eef88ca571.js" crossorigin="anonymous"></script>
     {% endblock %}
 
     {% block corejs %}
@@ -37,69 +40,91 @@
     {% endblock %}
 
     <title>Vintage {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
+</head>
 
-  <header id="header" class="header d-flex align-items-center">
+<body>
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Impact<span>.</span></h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li class="dropdown"><a href="{% url 'products' %}"><span>Clothes</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-                <li class="dropdown"><a href="#"><span>Men</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a href="#">Jumpers & Hoodies</a></li>
-                <li><a href="#">T-shirts</a></li>
-                <li><a href="#">Trousers</a></li>
-                <li><a href="#">Jackets</a></li>
-                <li><a href="#">Acessories</a></li>
-              </ul>
-              <li class="dropdown"><a href="#"><span>Women</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+    <header id="header" class="header d-flex align-items-center">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>Impact<span>.</span></h1>
+            </a>
+            <nav id="navbar" class="navbar">
                 <ul>
-                  <li><a href="#">Jumpers & Hoodies</a></li>
-                  <li><a href="#">T-shirts</a></li>
-                  <li><a href="#">Trousers</a></li>
-                  <li><a href="#">Jackets</a></li>
-                  <li><a href="#">Acessories</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown"><a href="{% url 'products' %}"><span>Clothes</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li class="dropdown"><a href="#"><span>Men</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Jumpers & Hoodies</a></li>
+                                    <li><a href="#">T-shirts</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Acessories</a></li>
+                                </ul>
+                            <li class="dropdown"><a href="#"><span>Women</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Jumpers & Hoodies</a></li>
+                                    <li><a href="#">T-shirts</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Acessories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <form method="GET" action="">
+                            <div class="input-group w-100">
+                                <input class="form-control border border-black rounded-0" type="text" name="q"
+                                    placeholder="Search our site">
+                                <div class="input-group-append">
+                                    <button class="search-button" type="submit">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="dropdown"><a href="#" class="text-black nav-link"><div><i class="fas fa-user fa-lg"></i></div> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <li><a href="" class="dropdown-item">Product Management</a></li>
+                            {% endif %}
+                            <li><a href="" class="dropdown-item">My Profile</a></li>
+                            <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                            {% else %}
+                            <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                            <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                            {% endif %}
+                        </ul>
+                    </li>
+                    <li>
+                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <form method="GET" action="">
-                <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                    <div class="input-group-append">
-                        <button class="search-button" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-            </li> 
-            <li><div><i class="fas fa-user fa-lg"></i></div></li>
-            <li><div><i class="fas fa-shopping-bag fa-lg"></i></div></li>
-        </ul>
-      </nav><!-- .navbar -->
+            </nav><!-- .navbar -->
+            
+            {% include 'includes/mobile-top-header.html' %}
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+        </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
 
     <!-- <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -190,6 +215,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-    
-  </body>
+
+</body>
+
 </html>
