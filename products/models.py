@@ -17,7 +17,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ManyToManyField('Category', blank=True)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=255, null=True, blank=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -30,6 +30,16 @@ class Product(models.Model):
     brand = models.CharField(max_length=100)
     date_listed = models.DateTimeField(auto_now_add=True)
     is_sold = models.BooleanField(default=False)
+
+class Gender(models.Model):
+    GENDER_CHOICES = (
+        ('M', 'Male'),
+        ('F', 'Female'),
+        ('U', 'Unisex'),
+    )
+
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+
 
     def __str__(self):
         return self.name
