@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
     'home',
     'products',
 
@@ -104,6 +105,22 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'vintage.wsgi.application'
 
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': os.environ.get('CLIENT_ID', ''),
+            'secret': os.environ.get('CLIENT_SECRET', ''),
+            'key': ''
+        },
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

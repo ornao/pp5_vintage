@@ -33,6 +33,8 @@
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                <p>Or</p>
+                <a href="{% provider_login_url 'google' %}">Sign up with Google</a>
                 {% endif %}
                 <div class="text-center small">
                   <button class="btn-book-a-table" type="submit">{% trans "Sign Up" %} &raquo;</button>
