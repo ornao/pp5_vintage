@@ -11,16 +11,17 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-    gender = None
+    genders = None
 
     if request.GET:
-        if 'gender' in request.GET:
-            selected_genders = request.GET['gender'].split(',')
-            products = products.filter(gender__in=selected_genders)
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
 
         if 'gender' in request.GET:
-            selected_gender = request.GET['gender']
-            products = products.filter(gender=selected_gender)
+            genders = request.GET['gender'].split(',')
+            products = products.filter(gender=genders)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -35,7 +36,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_gender': selected_genders
+        'current_gender': genders
     }
 
     return render(request, 'products/products.html', context)

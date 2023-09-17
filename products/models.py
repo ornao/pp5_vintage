@@ -15,15 +15,8 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
-
-GENDER_CHOICES = (
-    ('M', 'Male'),
-    ('F', 'Female'),
-    ('U', 'Unisex'),
-)
-
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ManyToManyField('Category', null=True, blank=True)
     sku = models.CharField(max_length=255, null=True, blank=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -36,7 +29,6 @@ class Product(models.Model):
     brand = models.CharField(max_length=100)
     date_listed = models.DateTimeField(auto_now_add=True)
     is_sold = models.BooleanField(default=False)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True)
 
     def __str__(self):
         return self.name
