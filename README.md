@@ -177,3 +177,24 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 | 30 | Store Owner / Admin | manage product listings | add, edit, or remove products from the catalog | [link](https://github.com/ornao/pp5_vintage/issues/) | 
 
 
+## Credits
+
+### Code  
+- Code Institute Boutique Ado
+- [Session timeout functionality](https://dev.to/arnopretorius/adding-a-session-timeout-in-django-4l5)
+- [Google sign-in functionality](https://medium.com/powered-by-django/add-social-authentication-django-allauth-google-oauth-example-d8d69a603356)
+
+### Media
+- [BeFunky](https://www.befunky.com/)
+- <a href="https://www.freepik.com/free-vector/antique-hand-watch_4258282.htm#query=old%20clock%20logo&position=3&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+- [Image Converter](https://jpg2png.com/)
+- [Images from Tola Vintage](https://www.tolavintage.com/)
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Acknowledgements
+
+### Special thanks to the following:
+- My Mentor Mo Shami for his excellent guidance and valuable advice  
+- Code Institute Slack Community
+- Code Institute Tutor Support
