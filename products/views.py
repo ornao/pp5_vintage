@@ -16,12 +16,11 @@ def all_products(request):
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
+            print(f'Categories from request: {categories}')
             products = products.filter(category__name__in=categories)
+            print(f'Filtered Products: {products}')
             categories = Category.objects.filter(name__in=categories)
-
-        if 'gender' in request.GET:
-            genders = request.GET['gender'].split(',')
-            products = products.filter(gender=genders)
+            print(f'Category objects: {categories}')
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -36,7 +35,6 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_gender': genders
     }
 
     return render(request, 'products/products.html', context)

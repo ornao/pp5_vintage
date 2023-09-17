@@ -16,7 +16,7 @@ class Category(models.Model):
         return self.friendly_name
 
 class Product(models.Model):
-    category = models.ManyToManyField('Category', null=True, blank=True)
+    category = models.ManyToManyField('Category', blank=True)
     sku = models.CharField(max_length=255, null=True, blank=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
