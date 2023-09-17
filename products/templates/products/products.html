@@ -23,11 +23,11 @@
             <div>
                 <ul class="portfolio-flters">
                     <li class="filter-active"><a href="{% url 'products' %}?category=male">All</a></li>
-                    <li><a href="{% url 'products' %}?category=jumpers_hoodies&male">Jumpers & Hoodies</a></li>
-                    <li><a href="{% url 'products' %}?category=t_shirts&male">T-shirts</a></li>
-                    <li><a href="{% url 'products' %}?category=trousers&male">Trousers</a></li>
-                    <li><a href="{% url 'products' %}?category=jackets&male">Jackets</a></li>
-                    <li><a href="{% url 'products' %}?category=accessories&male">Acessories</a></li>
+                    <li><a href="{% url 'products' %}?category=jumpers_hoodies,male">Jumpers & Hoodies</a></li>
+                    <li><a href="{% url 'products' %}?category=t_shirts,male">T-shirts</a></li>
+                    <li><a href="{% url 'products' %}?category=trousers,male">Trousers</a></li>
+                    <li><a href="{% url 'products' %}?category=jackets,male">Jackets</a></li>
+                    <li><a href="{% url 'products' %}?category=accessories,male">Acessories</a></li>
                 </ul><!-- End Portfolio Filters -->
             </div>
         {% elif 'category' in request.GET and request.GET.gender == 'female' %}
@@ -38,11 +38,11 @@
             <div>
                 <ul class="portfolio-flters">
                     <li class="filter-active"><a href="{% url 'products' %}?category=female">All</a></li>
-                    <li><a href="{% url 'products' %}?category=jumpers_hoodies&female">Jumpers & Hoodies</a></li>
-                    <li><a href="{% url 'products' %}?category=t_shirts&female">T-shirts</a></li>
-                    <li><a href="{% url 'products' %}?category=trousers&female">Trousers</a></li>
-                    <li><a href="{% url 'products' %}?category=jackets&female">Jackets</a></li>
-                    <li><a href="{% url 'products' %}?category=accessories&female">Acessories</a></li>
+                    <li><a href="{% url 'products' %}?category=jumpers_hoodies,female">Jumpers & Hoodies</a></li>
+                    <li><a href="{% url 'products' %}?category=t_shirts,female">T-shirts</a></li>
+                    <li><a href="{% url 'products' %}?category=trousers,female">Trousers</a></li>
+                    <li><a href="{% url 'products' %}?category=jackets,female">Jackets</a></li>
+                    <li><a href="{% url 'products' %}?category=accessories,female">Acessories</a></li>
                 </ul><!-- End Portfolio Filters -->
             </div>
         {% endif %}
