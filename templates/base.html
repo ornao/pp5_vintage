@@ -128,7 +128,18 @@
                         </ul>
                     </li>
                     <li>
-                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        €{{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        $0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </nav><!-- .navbar -->
