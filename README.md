@@ -201,7 +201,8 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 
 
-1. add blog and contact user stories
-2. finished add products videos
-3. add more products to site, dseign section inluding wireframes needs a start 
-4. rework categories so don't have to rely on category logic
+- add blog and contact user stories
+- add more products to site, dseign section inluding wireframes needs a start 
+- rework categories so don't have to rely on category logic
+- add code that show product is sold when put in bag/bought
+- 
