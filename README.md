@@ -198,3 +198,10 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 - My Mentor Mo Shami for his excellent guidance and valuable advice  
 - Code Institute Slack Community
 - Code Institute Tutor Support
+
+
+
+1. add blog and contact user stories
+2. finished add products videos
+3. add more products to site, dseign section inluding wireframes needs a start 
+4. rework categories so don't have to rely on category logic
