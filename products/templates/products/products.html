@@ -16,45 +16,50 @@
             <div>
                 <ul class="portfolio-flters">
                     <li class="filter-active"><a href="{% url 'products' %}?category=male">Men</a></li>
-                    <li><a href="{% url 'products' %}?category=female">Women</a></li>
+                    <li class="filter-active"><a href="{% url 'products' %}?category=female">Women</a></li>
                 </ul><!-- End Portfolio Filters -->
             </div>
 
-            {% if 'category' in request.GET and request.GET.category == 'male' or 'sweatshirts_hoodies' or 't_shirts' or 'trousers' or 'jackets' %}
-            <h3>Men</h3>
+       
 
-            <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                data-portfolio-sort="original-order">
-
-                <div>
-                    <ul class="portfolio-flters">
-                        <li class="filter-active"><a href="{% url 'products' %}?category=male">All</a></li>
-                        <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a></li>
-                        <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
-                        <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
-                        <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
-                        <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                    </ul><!-- End Portfolio Filters -->
-                </div>
-            {% endif %}
-            {% if 'category' in request.GET and request.GET.category == 'female' or 'jumpers_hoodies' or 'tops_blouses' or 'skirts_bottoms' or 'coats'  %}
-            <h3>Women</h3>
-
-            <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                data-portfolio-sort="original-order">
-
-                <div>
-                    <ul class="portfolio-flters">
-                        <li class="filter-active"><a href="{% url 'products' %}?category=female">All</a></li>
-                        <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
-                        <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
-                        <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
-                        <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
-                        <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                    </ul><!-- End Portfolio Filters -->
-                </div>
-            {% endif %}
+            {% if 'category' in request.GET and request.GET.category == 'male' %}
+                <h3>Men</h3>
             </div>
+                <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+                    data-portfolio-sort="original-order">
+
+                    <div>
+                        <ul class="portfolio-flters">
+                            <li class="filter-active"><a href="{% url 'products' %}?category=male">All</a></li>
+                            <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a></li>
+                            <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
+                            <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
+                            <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
+                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
+                        </ul><!-- End Portfolio Filters -->
+                    </div>
+
+            {% else %}
+                    <h3>Women</h3>
+                </div>
+
+                <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+                    data-portfolio-sort="original-order">
+
+                    <div>
+                        <ul class="portfolio-flters">
+                            <li class="filter-active"><a href="{% url 'products' %}?category=female">All</a></li>
+                            <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
+                            <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
+                            <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
+                            <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
+                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
+                        </ul><!-- End Portfolio Filters -->
+                    </div>
+
+
+                </div>
+            {% endif %}
             {% if product.category %}
             <p class="small mt-1 mb-0">
                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -64,88 +69,27 @@
             {% endif %}
             <div class="row gy-4 portfolio-container">
 
-                {% for product in products %}
-                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <a href="" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ product.image_url }}" class="img-fluid" alt="{{ product.name }}"></a>
-                        <div class="portfolio-info">
-                            <h4><a href="{% url 'product_detail' product.id %}"
-                                    title="More Details">{{ product.name }}</a></h4>
-                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.condition }} condition
-                            </small>
-                        </div>
+            {% for product in products %}
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <a href="" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ product.image_url }}"
+                            class="img-fluid" alt="{{ product.name }}"></a>
+                    <div class="portfolio-info">
+                        <h4><a href="{% url 'product_detail' product.id %}" title="More Details">{{ product.name }}</a>
+                        </h4>
+                        <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.condition }} condition
+                        </small>
                     </div>
-                </div><!-- End Portfolio Item -->
-                {% endfor %}
-            </div><!-- End Portfolio Container -->
-
-        </div>
+                </div>
+            </div><!-- End Portfolio Item -->
+            {% endfor %}
+        </div><!-- End Portfolio Container -->
 
     </div>
+
 </section><!-- End Portfolio Section -->
 
 {% endblock %}
-<!-- <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
-                <hr class="w-50 mb-1">
-            </div>
-        </div>
-        <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                <div class="row">
-                    {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.condition }} condition </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div> -->
+
+
