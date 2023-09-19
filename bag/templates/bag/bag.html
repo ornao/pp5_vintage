@@ -55,7 +55,10 @@
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove from Bag</small></a>
+                                        <form class="form update-form" method="POST" action="{% url 'remove_from_bag' item.item_id %}">
+                                            {% csrf_token %}
+                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove from Bag</small></a>
+                                        </form>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -113,7 +116,7 @@
             var csrfToken = "{{ csrf_token }}";
             var itemId = $(this).attr('id').split('remove_')[1];
             var url = `/bag/remove/${itemId}`;
-            var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+            var data = {'csrfmiddlewaretoken': csrfToken};
     
             $.post(url, data)
             .done(function() {
