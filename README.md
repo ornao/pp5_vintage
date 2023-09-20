@@ -195,7 +195,7 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 ## Acknowledgements
 
 ### Special thanks to the following:
-- My Mentor Mo Shami for his excellent guidance and valuable advice  
+- My Mentor Martina for his excellent guidance and valuable advice  
 - Code Institute Slack Community
 - Code Institute Tutor Support
 
@@ -203,6 +203,6 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 - add blog and contact user stories
 - add more products to site, dseign section inluding wireframes needs a start 
-- rework categories so don't have to rely on category logic
+- add more filtering to products
 - add code that show product is sold when put in bag/bought
 - 
