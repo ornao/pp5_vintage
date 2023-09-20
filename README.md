@@ -183,6 +183,7 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 - Code Institute Boutique Ado
 - [Session timeout functionality](https://dev.to/arnopretorius/adding-a-session-timeout-in-django-4l5)
 - [Google sign-in functionality](https://medium.com/powered-by-django/add-social-authentication-django-allauth-google-oauth-example-d8d69a603356)
+- [Displaying the Choices Field in human readable format](https://stackoverflow.com/questions/22366536/displaying-the-choices-field-in-human-readable-format)
 
 ### Media
 - [BeFunky](https://www.befunky.com/)
@@ -203,7 +204,5 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 - add blog and contact user stories
 - add more products to site, dseign section inluding wireframes needs a start 
-- add more filtering to products
 - add code that show product is sold when put in bag/bought
 - add neutral home page for proucts when category is none add to if else statement
-- update condition model field so filters correctly high to low
