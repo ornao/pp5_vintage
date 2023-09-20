@@ -206,3 +206,4 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 - add more filtering to products
 - add code that show product is sold when put in bag/bought
 - add neutral home page for proucts when category is none add to if else statement
+- update condition model field so filters correctly high to low
