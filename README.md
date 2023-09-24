@@ -177,6 +177,100 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 | 30 | Store Owner / Admin | manage product listings | add, edit, or remove products from the catalog | [link](https://github.com/ornao/pp5_vintage/issues/) | 
 
 
+---
+
+### Wireframes
+
+<details>
+
+<summary>Home Page</summary>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/homepagepp5.png)
+
+</details>
+
+<details>
+
+<summary>Blog Page</summary>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/blogpagepp5.png)
+
+</details>
+
+<details>
+
+<summary>Blog Detail Page</summary>
+
+![screenshot]()
+
+</details>
+
+<details>
+
+<summary>Products Page</summary>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/productspagepp5.png)
+
+
+</details>
+
+<details>
+
+<summary>Products Detail Page</summary>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/productsdetailspagepp5.png)
+
+</details>
+
+<details>
+
+<summary>Contact Us Page</summary>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/contactpagepp5.png)
+
+</details>
+
+<details>
+
+<summary>Basket Page</summary>
+
+![screenshot]()
+
+</details>
+
+<details>
+
+<summary>Checkout Page</summary>
+
+![screenshot]()
+
+</details>
+
+<details>
+
+<summary> Login/logout/register Pages</summary>
+
+#### Login
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/loginpagepp5.png)
+
+#### Logout
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/logoutpagepp5.png)
+
+#### Register
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/registrationpagepp5.png)
+
+</details>
+
+<details>
+
+<summary>Profile Page</summary>
+
+![screenshot]()
+
+</details>
+
+---
+
 ## Credits
 
 ### Code  
@@ -204,5 +298,6 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 - add blog and contact user stories
 - add more products to site, dseign section inluding wireframes needs a start 
+- add checkout app and stripe functionality 
 - add code that show product is sold when put in bag/bought
 - add neutral home page for proucts when category is none add to if else statement
