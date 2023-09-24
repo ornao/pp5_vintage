@@ -37,6 +37,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
     {% endblock %}
 
     {% block extra_js %}
@@ -63,29 +65,26 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="#about">About</a></li>
                     <li class="dropdown"><a href="{% url 'products' %}"><span>Clothes</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li class="dropdown"><a href="{% url 'products' %}?category=male"><span>Men</span> <i
                                         class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
-                                    <li><a href="{% url 'products' %}?category=jumpers_hoodies,male">Jumpers &
-                                            Hoodies</a></li>
-                                    <li><a href="{% url 'products' %}?category=t_shirts,male">T-shirts</a></li>
-                                    <li><a href="{% url 'products' %}?category=trousers,male">Trousers</a></li>
-                                    <li><a href="{% url 'products' %}?category=jackets,male">Jackets</a></li>
-                                    <li><a href="{% url 'products' %}?category=accessories,male">Acessories</a></li>
+                                    <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a></li>
+                                    <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
+                                    <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
+                                    <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
+                                    <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
                                 </ul>
                             <li class="dropdown"><a href="{% url 'products' %}?category=female"><span>Women</span> <i
                                         class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
-                                    <li><a href="{% url 'products' %}?category=jumpers_hoodies,female">Jumpers &
-                                            Hoodies</a></li>
-                                    <li><a href="{% url 'products' %}?category=t_shirts,female">T-shirts</a></li>
-                                    <li><a href="{% url 'products' %}?category=trousers,female">Trousers</a></li>
-                                    <li><a href="{% url 'products' %}?category=jackets,female">Jackets</a></li>
-                                    <li><a href="{% url 'products' %}?category=accessories,female">Acessories</a></li>
+                                    <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
+                                    <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
+                                    <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
+                                    <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
+                                    <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
                                 </ul>
                             </li>
                         </ul>

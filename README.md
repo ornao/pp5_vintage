@@ -196,7 +196,7 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 ## Acknowledgements
 
 ### Special thanks to the following:
-- My Mentor Martina for his excellent guidance and valuable advice  
+- My Mentor Martina for her excellent guidance and valuable advice  
 - Code Institute Slack Community
 - Code Institute Tutor Support
 
