@@ -16,7 +16,7 @@ class Category(models.Model):
         return self.friendly_name
 
 class Product(models.Model):
-    category = models.ManyToManyField('Category', blank=True)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=255, null=True, blank=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -32,6 +32,14 @@ class Product(models.Model):
     ]
 
     condition = models.CharField(max_length=100, choices=CONDITION_CHOICES)
+
+    GENDER_CHOICES = [
+        ('M', 'Male'),
+        ('F', 'Female'),
+        ('U', 'Unisex'),
+    ]
+
+    gender = models.CharField(max_length=100, null=True, blank=True, choices=GENDER_CHOICES)
     size = models.CharField(max_length=20)
     material = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)

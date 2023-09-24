@@ -14,73 +14,12 @@
         <div class="section-header">
             <h2>Clothes</h2>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Gender
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="{% url 'products' %}?category=male">Men</a>
-                    <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li class="filter-active"><a href="{% url 'products' %}?category=male">All</a></li>
-                            <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a></li>
-                            <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
-                            <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
-                            <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
-                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                        </ul>
-                    </li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=female">Women</a>
-                    <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li class="filter-active"><a href="{% url 'products' %}?category=female">All</a></li>
-                            <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
-                            <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
-                            <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
-                            <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
-                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </div>
+            {% for c in current_categories %}
+            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+            </a>
+            {% endfor %}
 
-            {% if 'category' in request.GET and request.GET.category == 'male' %}
-                <h3>Men</h3>
-            </div>
-                <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                    data-portfolio-sort="original-order">
-
-                    <div>
-                        <ul class="portfolio-flters">
-                            <li class="filter-active"><a href="{% url 'products' %}?category=male">All</a></li>
-                            <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a></li>
-                            <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
-                            <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
-                            <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
-                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                        </ul><!-- End Portfolio Filters -->    
-
-            {% else %}
-                    <h3>Women</h3>
-                </div>
-
-                <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                    data-portfolio-sort="original-order">
-
-                    <div>
-                        <ul class="portfolio-flters">
-                            <li class="filter-active"><a href="{% url 'products' %}?category=female">All</a></li>
-                            <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
-                            <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
-                            <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
-                            <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
-                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                        </ul><!-- End Portfolio Filters -->
-                    </div>
-
-
-                </div>
-            {% endif %}
             <div class="row">
                 <div class="product-container col-10 offset-1">
                     <div class="row mt-1 mb-2">
@@ -124,6 +63,20 @@
                         <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.get_condition_display }} condition
                         </small>
+                        {% if product.category %}
+                        <p class="small mt-1 mb-0">
+                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            </a>
+                        </p>
+                        {% endif %}
+                        {% if product.gender %}
+                        <p class="small mt-1 mb-0">
+                            <a class="text-muted" href="{% url 'products' %}?gender={{ product.gender }}">
+                                <i class="fas fa-tag mr-1"></i>{{ product.get_gender_display }}
+                            </a>
+                        </p>
+                        {% endif %}
                     </div>
                 </div>
             </div><!-- End Portfolio Item -->

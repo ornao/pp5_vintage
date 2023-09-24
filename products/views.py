@@ -19,11 +19,8 @@ def all_products(request):
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            print(f'Categories from request: {categories}')
             products = products.filter(category__name__in=categories)
-            print(f'Filtered Products: {products}')
             categories = Category.objects.filter(name__in=categories)
-            print(f'Category objects: {categories}')
 
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
