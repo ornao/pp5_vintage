@@ -201,7 +201,7 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 <summary>Blog Detail Page</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/blogdetailspagepp5.png)
 
 </details>
 
@@ -234,7 +234,7 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 <summary>Basket Page</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/basketpagepp5.png)
 
 </details>
 
@@ -242,7 +242,7 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 <summary>Checkout Page</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutpagepp5.png)
 
 </details>
 
@@ -265,7 +265,15 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 <summary>Profile Page</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/profilepagepp5.png)
+
+</details>
+
+<details>
+
+<summary>Error Page</summary>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/errorpagepp5.png)
 
 </details>
 
