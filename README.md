@@ -279,6 +279,42 @@ In conclusion, Times Gone By is committed to reshaping the fashion industry by c
 
 ---
 
+## Design
+
+### Theme
+
+A [bootstrap template ]() was used for this project. I also utilised another [bootstrap template Admin](https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/) for the login/logout and forms of the site. I adapted and pulled aspects of the code for the website and changed CSS elements to better represent my vision for the vintage online shop.
+
+### Colour 
+
+
+
+<img src="" alt="colours of wesbite">
+
+<hr>
+
+<hr>
+
+# Structure
+
+
+## Website pages
+
+
+  ##### Back to [top](#table-of-contents)
+  <hr>
+
+## AWS 
+
+<hr>
+
+
+## Database
+
+<hr>
+
+## Models  
+
 ## Credits
 
 ### Code  

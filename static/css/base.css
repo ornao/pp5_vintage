@@ -25,7 +25,7 @@ html {
 :root {
   --color-default: #222222;
   --color-primary: #008374;
-  --color-secondary: #f85a40;
+  --color-secondary: #E2532F;
 }
 
 /* Smooth scroll behavior */
@@ -69,7 +69,7 @@ section {
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #fff;
 }
 
 .section-header {
