@@ -340,7 +340,9 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 
 
 
-- add blog and contact user stories
-- add checkout app and stripe functionality - started, fix issues
-- add code that show product is sold when put in bag/bought
-- add neutral home page for proucts when category is none add to if else statement
+- add blog and contact user stories - add apps to project
+
+- add code that show product is sold when put in bag/bought, only allow 1 of each into basket
+- fix category sorting for men and women
+- add stting to buttons and product details page
+- sort out nav bar for mobile and desktop naviagtion 

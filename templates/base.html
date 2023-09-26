@@ -34,9 +34,14 @@
     {% endblock %}
 
     {% block corejs %}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <script src="{% static 'js/main.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'vendor/aos/aos.js' %}"></script>
@@ -60,34 +65,31 @@
     <header id="header" class="header d-flex align-items-center">
 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="{% url 'home' %}" class="logo d-flex align-items-center">
-                <img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/logo.png" alt="vintage hand watch logo">
+            <a href="{% url 'home' %}" class="logo d-flex align-items-center" id="icon">
+                <i class="fa-solid fa-heart-crack"></i>
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="{% url 'home' %}">Home</a></li>
-                    <li class="dropdown"><a href="{% url 'products' %}"><span>Clothes</span> <i
+                    <li class="dropdown"><a href="{% url 'products' %}?gender=t_shirts"><span>Men</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li class="dropdown"><a href="{% url 'products' %}?gender=male"><span>Men</span> <i
-                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul>
-                                    <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a></li>
-                                    <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
-                                    <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
-                                    <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
-                                    <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                                </ul>
-                            <li class="dropdown"><a href="{% url 'products' %}?gender=female"><span>Women</span> <i
-                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul>
-                                    <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
-                                    <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
-                                    <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
-                                    <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
-                                    <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
-                                </ul>
+                            <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a>
                             </li>
+                            <li><a href="{% url 'products' %}?category=t_shirts">T-shirts</a></li>
+                            <li><a href="{% url 'products' %}?category=trousers">Trousers</a></li>
+                            <li><a href="{% url 'products' %}?category=jackets">Jackets</a></li>
+                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="{% url 'products' %}?gender=female"><span>Women</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="{% url 'products' %}?category=jumpers_hoodies">Jumpers & Hoodies</a></li>
+                            <li><a href="{% url 'products' %}?category=top_blouses">Tops & Blouses</a></li>
+                            <li><a href="{% url 'products' %}?category=skirts_bottoms">Skirts & Bottoms</a></li>
+                            <li><a href="{% url 'products' %}?category=coats">Coats</a></li>
+                            <li><a href="{% url 'products' %}?category=accessories">Acessories</a></li>
                         </ul>
                     </li>
                     <li><a href="blog.html">Blog</a></li>
@@ -128,14 +130,15 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block"
+                            href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        €{{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                    $0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -154,20 +157,20 @@
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
-{% endif %}
+    {% endif %}
 
     {% block page_header %}
     {% endblock %}

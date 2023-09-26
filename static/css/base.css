@@ -24,7 +24,7 @@ html {
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
+  --color-primary: #D83F31;
   --color-secondary: #E2532F;
 }
 
@@ -336,6 +336,13 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
+#icon {
+  color: #222222;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -903,6 +910,9 @@ section {
   height: 2px;
 }
 
+/* buttons */
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1002,7 +1012,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
+  background: var(--color-default);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1034,7 +1044,7 @@ section {
 }
 
 .hero .icon-box:hover {
-  background: #009786;
+  background: var(--color-default);
 }
 
 .hero .icon-box:hover .title a,
@@ -1042,23 +1052,3 @@ section {
   color: #fff;
 }
 
-/* checkout */
-
-#loading-overlay {
-	display: none;
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(23, 162, 184, .85);
-    z-index: 9999;
-}
-
-.loading-spinner {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100%;
-}
