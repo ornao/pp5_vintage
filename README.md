@@ -341,7 +341,6 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 
 
 - add blog and contact user stories
-- add more products to site, dseign section inluding wireframes needs a start 
-- add checkout app and stripe functionality 
+- add checkout app and stripe functionality - started, fix issues
 - add code that show product is sold when put in bag/bought
 - add neutral home page for proucts when category is none add to if else statement

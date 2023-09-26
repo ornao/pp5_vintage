@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '*')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ornao-pp5vintage-llfji1xzx6w.ws-eu104.gitpod.io', 'vintagepp5-4fbf60af10de.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-ornao-pp5vintage-llfji1xzx6w.ws-eu105.gitpod.io', 'vintagepp5-4fbf60af10de.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -201,8 +201,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 
 if 'USE_AWS' in os.environ:
     # Cache control
