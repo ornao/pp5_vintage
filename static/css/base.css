@@ -342,7 +342,6 @@ section {
   text-decoration: none;
 }
 
-
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -528,7 +527,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: rgba(6, 6, 6, 0.9);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -627,7 +626,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: rgba(106, 0, 0, 0.8);
     z-index: 9996;
   }
 }
