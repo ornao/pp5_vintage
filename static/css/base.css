@@ -520,7 +520,6 @@ section {
     bottom: 0;
     transition: 0.3s;
     z-index: 9997;
-    background-color: blue;
   }
 
   .navbar ul {
@@ -533,7 +532,7 @@ section {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    margin: 0;
+    margin: -27px;
   }
 
   .navbar a,
@@ -584,10 +583,11 @@ section {
     position: static;
     display: none;
     padding: 10px 0;
-    margin: 10px 20px;
+    margin: 5px 5px;
     transition: all 0.5s ease-in-out;
-    background-color: #007466;
-    border: 1px solid #006459;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    height: fit-content;
   }
 
   .navbar .dropdown>.dropdown-active,
