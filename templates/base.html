@@ -71,7 +71,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="{% url 'home' %}">Home</a></li>
-                    <li class="dropdown"><a href="{% url 'products' %}?gender=t_shirts"><span>Men</span> <i
+                    <li class="dropdown"><a href="{% url 'products' %}?gender=male"><span>Men</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="{% url 'products' %}?category=sweatshirts_hoodies">Sweatshirts & Hoodies</a>
@@ -146,13 +146,12 @@
                     </li>
                 </ul>
 
-                <div class="row">
-                    {% include 'includes/mobile-top-header.html' %}
-                </div>
 
-                
+                {% include 'includes/mobile-top-header.html' %}
+
+
             </nav>
-         
+
         </div>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

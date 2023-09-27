@@ -15,12 +15,18 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    gender = None
 
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+        if 'gender' in request.GET:
+            genders = request.GET['gender'].split(',')
+            products = products.filter(gender__in=genders)
+            genders = Gender.objects.filter(gender__in=genders)
 
         if 'sort' in request.GET:
             sortkey = request.GET['sort']

@@ -345,4 +345,4 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 - add code that show product is sold when put in bag/bought, only allow 1 of each into basket
 - fix category sorting for men and women
 - add stting to buttons and product details page
-- sort out nav bar for mobile and desktop naviagtion 
+- figure our account and bag in mobile header
