@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
@@ -760,6 +760,12 @@ section {
 
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
+}
+
+.gender-header {
+  text-decoration: none;
+  font-family: var(--font-primary);
+  color: var(--color-default);
 }
 
 /*--------------------------------------------------------------

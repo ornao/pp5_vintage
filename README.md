@@ -43,48 +43,48 @@
 ## Business Plan  
 ### Executive Summary:
 
-Times Gone By is an online platform dedicated to connecting vintage and second-hand fashion enthusiasts with a curated selection of unique and high-quality clothing, accessories, and collectibles. Our mission is to make the world of vintage fashion accessible to all and promote sustainable shopping practices by giving pre-loved items a new life. Our platform not only offers a diverse range of vintage treasures but also provides a seamless shopping experience, inspiring a sense of nostalgia and individuality.
+Preloved is an online platform dedicated to connecting vintage and second-hand fashion enthusiasts with a curated selection of unique and high-quality clothing. Our mission is to make the world of vintage fashion accessible to all and promote sustainable shopping practices by giving "pre-loved" items a new life. Our platform not only offers a diverse range of vintage treasures but also provides a seamless shopping experience, inspiring a sense of nostalgia and individuality.
 
 ### Mission and Vision:
 
-At Times Gone By, our mission is to celebrate individuality through timeless fashion pieces that tell stories. We envision a world where vintage and second-hand shopping is the norm, reducing fashion waste and contributing to a more sustainable and eco-friendly future. Our platform serves as a bridge between eras, offering a glimpse into the past while shaping a more conscious and stylish present.
+At Preloved, our mission is to celebrate individuality through timeless fashion pieces that tell stories. We envision a world where vintage and second-hand shopping is the norm, reducing fashion waste and contributing to a more sustainable and eco-friendly future. Our platform serves as a bridge between eras, offering a glimpse into the past while shaping a more conscious and stylish present.
 
 ### Target Market:
 
-Our primary audience includes fashion-conscious individuals of all ages and backgrounds who appreciate the charm and uniqueness of vintage fashion. We cater to those seeking distinct and eco-friendly clothing options while contributing to the circular economy. Times Gone By targets both buyers, and in the future, sellers, creating a dynamic marketplace where fashion treasures find new homes and stories.
+Our primary audience includes fashion-conscious individuals of all ages and backgrounds who appreciate the charm and uniqueness of vintage fashion. We cater to those seeking distinct and eco-friendly clothing options while contributing to the circular economy. Preloved targets both buyers, and in the future, sellers, creating a dynamic marketplace where fashion treasures find new homes and stories.
 
 ### Finanicial Plan:
 
-Times Gone By generates revenue from sales made through the platform. As our user base expands, we anticipate steady growth in transactions, ensuring a reliable income stream. By fostering a sense of community and trust, we aim to establish Times Gone By as the go-to destination for vintage fashion enthusiasts. Over time, our goal is to enable user-generated listings on the website, further nurturing this community.
+Preloved generates revenue from sales made through the platform. As our user base expands, we anticipate steady growth in transactions, ensuring a reliable income stream. By fostering a sense of community and trust, we aim to establish Preloved as the go-to destination for vintage fashion enthusiasts. Over time, our goal is to enable user-generated listings on the website, further nurturing this community.
 
 ### Products:
 
-Our platform boasts a handpicked selection of vintage clothing, accessories, and collectibles from various eras and styles. We focus on quality, authenticity, and style, ensuring that every item tells a unique story. Eventually, Times Gone By will also provide user-friendly tools for sellers to list their items, promoting an inclusive and diverse marketplace.
+Our platform boasts a handpicked selection of vintage clothing, accessories, and collectibles from various eras and styles. We focus on quality, authenticity, and style, ensuring that every item tells a unique story. Eventually, Preloved will also provide user-friendly tools for sellers to list their items, promoting an inclusive and diverse marketplace.
 
 ### Sales Strategy:
 
-Times Gone By operates as a user-friendly online shop. We prioritize user experience by implementing a responsive and intuitive website design. We offer competitive pricing, secure payment options, and reliable customer support to ensure a seamless shopping journey for our users. Building a sense of trust and community is central to our sales strategy, driving repeat business and word-of-mouth referrals.
+Preloved operates as a user-friendly online shop. We prioritize user experience by implementing a responsive and intuitive website design. We offer competitive pricing, secure payment options, and reliable customer support to ensure a seamless shopping journey for our users. Building a sense of trust and community is central to our sales strategy, driving repeat business and word-of-mouth referrals.
 
 ### Community and Blog
 
-Times Gone By extends beyond an online shop; it's a community of fashion enthusiasts and storytellers. Our blog features captivating content, including interviews with vintage collectors, fashion history insights, and styling tips. By fostering a vibrant community, we aim to create lasting relationships and a shared passion for vintage fashion.
+Preloved extends beyond an online shop; it's a community of fashion enthusiasts and storytellers. Our blog features captivating content, including interviews with vintage collectors, fashion history insights, and styling tips. By fostering a vibrant community, we aim to create lasting relationships and a shared passion for vintage fashion.
 
 ## Marketing Strategy
 
 ### Web Marketing:
 
-Recognizing the importance of our website as the heart of Times Gone By, we've devised a strategic web marketing plan. This includes utilizing search engine optimization (SEO) techniques to enhance our online visibility, ensuring that vintage fashion enthusiasts can easily discover our platform when searching for unique items. Additionally, we are committed to creating engaging and informative content that showcases our curated collection, highlights featured sellers, and provides fashion history insights to captivate our audience.
+Recognizing the importance of our website as the heart of Preloved, we've devised a strategic web marketing plan. This includes utilizing search engine optimization (SEO) techniques to enhance our online visibility, ensuring that vintage fashion enthusiasts can easily discover our platform when searching for unique items. Additionally, we are committed to creating engaging and informative content that showcases our curated collection, highlights featured sellers, and provides fashion history insights to captivate our audience.
 
 ### Social Media Marketing:
 
-Social media platforms play a crucial role in our marketing efforts. Through well-planned social media marketing campaigns, we connect directly with our target audience. By leveraging platforms like Instagram and Facebook, we share visually captivating content, behind-the-scenes glimpses of vintage fashion curations, and interactive posts that foster a sense of community among our users. Building a strong social media presence allows us to spark conversations, gather valuable feedback, and solidify Times Gone By as the ultimate vintage fashion destination.
+Social media platforms play a crucial role in our marketing efforts. Through well-planned social media marketing campaigns, we connect directly with our target audience. By leveraging platforms like Instagram and Facebook, we share visually captivating content, behind-the-scenes glimpses of vintage fashion curations, and interactive posts that foster a sense of community among our users. Building a strong social media presence allows us to spark conversations, gather valuable feedback, and solidify Preloved as the ultimate vintage fashion destination.
 
 [Facebook](https://www.facebook.com/)  
 [Instagram](https://www.instagram.com/)
 
 ### Customer Engagement:
 
-At Times Gone By, we place exceptional customer engagement at the heart of our marketing strategy. Our commitment extends to addressing customer inquiries promptly and professionally through our dedicated contact page. We believe that every interaction with our platform is a valuable opportunity to not only meet but exceed customer expectations, ultimately building trust, fostering loyalty, and encouraging positive word-of-mouth recommendations within our vibrant vintage fashion community.
+At Preloved, we place exceptional customer engagement at the heart of our marketing strategy. Our commitment extends to addressing customer inquiries promptly and professionally through our dedicated contact page. We believe that every interaction with our platform is a valuable opportunity to not only meet but exceed customer expectations, ultimately building trust, fostering loyalty, and encouraging positive word-of-mouth recommendations within our vibrant vintage fashion community.
 
 ### Newsletter Emails:
 
@@ -92,23 +92,23 @@ Maintaining a strong connection with our audience is vital to nurturing relation
 
 ### Conclusion:
 
-In conclusion, Times Gone By is committed to reshaping the fashion industry by connecting individuals with timeless vintage fashion pieces while promoting sustainability and individuality. Our platform invites users to embark on a journey through history, celebrating the charm and significance of pre-loved fashion items. As we expand and grow, we look forward to making Times Gone By a beloved and enduring online vintage shopping destination.
+In conclusion, Preloved is committed to reshaping the fashion industry by connecting individuals with timeless vintage fashion pieces while promoting sustainability and individuality. Our platform invites users to embark on a journey through history, celebrating the charm and significance of pre-loved fashion items. As we expand and grow, we look forward to making Preloved a beloved and enduring online vintage shopping destination.
 
 ##### Back to [top](#table-of-contents)<hr>
 
 
 ## User Goals
 
-- Easily and conveniently browse and purchase vintage fashion items from Times Gone By.
+- Easily and conveniently browse and purchase vintage fashion items from Preloved.
 - Access engaging and informative content on vintage fashion history, styling tips, and featured sellers through the blog.
-- Contact the Times Gone By team with any inquiries or support needs via the contact page.
-- In the future, contribute by listing their own vintage fashion items on the Times Gone By platform.
+- Contact the Preloved team with any inquiries or support needs via the contact page.
+- In the future, contribute by listing their own vintage fashion items on the Preloved platform.
 
 ## Site Owner Goals
 
 - Generate revenue through the sale of vintage fashion items on the eCommerce platform.
 - Build a strong and loyal customer base by providing a user-friendly platform and high-quality vintage fashion items.
-- Establish Times Gone By as a trusted and respected brand in the vintage fashion industry.
+- Establish Preloved as a trusted and respected brand in the vintage fashion industry.
 - Achieve profitability and long-term sustainability while promoting sustainable shopping practices.
 
 <hr>
@@ -340,9 +340,8 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 
 
 
-- add blog and contact user stories - add apps to project
-
+- look into just adding profile app instead of blog, make sure crud form is present
 - add code that show product is sold when put in bag/bought, only allow 1 of each into basket
-- fix category sorting for men and women
 - add stting to buttons and product details page
 - figure our account and bag in mobile header
+- signup for newsletter
