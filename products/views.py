@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Gender
 
 # Create your views here.
 
@@ -19,16 +19,36 @@ def all_products(request):
 
     all_categories = Category.objects.all()
 
+    def all_products(request):
+        gender_param = request.GET.get('gender', None)
+
+        if gender_param:
+            try:
+                gender_obj = Gender.objects.get(gender__iexact=gender_param[0].upper())  # Get the gender object using the first letter
+                products = Product.objects.filter(gender=gender_obj)
+            except Gender.DoesNotExist:
+                products = Product.objects.all()  # or handle this in some other way
+        else:
+            products = Product.objects.all()
+
+
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'gender' in request.GET:
-            genders = request.GET['gender'].split(',')
-            products = products.filter(gender__in=genders)
-            genders = Gender.objects.filter(gender__in=genders)
+        # if 'gender' in request.GET:
+        #     genders = request.GET['gender'].split(',')
+        #     if request.GET['gender'] == "male":
+        #         genders = genders[0]
+        #     elif request.GET['gender'] == "female":
+        #         genders = genders[1]
+        #     else:
+        #         genders = genders[2]
+
+        #     products = products.filter(gender__in=genders)
+        #     genders = Gender.objects.filter(gender__in=genders)
 
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
