@@ -691,7 +691,7 @@ section {
 }
 
 .portfolio .portfolio-flters a:hover,
-.portfolio .portfolio-flters a.filter-active {
+.portfolio .portfolio-flters a:active {
   color: var(--color-primary);
 }
 
@@ -1102,7 +1102,7 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
+  background-color: var(--color-default);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
