@@ -14,21 +14,36 @@
         <div class="section-header">
             <h2>Clothes</h2>
 
+            {% if 'gender' in request.GET %}
+                {% if request.GET.gender == 'M' %}
+                    <h3>Men</h3>
+
+                {% elif request.GET.gender == 'F' %}
+                    <h3>Women</h3>
+
+                {% endif %}
+            {% endif %}
+
             <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
                 
                 <div>
                     <ul class="portfolio-flters">
                         {% for c in all_categories %}
+                        {% for p in current_genders %}
+                        {% if forloop.counter == forloop.parentloop.counter %}
                         <li data-filter="*"> <a  {% if c in current_categories %}
                             style="color: var(--color-primary)"
-                            {% endif %} href="{% url 'products' %}?category={{ c.name }}">
+                            {% endif %} href="{% url 'products' %}?category={{ c.name }}&gender={{p.gender}}">
                             <span>{{ c.friendly_name }}</span>
                         </a></li>
+                        {% endif %}
+                        {% endfor %}
                         {% endfor %}
                        
 
                     </ul><!-- End Portfolio Filters -->
                 </div>
+            </div>
                 
             <div class="row">
                 <div>

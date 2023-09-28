@@ -1,13 +1,4 @@
-from django.shortcuts import render, get_object_or_404
-from django.contrib import messages
-from django.db.models import Q
-from django.db.models.functions import Lower
-
-from .models import Product, Category
-
-# Create your views here.
-
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -31,6 +22,7 @@ def all_products(request):
         if 'gender' in request.GET:
             gender_param = request.GET['gender'].upper()
             products = products.filter(gender=gender_param)
+            genders = Product.objects.filter(gender=gender_param)
 
         # Category filtering
         if 'category' in request.GET:
@@ -64,6 +56,8 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+   
+
 
     context = {
         'products': products,
@@ -71,6 +65,7 @@ def all_products(request):
         'current_categories': categories,
         'all_categories': all_categories, 
         'current_sorting': current_sorting,
+        'current_genders': genders
     }
 
     return render(request, 'products/products.html', context)
