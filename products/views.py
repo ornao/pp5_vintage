@@ -3,53 +3,42 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Gender
+from .models import Product, Category
 
 # Create your views here.
+
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
+from django.db.models import Q
+from django.db.models.functions import Lower
+
+from .models import Product, Category
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    products = Product.objects.all() 
     query = None
     categories = None
     sort = None
     direction = None
-    gender = None
+    gender_param = None
 
     all_categories = Category.objects.all()
 
-    def all_products(request):
-        gender_param = request.GET.get('gender', None)
-
-        if gender_param:
-            try:
-                gender_obj = Gender.objects.get(gender__iexact=gender_param[0].upper())  # Get the gender object using the first letter
-                products = Product.objects.filter(gender=gender_obj)
-            except Gender.DoesNotExist:
-                products = Product.objects.all()  # or handle this in some other way
-        else:
-            products = Product.objects.all()
-
-
     if request.GET:
+        # Gender filtering
+        if 'gender' in request.GET:
+            gender_param = request.GET['gender'].upper()
+            products = products.filter(gender=gender_param)
+
+        # Category filtering
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        # if 'gender' in request.GET:
-        #     genders = request.GET['gender'].split(',')
-        #     if request.GET['gender'] == "male":
-        #         genders = genders[0]
-        #     elif request.GET['gender'] == "female":
-        #         genders = genders[1]
-        #     else:
-        #         genders = genders[2]
-
-        #     products = products.filter(gender__in=genders)
-        #     genders = Gender.objects.filter(gender__in=genders)
-
+        # Sorting logic
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -64,6 +53,7 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
+        # Search logic
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:

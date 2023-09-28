@@ -16,21 +16,6 @@ class Category(models.Model):
         return self.friendly_name
 
 
-class Gender(models.Model):
-    
-    GENDER_CHOICES = [
-        ('M', 'Male'),
-        ('F', 'Female'),
-        ('U', 'Unisex'),
-    ]
-
-    gender = models.CharField(max_length=1, null=True, blank=True, choices=GENDER_CHOICES)
-
-    def __str__(self):
-        return self.gender
-
-
-
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=255, null=True, blank=True)
@@ -49,7 +34,13 @@ class Product(models.Model):
 
     condition = models.CharField(max_length=100, choices=CONDITION_CHOICES)
 
-    gender = models.ForeignKey('Gender', null=True, blank=True, default=1, on_delete=models.SET_NULL)
+    GENDER_CHOICES = [
+        ('M', 'Male'),
+        ('F', 'Female'),
+        ('U', 'Unisex'),
+    ]
+
+    gender = models.CharField(max_length=100, null=True, blank=True, choices=GENDER_CHOICES)
     size = models.CharField(max_length=20)
     material = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)
