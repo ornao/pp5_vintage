@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Contact</h2>
+            <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+          </div>
+  
+          <div class="row gx-lg-0 gy-4">
+  
+            <div class="col-lg-4">
+  
+              <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Location:</h4>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p>info@example.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Call:</h4>
+                    <p>+1 5589 55488 55</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-clock flex-shrink-0"></i>
+                  <div>
+                    <h4>Open Hours:</h4>
+                    <p>Mon-Sat: 11AM - 23PM</p>
+                  </div>
+                </div><!-- End Info Item -->
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-8">
+              <form action="{% url 'contact' %}" method="POST" role="form" class="php-email-form" id="contact-form">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div><!-- End Contact Form -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+    
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}
+
+<form action="{% url 'checkout' %}" method="POST" id="payment-form">
+    {% csrf_token %}
+    <fieldset class="rounded px-3 mb-5">
+        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+        {{ order_form.full_name | as_crispy_field }}
+        {{ order_form.email | as_crispy_field }}
+    </fieldset>
+    <fieldset class="rounded px-3 mb-5">
+        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+        {{ order_form.phone_number | as_crispy_field }}
+        {{ order_form.country | as_crispy_field }}
+        {{ order_form.postcode | as_crispy_field }}
+        {{ order_form.town_or_city | as_crispy_field }}
+        {{ order_form.street_address1 | as_crispy_field }}
+        {{ order_form.street_address2 | as_crispy_field }}
+        {{ order_form.county | as_crispy_field }}
+        <div class="form-check form-check-inline float-right mr-0">
+            {% if user.is_authenticated %}
+                <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+            {% else %}
+                <label class="form-check-label" for="id-save-info">
+                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                </label>
+            {% endif %}
+        </div>
+    </fieldset>
+    <fieldset class="px-3">
+        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+        <!-- A Stripe card element will go here -->
+        <div class="mb-3" id="card-element"></div>
+
+        <!-- Used to display form errors -->
+        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+         <!-- Pass the client secret to the view so we can get the payment intent id -->
+         <input type="hidden" value="{{ client_secret }}" name="client_secret">
+    </fieldset>
+
+    <div class="submit-button text-right mt-5 mb-2">                    
+        <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="font-weight-bold">Adjust Bag</span>
+        </a>
+        <button id="submit-button" class="btn btn-black rounded-0">
+            <span class="font-weight-bold">Complete Order</span>
+            <span class="icon">
+                <i class="fas fa-lock"></i>
+            </span>
+        </button>
+        <p class="small text-danger my-0">
+            <span class="icon">
+                <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+        </p>
+    </div>
+</form>
