@@ -14,6 +14,7 @@ def all_products(request):
     sort = None
     direction = None
     gender_param = None
+    genders = None
 
     all_categories = Category.objects.all()
 
