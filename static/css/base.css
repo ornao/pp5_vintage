@@ -103,6 +103,18 @@ section {
   color: #6f6f6f;
 }
 
+/* select options for country */
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: var(--bs-secondary-color);
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
