@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+    
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Customer Reviews</h2>
+          </div>
+         
+          <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                {% for review in reviews %}
+                  <div class="testimonial-item">
+                    <div class="d-flex align-items-center">
+                      <img src="{{ review.featured_image_url }}" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>{{ review.author }}</h3>
+                        <h4>{{ review.product_name }}</h4>
+                        <div class="stars">{{ review.rating }}
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      {{ review.content }}
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div><!-- End testimonial item -->
+             
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+        
+      </section><!-- End Testimonials Section -->
+
+      {% endblock %}

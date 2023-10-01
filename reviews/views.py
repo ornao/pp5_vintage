@@ -1,10 +1,16 @@
 from django.shortcuts import render
-from django.views import generic
+from django.views import View
 from .models import Reviews
 
 
-class ReviewsList(generic.ListView):
-    """ a class for reviews view """
-    model = Reviews
-    queryset = Reviews.objects.filter(status=1).order_by('-created_date')
-    template_name = "reviews.html"
+class ReviewsView(View):
+    """A custom class-based view for displaying reviews."""
+
+    def get(self, request):
+
+        reviews = Reviews.objects.filter(status=1).order_by('-created_date')
+        context = {
+            'reviews': reviews,
+        }
+
+        return render(request, 'reviews/reviews.html', context)
