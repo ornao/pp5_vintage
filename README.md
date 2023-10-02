@@ -322,7 +322,14 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 - [Session timeout functionality](https://dev.to/arnopretorius/adding-a-session-timeout-in-django-4l5)
 - [Google sign-in functionality](https://medium.com/powered-by-django/add-social-authentication-django-allauth-google-oauth-example-d8d69a603356)
 - [Displaying the Choices Field in human readable format](https://stackoverflow.com/questions/22366536/displaying-the-choices-field-in-human-readable-format)
-
+- [django docs - tags and filters](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/)
+- [django docs - querysets](https://docs.djangoproject.com/en/4.0/ref/models/querysets/)
+- [stackoverflow - crispy forms](https://stackoverflow.com/questions/58857859/django-crispy-tag-vs-formcrispy-filter-whats-the-difference)
+- [contact form](https://blog.finxter.com/how-i-created-a-simple-contact-page-in-python-django/)
+- [choices paremetrs](https://gist.github.com/ambv/2292291)
+### Content 
+- [condition parameters](https://www.loop-generation.com/pages/product-condition)
+- [vintage store business plan](https://www.zenbusinessplans.com/vintage-store-business-plan/)
 ### Media
 - [BeFunky](https://www.befunky.com/)
 - <a href="https://www.freepik.com/free-vector/antique-hand-watch_4258282.htm#query=old%20clock%20logo&position=3&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
