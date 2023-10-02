@@ -8,6 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Reviews(models.Model):
     """ a class for reviews model """
+    reviews_id = models.AutoField(primary_key=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user_reviews"
     )
@@ -27,14 +28,9 @@ class Reviews(models.Model):
         related_name="products_name", null=True)
     created_date = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    likes = models.ManyToManyField(
-        User, related_name='reviews_likes', blank=True)
 
     class Meta:
         ordering = ['-created_date']
 
     def __str__(self):
         return self.content
-
-    def number_of_likes(self):
-        return self.likes.count()

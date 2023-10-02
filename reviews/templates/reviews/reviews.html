@@ -22,9 +22,11 @@
           <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="testimonial-wrap">
                 {% for review in reviews %}
+                <div class="testimonial-wrap">
+                
                   <div class="testimonial-item">
+                   
                     <div class="d-flex align-items-center">
                       <img src="{{ review.featured_image_url }}" class="testimonial-img flex-shrink-0" alt="">
                       <div>
@@ -45,11 +47,12 @@
                       <a href="{% url 'edit_reviews' review.pk %}">Edit</a>
                       <a href="{% url 'delete_reviews' review.pk %}">Delete</a>
                     </div>
-                    
+                   
                   </div>
                  
-                  {% endfor %}
+                 
                 </div>
+                {% endfor %}
               </div><!-- End testimonial item -->
              
             </div>

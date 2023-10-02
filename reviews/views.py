@@ -6,18 +6,12 @@ from django.urls import reverse, reverse_lazy
 from .forms import ReviewsForm
 
 
-class ReviewsView(View):
-    """A custom class-based view for displaying reviews."""
-
-    def get(self, request):
-
-        reviews = Reviews.objects.filter(status=1).order_by('-created_date')
-        context = {
-            'reviews': reviews,
-        }
-
-        return render(request, 'reviews/reviews.html', context)
-
+class ReviewsView(generic.ListView):
+    """ a class for reviews display """
+    model = Reviews
+    template_name = "reviews/reviews.html"
+    queryset = Reviews.objects.filter(status=1).order_by('-created_date').distinct()
+    context_object_name = 'reviews'
 
 class ReviewsCreate(generic.CreateView):
     """ a class for creating bookings """
@@ -43,4 +37,3 @@ class ReviewsDelete(generic.DeleteView):
     model = Reviews
     template_name = 'reviews/confirm_delete.html'
     success_url = reverse_lazy("reviews")
-
