@@ -118,11 +118,29 @@ select option[value=""] {
 .button-primary {
   background: var(--color-primary);
   border: 0;
-  padding: 14px 45px;
+  padding: 10px 20px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
   text-decoration: none;
+}
+
+.button-primary:hover {
+  background-color: #000;
+}
+
+.black-button {
+  background-color: #000;
+  border: 0;
+  padding: 10px 20px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.black-button:hover {
+  background-color: var(--color-primary);
 }
 
 /*--------------------------------------------------------------

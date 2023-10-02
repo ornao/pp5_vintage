@@ -348,7 +348,6 @@ A [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-busines
 
 
 
-- figure out why can't set up new accounts, email verification
 - add code that show product is sold when put in bag/bought, only allow 1 of each into basket
 - add stting to buttons and product details page
 - figure our account and bag in mobile header
