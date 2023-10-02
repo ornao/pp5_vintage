@@ -33,10 +33,18 @@
     <!-- mailchimp -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-          #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: px;}
-          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        #mc_embed_signup {
+            background: black;
+            false;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            width: ;
+            padding: 5px;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  </style>
+    </style>
     {% endblock %}
 
     {% block extra_css %}
@@ -230,60 +238,85 @@
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-links d-flex">
+                        <a href="https://twitter.com/" aria-label="twitter icon link" class="twitter" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/" aria-label="facebook icon link" class="facebook"
+                            target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="instagram icon link" class="instagram"
+                            target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="linkedin icon link" class="linkedin"
+                            target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
                 <div class="col-lg-3 col-md-6 footer-links d-flex">
                     <i class="fa-solid fa-bullhorn"> </i>
-                    <h4>Newsletter</h4>
-                    <div id="mc_embed_shell">
-                    
-                  <div id="mc_embed_signup">
-                      <form action="https://herokuapp.us12.list-manage.com/subscribe/post?u=a123574c1e8243512a23876f9&amp;id=3c8cb1cfef&amp;f_id=0019b5e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                          <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
-                              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                              <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-                          <div id="mce-responses" class="clear foot">
-                              <div class="response" id="mce-error-response" style="display: none;"></div>
-                              <div class="response" id="mce-success-response" style="display: none;"></div>
-                          </div>
-                      <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                          <input type="text" name="b_a123574c1e8243512a23876f9_3c8cb1cfef" tabindex="-1" value="">
-                      </div>
-                          <div class="optionalParent">
-                              <div class="clear foot">
-                                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                  <p style="margin: 0px auto;"><a href="http://eepurl.com/iAWm7k" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-                  </div>
-                  
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Follow Us</h4>
-                        <div class="social-links d-flex">
-                            <a href="https://twitter.com/" aria-label="twitter icon link" class="twitter"
-                                target="_blank"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.facebook.com/" aria-label="facebook icon link" class="facebook"
-                                target="_blank"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/" aria-label="instagram icon link" class="instagram"
-                                target="_blank"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/" aria-label="linkedin icon link" class="linkedin"
-                                target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <div>
+                        <h4>Newsletter</h4>
+                        <div id="mc_embed_shell">
+
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://herokuapp.us12.list-manage.com/subscribe/post?u=a123574c1e8243512a23876f9&amp;id=3c8cb1cfef&amp;f_id=0019b5e0f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <h2>Subscribe</h2>
+                                        <div class="indicates-required"><span class="asterisk">*</span> indicates
+                                            required</div>
+                                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                                class="required email" id="mce-EMAIL" required="" value=""></div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;">
+                                            </div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            /* real people should not fill this in and expect good things - do not
+                                            remove this or risk form bot signups */
+                                            <input type="text" name="b_a123574c1e8243512a23876f9_3c8cb1cfef"
+                                                tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="button" value="Subscribe">
+                                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iAWm7k"
+                                                        title="Mailchimp - email marketing made easy and fun"><span
+                                                            style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                                class="refferal_badge"
+                                                                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                                alt="Intuit Mailchimp"
+                                                                style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
                         </div>
                     </div>
-
                 </div>
-            </div>
 
-            <div class="container mt-4">
-                <div class="credits">
-                    <!-- All the links in the footer should remain intact. -->
-                    <!-- You can delete the links only if you purchased the pro version. -->
-                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+               
+
+
+
+                <div class="container mt-4">
+                    <div class="credits">
+                        <!-- All the links in the footer should remain intact. -->
+                        <!-- You can delete the links only if you purchased the pro version. -->
+                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
                 </div>
-            </div>
 
     </footer><!-- End Footer -->
     <!-- End Footer -->
