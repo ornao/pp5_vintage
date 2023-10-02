@@ -30,3 +30,11 @@ class ReviewsCreate(generic.CreateView):
         """assigns logged-in user to user field in database"""
         form.instance.user = self.request.user
         return super().form_valid(form)
+
+class ReviewsEdit(generic.UpdateView):
+    """ a class for editing bookings """
+    model = Reviews
+    form_class = ReviewsForm
+    template_name = 'edit_reviews.html'
+    success_url = reverse_lazy('reviews')
+

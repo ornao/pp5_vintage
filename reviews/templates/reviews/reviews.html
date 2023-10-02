@@ -15,11 +15,9 @@
             <h2>Customer Reviews</h2>
           </div>
          
-         
           <div class="text-center">
             <a href="{% url 'create_reviews' %}" class="button-primary">Create Review</a>
           </div>
-
 
           <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
@@ -42,7 +40,15 @@
                       {{ review.content }}
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
+                    
+                    <div class="text-center">
+                      <a href="{% url 'edit_reviews' review.pk %}">Edit</a>
+                    </div>
+                    <div class="text-center">
+                    </div>
+                    
                   </div>
+                 
                   {% endfor %}
                 </div>
               </div><!-- End testimonial item -->
