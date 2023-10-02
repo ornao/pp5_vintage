@@ -143,9 +143,6 @@
                         </a>
                         <ul>
                             {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <li><a href="" class="dropdown-item">Product Management</a></li>
-                            {% endif %}
                             <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
                             <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
                             {% else %}
@@ -215,17 +212,6 @@
 
         <div class="container">
             <div class="row gy-3">
-                <div class="col-lg-3 col-md-6 d-flex">
-                    <i class="bi bi-geo-alt icon"></i>
-                    <div>
-                        <h4>Our Address</h4>
-                        <p>
-                            3 Cois na hAbhann, <br>
-                            Contae na Gaillimhe <br>
-                        </p>
-                    </div>
-
-                </div>
 
                 <div class="col-lg-3 col-md-6 footer-links d-flex">
                     <i class="bi bi-telephone icon"></i>
