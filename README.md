@@ -340,9 +340,10 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 
 
 
-- look into just adding profile app instead of blog, make sure crud form is present
+
 - figure out why can't set up new accounts, email verification
 - add code that show product is sold when put in bag/bought, only allow 1 of each into basket
 - add stting to buttons and product details page
 - figure our account and bag in mobile header
 - signup for newsletter
+- add edit and delete to comments, must be for own commnets only 
