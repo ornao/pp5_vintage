@@ -69,7 +69,7 @@ def all_products(request):
         'current_genders': genders
     }
 
-    return render(request, 'templates/products/products.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def product_detail(request, product_id):
@@ -81,4 +81,4 @@ def product_detail(request, product_id):
         'product': product,
     }
 
-    return render(request, 'templates/products/product_detail.html', context)
+    return render(request, 'products/product_detail.html', context)

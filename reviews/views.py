@@ -9,14 +9,14 @@ from .forms import ReviewsForm
 class ReviewsView(generic.ListView):
     """ a class for reviews display """
     model = Reviews
-    template_name = "templates/reviews/reviews.html"
+    template_name = "reviews/reviews.html"
     queryset = Reviews.objects.filter(status=1).order_by('-created_date')
     context_object_name = 'reviews'
 
 class ReviewsCreate(generic.CreateView):
     """ a class for creating bookings """
     model = Reviews
-    template_name = "templates/reviews/create_reviews.html"
+    template_name = "reviews/create_reviews.html"
     form_class = ReviewsForm
     success_url = reverse_lazy('reviews')
 
@@ -29,11 +29,11 @@ class ReviewsEdit(generic.UpdateView):
     """ a class for editing reviews """
     model = Reviews
     form_class = ReviewsForm
-    template_name = 'templates/reviews/edit_reviews.html'
+    template_name = 'reviews/edit_reviews.html'
     success_url = reverse_lazy('reviews')
 
 class ReviewsDelete(generic.DeleteView):
     """ a class for deleting reviews """
     model = Reviews
-    template_name = 'templates/reviews/confirm_delete.html'
+    template_name = 'reviews/confirm_delete.html'
     success_url = reverse_lazy("reviews")
