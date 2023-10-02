@@ -283,7 +283,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 
 ### Theme
 
-A [bootstrap template ]() was used for this project. I also utilised another [bootstrap template Admin](https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/) for the login/logout and forms of the site. I adapted and pulled aspects of the code for the website and changed CSS elements to better represent my vision for the vintage online shop.
+A [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-business-website-template/download/) was used for this project. I also utilised another [bootstrap template Admin](https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/) for the login/logout and forms of the site. I adapted and pulled aspects of the code for the website and changed CSS elements to better represent my vision for the vintage online shop.
 
 ### Colour 
 
@@ -353,4 +353,3 @@ A [bootstrap template ]() was used for this project. I also utilised another [bo
 - add stting to buttons and product details page
 - figure our account and bag in mobile header
 - signup for newsletter
-- add edit and delete to comments, must be for own commnets only 
