@@ -29,7 +29,7 @@ class ReviewsEdit(generic.UpdateView):
     """ a class for editing reviews """
     model = Reviews
     form_class = ReviewsForm
-    template_name = 'edit_reviews.html'
+    template_name = 'reviews/edit_reviews.html'
     success_url = reverse_lazy('reviews')
 
 class ReviewsDelete(generic.DeleteView):

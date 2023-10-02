@@ -15,13 +15,25 @@
             <h2>Customer Reviews</h2>
           </div>
 
+          {% if user.is_authenticated %}
+            {% csrf_token %}
+            <div class="text-center">
+              <a href="{% url 'create_reviews' %}" class="button-primary">Create Review</a>
+            </div>
+          
+          {% else %}
           <div class="text-center">
-            <a href="{% url 'create_reviews' %}" class="button-primary">Create Review</a>
+            <p>Please log in to leave a review.</p>
+            <a class="button-primary" href="{% url 'account_login' %}">Login</a>
           </div>
+          {% endif %}
+
+         
 
          
           <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
+              {% if reviews %}
               {% for review in reviews %}
 
               <div class="swiper-slide">
@@ -46,10 +58,12 @@
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                     
+                    {% if review.author == request.user %}
                     <div class="text-center">
                       <a href="{% url 'edit_reviews' review.pk %}">Edit</a>
                       <a href="{% url 'delete_reviews' review.pk %}">Delete</a>
                     </div>
+                    {% endif %}
                    
                   </div>
                  
@@ -60,6 +74,7 @@
               </div><!-- End testimonial item -->
           
               {% endfor %}
+              {% endif %}
         
             </div>
            
