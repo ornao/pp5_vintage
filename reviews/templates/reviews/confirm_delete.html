@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Delete your Review </h2>
+        </div>
+
+        <div class="col-lg-8">
+            <form method="post">
+                {% csrf_token %}
+                <p>Are you sure you want to delete your booking?</p>
+                {{ form }}
+                <div class="text-center small">
+                <button class="btn-book-a-table primaryAction" type="submit">Confirm</button>
+                </div>
+                <a href="{% url 'reviews' %}">Go Back</a>
+              </form>
+        </div>
+    </div>
+    </div><!-- End Contact Form -->
+
+    </div>
+
+    </div>
+</section><!-- End Contact Section -->
+
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}

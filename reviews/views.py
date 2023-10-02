@@ -32,9 +32,15 @@ class ReviewsCreate(generic.CreateView):
         return super().form_valid(form)
 
 class ReviewsEdit(generic.UpdateView):
-    """ a class for editing bookings """
+    """ a class for editing reviews """
     model = Reviews
     form_class = ReviewsForm
     template_name = 'edit_reviews.html'
     success_url = reverse_lazy('reviews')
+
+class ReviewsDelete(generic.DeleteView):
+    """ a class for deleting reviews """
+    model = Reviews
+    template_name = 'reviews/confirm_delete.html'
+    success_url = reverse_lazy("reviews")
 
