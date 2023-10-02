@@ -10,7 +10,7 @@ class ReviewsView(generic.ListView):
     """ a class for reviews display """
     model = Reviews
     template_name = "reviews/reviews.html"
-    queryset = Reviews.objects.filter(status=1).order_by('-created_date').distinct()
+    queryset = Reviews.objects.filter(status=1).order_by('-created_date')
     context_object_name = 'reviews'
 
 class ReviewsCreate(generic.CreateView):

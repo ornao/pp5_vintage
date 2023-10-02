@@ -14,15 +14,18 @@
           <div class="section-header">
             <h2>Customer Reviews</h2>
           </div>
-         
+
           <div class="text-center">
             <a href="{% url 'create_reviews' %}" class="button-primary">Create Review</a>
           </div>
 
+         
           <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
+              {% for review in reviews %}
+
               <div class="swiper-slide">
-                {% for review in reviews %}
+               
                 <div class="testimonial-wrap">
                 
                   <div class="testimonial-item">
@@ -52,12 +55,17 @@
                  
                  
                 </div>
-                {% endfor %}
-              </div><!-- End testimonial item -->
+               
              
+              </div><!-- End testimonial item -->
+          
+              {% endfor %}
+        
             </div>
+           
             <div class="swiper-pagination"></div>
           </div>
+         
   
         </div>
         
