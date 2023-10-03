@@ -287,33 +287,49 @@ A [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-busines
 
 ### Colour 
 
+I chose red, black, and white as the main colours for my website because these colors blend well together, creating an attractive and cohesive look. Red connects with the "preloved" theme of my shop, and the fractured black heart logo reinforces this, symbolizing affection for vintage items that may have seen some wear and tear. Additionally, I like the use black and white as they pay tribute to times gone by, adding a nostalgic and timeless feel to the website.
 
-
-<img src="" alt="colours of wesbite">
-
-<hr>
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/colourspp5.png" alt="colours of wesbite">
 
 <hr>
 
-# Structure
-
+## Structure 
 
 ## Website pages
 
+- Home 
 
-  ##### Back to [top](#table-of-contents)
-  <hr>
+- Products
+ - Men's clothes - page further subdivided into categories
+
+ - Women's clothes - - page further subdivided into categories
+
+- Products details
+
+- Reviews 
+
+- Log in /Register /Log Out
+
+- Error page (404)
+
+- Bag
+
+- Checkout
+
+User need to Log In to view these page: 
+
+- Create reviews 
+
+- Edit reviews 
+
+- Delete reviews
+
+##### Back to [top](#table-of-contents)
+<hr>
 
 ## AWS 
 
 <hr>
-
-
-## Database
-
-<hr>
-
-## Models  
 
 ## Credits
 
@@ -349,6 +365,8 @@ A [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-busines
 
 
 - add code that show product is sold when put in bag/bought, only allow 1 of each into basket
-- add stting to buttons and product details page
+- can add more details to products details page
 - figure our account and bag in mobile header
-- signup for newsletter
+- signup for newsletter, check if sends email
+- finish up to testing readme, need to almost/start testing tommorrow
+- look at agile boards in work
