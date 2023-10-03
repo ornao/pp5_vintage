@@ -331,6 +331,148 @@ User need to Log In to view these page:
 
 <hr>
 
+### Database
+
+3 custom models were created for this project - Contact, Product and Reviews. My Reviews model contains a form that supports full CRUD functionality. User model was provided for by django allauth. I incorporated Order, OrderLineItem, Category and UserProfile model from Boutique Ado project. 
+
+<details><summary> Database schema screenshot</summary>
+<img src="" alt="database schema scrennshot">
+</details>
+
+## Models  
+
+#### User model (allauth)
+This contains:
+- user_id: AutoField (PK)
+- first_name: CharField()
+- last_name: CharField()
+- email: EmailField()
+- password: CharField()
+- is_superuser: BooleanField()
+
+#### Order model 
+This contains:
+- order_number = CharField()
+- user_profile = ForeignKey(UserProfile)
+- full_name = CharField()
+- email = EmailField()
+- phone_number = CharField()
+- country = CountryField()
+- postcode = CharField()
+- town_or_city = CharField()
+- street_address1 = CharField()
+- street_address2 = CharField()
+- county = CharField()
+- date = DateTimeField()
+- delivery_cost = DecimalField()
+- order_total = DecimalField()
+- grand_total = DecimalField()
+- original_bag = TextField()
+- stripe_pid = CharField()
+
+#### OrderLineItem model 
+This contains:
+- order = ForeignKey(Order)
+- product = ForeignKey(Product)
+- quantity = IntegerField()
+- lineitem_total = DecimalField()
+
+#### Contact model ** check and compare
+This contains:
+- contact_form_id: AutoField (PK)
+- user_id: ForeignKey
+- first_name: CharField()
+- last_name: CharField()
+- email: EmailField()
+- subject = models.CharField()
+- message = models.TextField()
+- date_submitted: DateField()
+
+#### Category model 
+This contains:
+- name = CharField()
+- friendly_name = CharField()
+
+#### Product model
+This contains: 
+- category = ForeignKey(Category)
+- sku = CharField()
+- name = CharField()
+- description = TextField()
+- price = DecimalField()
+- image_url = URLField()
+- condition = CharField()
+- gender = CharField()
+- size = CharField()
+- material = CharField()
+- brand = CharField()
+- date_listed = DateTimeField()
+- is_sold = BooleanField()
+
+#### UserProfile model
+This contains: 
+- user = OneToOneField(User)
+- default_phone_number = CharField()
+- default_street_address1 = CharField()
+- default_street_address2 = CharField()
+- default_town_or_city = CharField()
+- default_county = CharField()
+- default_postcode = CharField()
+- default_country = CountryField()
+
+#### Reviews model
+This contains: 
+- reviews_id = AutoField(pk)
+- author = ForeignKey(User)
+- rating = IntegerField()
+- content = models.TextField()
+- featured_image_url = ForeignKey(Product)
+- product_name = ForeignKey(Product)
+- created_date = DateTimeField()
+- status = IntegerField()
+
+<br>
+
+### Future models 
+<br>
+
+#### Blog model
+This will contain:
+
+#### Blog details model
+This will contain:
+
+
+<hr>
+
+## Technologies Used
+
+### Languages & Frameworks
+
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
+
+### Libraries & Tools
+
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [dbdiagram](https://dbdiagram.io/home)
+- [BeFunky](https://www.befunky.com/)
+- [AmIResponsive](https://ui.dev/amiresponsive)
+- [Colormind.io](http://colormind.io/)
+
+
+##### Back to [top](#table-of-contents)
+
+<hr>
+
 ## Credits
 
 ### Code  
