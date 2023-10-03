@@ -22,11 +22,9 @@
     - [Fonts](#fonts)
     - [Structure](#structure)
       - [Website pages](#website-pages)
-      - [AWS](#aws)
       - [Database](#database)
       - [Models](#models)
   - [Technologies Used](#technologies-used)
-  - [Features](#features)
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
@@ -180,6 +178,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 ---
 
 ### Wireframes
+-- include finished pages beside
 
 <details>
 
@@ -295,7 +294,7 @@ I chose red, black, and white as the main colours for my website because these c
 
 ## Structure 
 
-## Website pages
+## Website pages -- need to check
 
 - Home 
 
@@ -327,13 +326,11 @@ User need to Log In to view these page:
 ##### Back to [top](#table-of-contents)
 <hr>
 
-## AWS 
-
-<hr>
 
 ### Database
 
 3 custom models were created for this project - Contact, Product and Reviews. My Reviews model contains a form that supports full CRUD functionality. User model was provided for by django allauth. I incorporated Order, OrderLineItem, Category and UserProfile model from Boutique Ado project. 
+-- should i mention aws, elephant sequel here?
 
 <details><summary> Database schema screenshot</summary>
 <img src="" alt="database schema scrennshot">

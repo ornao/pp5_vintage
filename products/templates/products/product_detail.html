@@ -36,7 +36,11 @@
                             </span>
                             <span>Keep Shopping</span>
                         </a>
+                        {% if product.is_sold %}
+                        <p class="text-danger">Sold</p>
+                        {% else %}
                         <input type="submit" class="black-button" value="Add to Bag">
+                        {% endif %}
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
