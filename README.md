@@ -473,6 +473,265 @@ This will contain:
 
 <hr>
 
+<hr>
+
+## Validation
+
+### HTML - [Validator](https://validator.w3.org/)
+
+The W3S HTML validator checks the HTML through the webpage url. This is because the validator does not recognise the django template language when HTML input directly into validator. 
+
+- This checks base.html and index.html
+<details><summary> Home page screenshot</summary>
+
+<img src="" alt="home page html validation check">
+</details>
+<br>
+
+- This checks base.html and .html
+<details><summary>  page screenshot</summary>
+
+<img src="" alt=" page html validation check">
+</details>
+<br>
+
+- This checks base.html and .html
+<details><summary>  page screenshot</summary>
+
+<img src="" alt=" page html validation check">
+</details>
+<br>
+
+- This checks base.html and account/login.html
+<details><summary> Log In page screenshot</summary>
+
+<img src="" alt="login page html validation check">
+</details>
+<br>
+
+- This checks base.html and accounts/signup.html
+<details><summary> Register page screenshot</summary>
+
+<img src="" alt="signup page html validation check">
+</details>
+<br>
+
+- This checks base.html and account/logout.html
+<details><summary> Log Out page screenshot</summary>
+
+<img src="" alt="logout page html validation check">
+</details>
+<br>
+
+- This checks base.html and reviews.html
+<details><summary> View your Reviews page screenshot</summary>
+
+<img src="" alt="view reviews page html validation check">
+</details>
+<br>
+
+- This checks base.html and create_reviews.html
+<details><summary> Create reviews page screenshot</summary>
+
+<img src="" alt="create reviews page html validation check">
+</details>
+<br>
+
+- This checks base.html and edit_reviews.html
+<details><summary> Edit reviews page screenshot</summary>
+
+<img src="" alt="edit reviews page html validation check">
+</details>
+<br>
+
+- This checks base.html and confirm_delete.html
+<details><summary> Delete reviews page screenshot</summary>
+<img src="" alt="confirm delete page html validation check">
+</details>
+<br>
+
+
+### CSS - [Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+- base.css was validated by direct inputting of contents of file into website.
+
+<details><summary> base.css validation check screenshot</summary>
+<img src="" alt="base.css validation check">
+</details>
+<br>
+
+### Javascript - [JSHint](https://jshint.com/)
+- The js included in this project is from the [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-business-website-template/download/). I did not adapt this code in anyway hence I did not try to fiddle with it and mess up its functionality by trying to fulfil all the validation checks.
+<details><summary> main.js validation check screenshot</summary>
+
+<img src="" alt="main.js validation check">
+</details>
+<br>
+
+### Python - [https://pep8ci.herokuapp.com/](https://pep8ci.herokuapp.com/)
+
+<details><summary> Vintage app (main app) validation screenshots(2)</summary>
+settings.py:
+<img src="" alt="settings.py">
+urls.py:
+<img src="" alt="urls.py">
+
+</details>
+
+<details><summary> Reviews app validation screenshots(6)</summary>
+admin.py:
+<img src="" alt="admin.py">
+forms.py:
+<img src="" alt="froms.py">
+models.py:
+<img src="" alt="models.py">
+test_models.py:
+<img src="" alt="test_models.py">
+urls.py:
+<img src="" alt="urls.py">
+views.py:
+<img src="" alt="views.py">
+
+</details>
+
+<details><summary> Checkout app validation screenshots(6)</summary>
+admin.py:
+<img src="" alt="admin.py">
+forms.py:
+<img src="" alt="froms.py">
+models.py:
+<img src="" alt="models.py">
+test_models.py:
+<img src="" alt="test_models.py">
+urls.py:
+<img src="" alt="urls.py">
+views.py:
+<img src="" alt="views.py">
+
+</details>
+
+<details><summary> Products app validation screenshots(5)</summary>
+admin.py:
+<img src="" alt="admin.py">
+forms.py:
+<img src="" alt="froms.py">
+models.py:
+<img src="" alt="models.py">
+test_models.py:
+<img src="" alt="test_models.py">
+urls.py:
+<img src="" alt="urls.py">
+views.py:
+<img src="" alt="views.py">
+
+</details>
+
+<details><summary> Contact app validation screenshots(5)</summary>
+admin.py:
+<img src="" alt="admin.py">
+forms.py:
+<img src="" alt="froms.py">
+models.py:
+<img src="" alt="models.py">
+test_models.py:
+<img src="" alt="test_models.py">
+urls.py:
+<img src="" alt="urls.py">
+views.py:
+<img src="" alt="views.py">
+
+</details>
+
+<details><summary> Profiles app validation screenshots(5)</summary>
+admin.py:
+<img src="" alt="admin.py">
+forms.py:
+<img src="" alt="froms.py">
+models.py:
+<img src="" alt="models.py">
+test_models.py:
+<img src="" alt="test_models.py">
+urls.py:
+<img src="" alt="urls.py">
+views.py:
+<img src="" alt="views.py">
+
+</details>
+
+<details><summary> Home app validation screenshots(2)</summary>
+settings.py:
+<img src="" alt="settings.py">
+urls.py:
+<img src="" alt="urls.py">
+
+</details>
+
+<details><summary> Bag app validation screenshots(2)</summary>
+settings.py:
+<img src="" alt="settings.py">
+urls.py:
+<img src="" alt="urls.py">
+
+</details>
+<br>
+
+### Accessibility - [WAVE](https://wave.webaim.org/report)
+
+All page tested with no errors, only some alerts present in some pages. 
+
+<details><summary>  page screenshot</summary>
+<img src="" alt=" page accessibility check">
+</details>
+
+<details><summary>  page screenshot</summary>
+<img src="" alt=" page accessibility check">
+</details>
+
+<details><summary>  page screenshot</summary>
+<img src="" alt=" page accessibility check">
+</details>
+
+<details><summary> Log In page screenshot</summary>
+<img src="" alt="login page accessibility check">
+</details>
+
+<details><summary> Register page screenshot</summary>
+<img src="" alt="signup page accessibility check">
+</details>
+
+<details><summary> Log Out page screenshot</summary>
+<img src="" alt="logout page accessibility check">
+</details>
+
+
+<details><summary> View your reviews page screenshot</summary>
+<img src="" alt="view reviews page accessibility check">
+</details>
+
+<details><summary> Create review page screenshot</summary>
+Checked when user was logged in and not logged in 
+<img src="" alt="create reviews page accessibility check">
+<img src="" alt="create reviews page accessibility check when user logged in">
+</details>
+
+<details><summary> Edit reviews page screenshot</summary>
+<img src="" alt="edit reviews page accessibility check">
+</details>
+
+<details><summary> Delete Bookings page screenshot</summary>
+<img src="" alt="delete reviews page accessibility check">
+</details>
+<br>
+
+### Performance - Lighthouse
+
+
+<br>
+
+## Testing
+
+### Manual testing
+
 ## Credits
 
 ### Code  
