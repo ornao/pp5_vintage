@@ -142,7 +142,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 | 1 | Shopper / Site User | Create an account | So I can access my order history and save my preferences. | [link](https://github.com/ornao/pp5_vintage/issues/1) | 
 | 2 | Shopper / Site User | Log in and Logout | So I can access my account and saved information and keep my information secure when not using | [link](https://github.com/ornao/pp5_vintage/issues/2) | 
 | 3 | Shopper / Site User | reset my password if I forget my login details | I can recover my account and stored information | [link](https://github.com/ornao/pp5_vintage/issues/3) | 
-| 4 | Shopper / Site User | receive email confirmation after registration | be notified when my account is sucessfully made | [link](https://github.com/ornao/pp5_vintage/issues/4) | 
+| 4 | Shopper / Site User | receive email verification email after registration | to establish account creation. | [link](https://github.com/ornao/pp5_vintage/issues/4) | 
 | 5 | Shopper / Site User | create a profile | store my information for faster checkouts in the future | [link](https://github.com/ornao/pp5_vintage/issues/5) | 
 | 6 | Shopper / Site User | update my profile | change my shipping information or payemnt information | [link](https://github.com/ornao/pp5_vintage/issues/6) | 
 | 7 | Shopper / Site User | view my order history | keep track of my past and present purchases | https://github.com/ornao/pp5_vintage/issues/7 |
@@ -741,27 +741,21 @@ Checked when user was logged in and not logged in
 
 **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | ------------ | ------------ | ------------ |
-| Visible "Log In" option on homepage | YES | ![screenshot]() |
-| Login form with username/email and password fields  | YES | ![screenshot]() |
-| Error message for incorrect credentials  | YES | ![screenshot]() |
-| Successful login redirects to authenticated view  | YES | ![screenshot]() |
-| Display user's name or profile picture when logged in  | YES | ![screenshot]() |
-| Access to account info (order history, addresses, payment methods)  | YES | ![screenshot]() |
-| Visible "Log Out" option when logged in  | YES | ![screenshot]() |
-| Clicking "Log Out" logs user out immediately  | YES | ![screenshot]() |
-| Secure logout prevents access without login  | YES | ![screenshot]() |
-| "Remember Me" option for persistent login  | YES | ![screenshot]() |
-| Logout confirmation screen  | YES | ![screenshot]() |
+| Visible "Log In" option on homepage | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.1.png) |
+| Login form with username/email and password fields  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.6.png) |
+| Error message for incorrect credentials  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.2.png) |
+| Successful login redirects to authenticated view  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.6.png) |
+| Display user's name or profile picture when logged in  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
+| Access to account info (order history, addresses)  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.7.png) |
+| Visible "Log Out" option when logged in  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.8.png) |
+| "Remember Me" option for persistent login  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.6.png) |
+| Logout confirmation screen  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.9.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.10.png) |
 | Session timeout for security  | YES | ![screenshot]() |
 | Thorough testing on various devices and browsers  | YES | ![screenshot]() |
-| Collect user feedback for improvements  | YES | ![screenshot]() |
-
-
-
 
 3. As a Shopper / Site User, I can reset the password if login details are forgotten to recover the account and stored information.
 
-4. As a Shopper / Site User, I receive email confirmation after registration to be notified of a successful account creation.
+4. As a Shopper / Site User, I receive email verification email after registration to establish account creation.
 | Email verification requirement | YES | ![screenshot]() |
 
 5. As a Shopper / Site User, I can create a profile to store information for faster future checkouts.
@@ -770,30 +764,27 @@ Checked when user was logged in and not logged in
 
 7. As a Shopper / Site User, I can view order history to keep track of past and present purchases.
 
-8. As a Shopper / Site User, I can save items and view the wishlist to keep tabs on potential purchases.
+8. As a Shopper / Site User, I want to save items and view my wishlist so I can keep tabs on purchases I am considering buying
 
 9. As a Shopper / Site User I want to understand immediately the purpose of the site so my time is not wasted
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Clearly convey the site's purpose on the homepage | YES | ![screenshot]() |
-| Present a visually appealing and nostalgic design that reflects the vintage/retro theme | YES | ![screenshot]() |
-| Offer a user-friendly interface with intuitive navigation to browse and purchase vintage items | YES | ![screenshot]() |
-
+| Clearly convey the site's purpose on the homepage through images and design that reflects the vintage/retro theme | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.1.png) |
+| Offer a user-friendly interface with intuitive navigation to browse and purchase vintage clothing items | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 
 
 10. As a Shopper / Site User, I want to include a navbar so I can easily access all parts of the site from any page
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --------------------------- | ----------------- | -------------- |
-| Prominent navbar that matches theme  | YES  | ![screenshot]() |
-| Positioned at the top for easy access | YES   | ![screenshot]() |
-| Includes functional links to each page | YES | ![screenshot]() |
+| Prominent navbar that matches theme  | YES  | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.1.png) |
+| Positioned at the top for easy access | YES   | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
+| Includes functional links to each page | YES | Each link in navbar is working correctly |
 | Responsive design for various devices    | YES | ![screenshot]() |
-| Consistent design and layout    | YES   | ![screenshot]() |
 | Mobile-friendly menu for smaller screens  | YES    | ![screenshot]() |
-| Logo/site name links to the homepage  | YES    | ![screenshot]() |
-| Fixed navbar for easy access while scrolling  | YES    | ![screenshot]() |
+| Logo/site name links to the homepage  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.3.png) |
+| Fixed navbar for easy access while scrolling  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 
 11. As a Shopper / Site User, I can access social links in the footer section of the site.
 
@@ -801,8 +792,8 @@ Checked when user was logged in and not logged in
 
 **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | ------------ | ------------ | ------------ |
-| Visible username under account icon when user logged in | YES | ![screenshot]() |
-| Toast success messages appear when user logs in/logs out | YES | ![screenshot]() |
+| Visible username under account icon when user logged in | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
+| Toast success messages appear when user logs in/logs out | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1..png) |
 | Thorough testing on various devices and browsers | YES | ![screenshot]() |
 | Collect user feedback for improvements | YES | ![screenshot]() |
 | Tested for consistency on various devices/browsers | YES | ![screenshot]() |
@@ -907,6 +898,11 @@ Acceptance criteria:
 
 30. As a Store Owner / Admin, I can manage product listings by adding, editing, or removing products from the catalog.
 
+## Bugs
+
+| **Bug** | **fix** | **Screenshots** |
+| --- | --- | --- |
+| content was not filling entire screen | added in missing </div> for container div | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bugfix1.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bugfix1.2.png) |
 
 ## Credits
 
