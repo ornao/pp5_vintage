@@ -166,6 +166,7 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
+                messages.success(request, 'Information saved successfully to your profile!')
 
         products_to_mark_as_sold = set(item.product for item in order.lineitems.all())
 

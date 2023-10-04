@@ -758,13 +758,31 @@ Checked when user was logged in and not logged in
 4. As a Shopper / Site User, I receive email verification email after registration to establish account creation.
 | Email verification requirement | YES | ![screenshot]() |
 
-5. As a Shopper / Site User, I can create a profile to store information for faster future checkouts.
+5. As a Shopper / Site User, I can save billing info to my profile for faster future checkouts.
+
+  **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Users can save billing details during checkout. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.2.png)|
+| Users can still edit billing details during checkout. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.3.png) |
+| Handle errors in saved billing info. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
+| Clear confirmation messages for actions. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
+| User-friendly interface. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
+| Compatibility and responsiveness across devices and browsers. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
+
 
 6. As a Shopper / Site User, I can update the profile to change shipping information or payment information.
 
-7. As a Shopper / Site User, I can view order history to keep track of past and present purchases.
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Users can access their profile settings. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.2.png) |
+| Edit and update shipping information in the profile. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.1.png) |
+| Confirm changes with clear notifications. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.1.png) |
+| Provide error handling for profile updates. | YES | ![screenshot]() |
+| Maintain a user-friendly profile interface. | YES | ![screenshot]() |
+| Ensure compatibility across devices and browsers. | YES | ![screenshot]() |
 
-8. As a Shopper / Site User, I want to save items and view my wishlist so I can keep tabs on purchases I am considering buying
+
+7. As a Shopper / Site User, I can view order history to keep track of past and present purchases.
 
 9. As a Shopper / Site User I want to understand immediately the purpose of the site so my time is not wasted
 
@@ -802,15 +820,15 @@ Checked when user was logged in and not logged in
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Display a grid or list of available products. | YES | ![screenshot]() |
-| Include clear product images, names, and prices. | YES | ![screenshot]() |
-| Implement filters or categories for easy navigation. | YES | ![screenshot]() |
-| Enable sorting options (e.g., by price, by condition). | YES | ![screenshot]() |
-| Pagination or infinite scrolling for large product catalogs (will not apply as only limited number of products added). | NO | ![screenshot]() |
+| Display a grid or list of available products. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.1.png) |
+| Include clear product images, names, and prices. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.3.png) |
+| Implement filters or categories for easy navigation. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.7.png)|
+| Enable sorting options (e.g., by price, by condition). | YES | ![screenshot](![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png)) |
+| Pagination or infinite scrolling for large product catalogs (will not apply as only limited number of products added). | NO | |
 | Responsive design for mobile and desktop users. | YES | ![screenshot]() |
-| Clickable product cards to view more details. | YES | ![screenshot]() |
-| Provide a search bar for specific product searches. | YES | ![screenshot]() |
-| Fast loading times for product pages. | YES | ![screenshot]() |
+| Clickable product cards to view more details. | YES | ![screenshot](![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.9.png)) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.10.png) |
+| Provide a search bar for specific product searches. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.11.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.12.png)|
+| Fast loading times for product pages. | YES | Used web.p images for quicker loading |
 | User-friendly navigation and intuitive layout. | YES | ![screenshot]() |
 
 
@@ -818,13 +836,13 @@ Checked when user was logged in and not logged in
 
 15. As a Shopper / Site User, I can view high-quality images of vintage items to examine their condition and details.
 
-16. As a Shopper / Site User I want to view my basket and total cost from any page on site so i can be aware of total cost of basket as I am browsing
+16. As a Shopper / Site User I want to view my bag and total cost from any page on site so i can be aware of total cost of bag as I am browsing
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Display a visible basket icon or link on all site pages | YES | ![screenshot]() |
-| Show the current total cost of items in the basket | YES | ![screenshot]() |
-| Update the total cost as users add/remove items | YES | ![screenshot]() |
+| Display a visible bag icon or link on all site pages | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.1.png) |
+| Show the current total cost of items in the bag | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.2.png) |
+| Update the total cost as users add/remove items | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.4.png) |
 | Ensure responsive design for mobile and desktop | YES | ![screenshot]() |
 | Verify seamless functionality | YES | ![screenshot]() |
 
@@ -848,14 +866,13 @@ Acceptance criteria:
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Implement sorting options for price (low to high and high to low) | YES | ![screenshot]() |
-| Implement sorting options for the condition of clothes (low to high and high to low) | YES | ![screenshot]() |
-| Display clear and easy-to-use sorting controls | YES | ![screenshot]() |
+| Implement sorting options for price (low to high and high to low) | YES |  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.5.png) |
+| Implement sorting options for the condition of clothes (low to high and high to low) | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png)  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.3.png) |
+| Display clear and easy-to-use sorting controls | YES |  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png) | |
 | Ensure that sorting updates the product list instantly | YES | ![screenshot]() |
-| Maintain consistency in sorting across all product categories | YES | ![screenshot]() |
-| Include appropriate icons or labels for each sorting option | YES | ![screenshot]() |
+| Maintain consistency in sorting across all product categories | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.7.png) |
 | Ensure responsive design for mobile and desktop users | YES | ![screenshot]() |
-| Test and verify that sorting functions correctly for all products | YES | ![screenshot]() |
+| Test and verify that sorting functions correctly for all products and categories | YES | |
 
 
 22. As a Shopper / Site User, I can enter keywords into a search bar to receive a page with all relevant products of interest.
