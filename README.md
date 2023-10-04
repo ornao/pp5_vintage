@@ -744,7 +744,7 @@ Checked when user was logged in and not logged in
 | Visible "Log In" option on homepage | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.1.png) |
 | Login form with username/email and password fields  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.6.png) |
 | Error message for incorrect credentials  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.2.png) |
-| Successful login redirects to authenticated view  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.6.png) |
+| Successful login redirects to authenticated view  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
 | Display user's name or profile picture when logged in  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
 | Access to account info (order history, addresses)  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.7.png) |
 | Visible "Log Out" option when logged in  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.8.png) |
@@ -795,8 +795,6 @@ Checked when user was logged in and not logged in
 | Visible username under account icon when user logged in | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
 | Toast success messages appear when user logs in/logs out | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1..png) |
 | Thorough testing on various devices and browsers | YES | ![screenshot]() |
-| Collect user feedback for improvements | YES | ![screenshot]() |
-| Tested for consistency on various devices/browsers | YES | ![screenshot]() |
 
 13. As a Shopper / Site User, I can receive notifications of actions through a toast to know if actions are successful.
 
