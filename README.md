@@ -731,13 +731,11 @@ Checked when user was logged in and not logged in
 
 **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | ------------ | ------------ | ------------ |
-| Registration form with required fields (name, email, password) | YES | ![screenshot]() |
-| Validations for email format and password strength | YES | ![screenshot]() |
-| Unique email address requirement | YES | ![screenshot]() |
-| Secure password storage with encryption | YES | ![screenshot]() |
-| Account creation upon successful registration | YES | ![screenshot]() |
-| Email confirmation | YES | ![screenshot]() |
-| Access to order history after login | YES | ![screenshot]() |
+| Registration form with required fields (name, email, password) | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.1.png) |
+| Validations for email format and password strength | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.3.png)|
+| Unique email address requirement | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.4.png) |
+| Account creation upon successful registration | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
+| Access to order history after login | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.8.png) |
 
 2. As a Shopper / Site User, I want to Log in and Logout so that I can access my account and saved information and keep my information secure when not using 
 
@@ -764,6 +762,7 @@ Checked when user was logged in and not logged in
 3. As a Shopper / Site User, I can reset the password if login details are forgotten to recover the account and stored information.
 
 4. As a Shopper / Site User, I receive email confirmation after registration to be notified of a successful account creation.
+| Email verification requirement | YES | ![screenshot]() |
 
 5. As a Shopper / Site User, I can create a profile to store information for faster future checkouts.
 
@@ -945,7 +944,10 @@ Acceptance criteria:
 - can add more details to products details page
 - figure our account and bag in mobile header
 - signup for newsletter, check if sends email
-- make a start on testing
-- fix little styling issues as testing
+
 - add more products 
-- look at agile boards 
+
+
+- show no orders to display when no orders 
+- change email verification to display sites name
+- change formating of email verification confrimation 
