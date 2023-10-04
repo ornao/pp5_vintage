@@ -159,9 +159,8 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 | 17 | Shopper / Site User | view an individual product details by clicking in | make more informed decisions when deciding to purchase | [link](https://github.com/ornao/pp5_vintage/issues/17s) | 
 | 18 | Shopper / Site User | read product reviews and ratings | make an informed purchase. | [link](https://github.com/ornao/pp5_vintage/issues/18) | 
 | Sorting and Searching ||||
-| 19 | Shopper / Site User | browse products by category | easily find items that interest me. | [link](https://github.com/ornao/pp5_vintage/issues/19) | 
-| 20 | Shopper / Site User | filter products by price range, era, and condition | narrow down my search results | [link](https://github.com/ornao/pp5_vintage/issues/20) | 
-| 21 | Shopper / Site User | sort items by price (low to high and vice versa) and newest arrivals | quickly find what I'm looking for | [link](https://github.com/ornao/pp5_vintage/issues/21) | 
+| 20 | Shopper / Site User | filter products by category | narrow down my search results and easily find items that interest me. | [link](https://github.com/ornao/pp5_vintage/issues/20) | 
+| 21 | Shopper / Site User | sort items by price, by condition (low to high and vice versa)  | quickly find what I'm looking for | [link](https://github.com/ornao/pp5_vintage/issues/21) | 
 | 22 | Shopper / Site User | put in keywords into a search bar | receive a page with all relevant products to my interests | [link](https://github.com/ornao/pp5_vintage/issues/22) | 
 | 23 | Shopper / Site User | search for a product by name or description | find a certain product | [link](https://github.com/ornao/pp5_vintage/issues/23) |                                   
 | Purchasing and Checkout ||||
@@ -173,7 +172,6 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 | 29 | Shopper / Site User | receive email order confirmation | be notified of a successful order and have a record | [link](https://github.com/ornao/pp5_vintage/issues/29) | 
 | Admin and Store Management | | | |
 | 30 | Store Owner / Admin | manage product listings | add, edit, or remove products from the catalog | [link](https://github.com/ornao/pp5_vintage/issues/) | 
-
 
 ---
 
@@ -729,6 +727,188 @@ Checked when user was logged in and not logged in
 
 ### Manual testing
 
+1. As a Shopper / Site User, I want to create an account so that I can access my order history and save my preferences.
+
+**Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| ------------ | ------------ | ------------ |
+| Registration form with required fields (name, email, password) | YES | ![screenshot]() |
+| Validations for email format and password strength | YES | ![screenshot]() |
+| Unique email address requirement | YES | ![screenshot]() |
+| Secure password storage with encryption | YES | ![screenshot]() |
+| Account creation upon successful registration | YES | ![screenshot]() |
+| Email confirmation | YES | ![screenshot]() |
+| Access to order history after login | YES | ![screenshot]() |
+
+2. As a Shopper / Site User, I want to Log in and Logout so that I can access my account and saved information and keep my information secure when not using 
+
+**Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| ------------ | ------------ | ------------ |
+| Visible "Log In" option on homepage | YES | ![screenshot]() |
+| Login form with username/email and password fields  | YES | ![screenshot]() |
+| Error message for incorrect credentials  | YES | ![screenshot]() |
+| Successful login redirects to authenticated view  | YES | ![screenshot]() |
+| Display user's name or profile picture when logged in  | YES | ![screenshot]() |
+| Access to account info (order history, addresses, payment methods)  | YES | ![screenshot]() |
+| Visible "Log Out" option when logged in  | YES | ![screenshot]() |
+| Clicking "Log Out" logs user out immediately  | YES | ![screenshot]() |
+| Secure logout prevents access without login  | YES | ![screenshot]() |
+| "Remember Me" option for persistent login  | YES | ![screenshot]() |
+| Logout confirmation screen  | YES | ![screenshot]() |
+| Session timeout for security  | YES | ![screenshot]() |
+| Thorough testing on various devices and browsers  | YES | ![screenshot]() |
+| Collect user feedback for improvements  | YES | ![screenshot]() |
+
+
+
+
+3. As a Shopper / Site User, I can reset the password if login details are forgotten to recover the account and stored information.
+
+4. As a Shopper / Site User, I receive email confirmation after registration to be notified of a successful account creation.
+
+5. As a Shopper / Site User, I can create a profile to store information for faster future checkouts.
+
+6. As a Shopper / Site User, I can update the profile to change shipping information or payment information.
+
+7. As a Shopper / Site User, I can view order history to keep track of past and present purchases.
+
+8. As a Shopper / Site User, I can save items and view the wishlist to keep tabs on potential purchases.
+
+9. As a Shopper / Site User I want to understand immediately the purpose of the site so my time is not wasted
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Clearly convey the site's purpose on the homepage | YES | ![screenshot]() |
+| Present a visually appealing and nostalgic design that reflects the vintage/retro theme | YES | ![screenshot]() |
+| Offer a user-friendly interface with intuitive navigation to browse and purchase vintage items | YES | ![screenshot]() |
+
+
+
+10. As a Shopper / Site User, I want to include a navbar so I can easily access all parts of the site from any page
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --------------------------- | ----------------- | -------------- |
+| Prominent navbar that matches theme  | YES  | ![screenshot]() |
+| Positioned at the top for easy access | YES   | ![screenshot]() |
+| Includes functional links to each page | YES | ![screenshot]() |
+| Responsive design for various devices    | YES | ![screenshot]() |
+| Consistent design and layout    | YES   | ![screenshot]() |
+| Mobile-friendly menu for smaller screens  | YES    | ![screenshot]() |
+| Logo/site name links to the homepage  | YES    | ![screenshot]() |
+| Fixed navbar for easy access while scrolling  | YES    | ![screenshot]() |
+
+11. As a Shopper / Site User, I can access social links in the footer section of the site.
+
+12. As a Shopper / Site User I want to see my login status so I know if I am logged in or not
+
+**Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| ------------ | ------------ | ------------ |
+| Visible username under account icon when user logged in | YES | ![screenshot]() |
+| Toast success messages appear when user logs in/logs out | YES | ![screenshot]() |
+| Thorough testing on various devices and browsers | YES | ![screenshot]() |
+| Collect user feedback for improvements | YES | ![screenshot]() |
+| Tested for consistency on various devices/browsers | YES | ![screenshot]() |
+
+13. As a Shopper / Site User, I can receive notifications of actions through a toast to know if actions are successful.
+
+14. As a Shopper / Site User I want to browse products so i can see the products available 
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Display a grid or list of available products. | YES | ![screenshot]() |
+| Include clear product images, names, and prices. | YES | ![screenshot]() |
+| Implement filters or categories for easy navigation. | YES | ![screenshot]() |
+| Enable sorting options (e.g., by price, by condition). | YES | ![screenshot]() |
+| Pagination or infinite scrolling for large product catalogs (will not apply as only limited number of products added). | NO | ![screenshot]() |
+| Responsive design for mobile and desktop users. | YES | ![screenshot]() |
+| Clickable product cards to view more details. | YES | ![screenshot]() |
+| Provide a search bar for specific product searches. | YES | ![screenshot]() |
+| Fast loading times for product pages. | YES | ![screenshot]() |
+| User-friendly navigation and intuitive layout. | YES | ![screenshot]() |
+
+
+
+
+15. As a Shopper / Site User, I can view high-quality images of vintage items to examine their condition and details.
+
+16. As a Shopper / Site User I want to view my basket and total cost from any page on site so i can be aware of total cost of basket as I am browsing
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Display a visible basket icon or link on all site pages | YES | ![screenshot]() |
+| Show the current total cost of items in the basket | YES | ![screenshot]() |
+| Update the total cost as users add/remove items | YES | ![screenshot]() |
+| Ensure responsive design for mobile and desktop | YES | ![screenshot]() |
+| Verify seamless functionality | YES | ![screenshot]() |
+
+
+17. As a Shopper / Site User, I can view individual product details by clicking to make more informed purchase decisions.
+
+18. As a Shopper / Site User, I can read product reviews and ratings to make informed purchases.
+
+20. As a Shopper / Site User I want to filter products by category so I can narrow down my search results and easily find items that interest me. 
+
+Acceptance criteria: 
+- Implement filtering options for all categories
+- Provide clear and easy-to-use filter controls.
+- Ensure that applying filters updates the product list instantly.
+- Display relevant filter options based on available products.
+- Include appropriate labels and descriptions for each filter.
+- Ensure responsive design for mobile and desktop users.
+- Test and verify that filtering functions correctly for all products.
+
+21. As a Shopper / Site User I want to sort items by price, by condition (low to high and vice versa) so I can quickly find what I'm looking for
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Implement sorting options for price (low to high and high to low) | YES | ![screenshot]() |
+| Implement sorting options for the condition of clothes (low to high and high to low) | YES | ![screenshot]() |
+| Display clear and easy-to-use sorting controls | YES | ![screenshot]() |
+| Ensure that sorting updates the product list instantly | YES | ![screenshot]() |
+| Maintain consistency in sorting across all product categories | YES | ![screenshot]() |
+| Include appropriate icons or labels for each sorting option | YES | ![screenshot]() |
+| Ensure responsive design for mobile and desktop users | YES | ![screenshot]() |
+| Test and verify that sorting functions correctly for all products | YES | ![screenshot]() |
+
+
+22. As a Shopper / Site User, I can enter keywords into a search bar to receive a page with all relevant products of interest.
+
+23. As a Shopper / Site User, I can search for a product by name or description to find a specific product.
+
+24. As a Shopper / Site User I want to add items to my basket so I can keep track of what i want to buy and have total added up
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Include an "Add to Bag" or "Add to Cart" button on each product | YES | ![screenshot]() |
+| Allow users to click this button to add items | YES | ![screenshot]() |
+| Provide a visual confirmation of the added item | YES | ![screenshot]() |
+| Update the basket icon with item count | YES | ![screenshot]() |
+| Display a running total of the basket value | YES | ![screenshot]() |
+| Enable easy adjustments (removal only in our case) | YES | ![screenshot]() |
+| Ensure mobile and desktop responsiveness | YES | ![screenshot]() |
+| Verify smooth functionality | YES | ![screenshot]() |
+
+25. As a Shopper / Site User, I can make changes to the quantities of items for easy updates.
+
+26. As a Shopper / Site User, I can use a card as the payment method to complete the purchase.
+
+27. As a Shopper / Site User, I can select the size and quantity of a product according to needs.
+
+28. As a Shopper / Site User I want to view items in my bag so I can be aware of what I am buying and it's cost
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Allow users to click the bag icon to view its contents | YES | ![screenshot]() |
+| Enable easy item removal | YES | ![screenshot]() |
+| Provide a summary of items with names, quantities, prices, and subtotals | YES | ![screenshot]() |
+| Update the total cost as users add/remove items | YES | ![screenshot]() |
+| Ensure responsive design for mobile and desktop | YES | ![screenshot]() |
+| Verify seamless functionality | YES | ![screenshot]() |
+
+29. As a Shopper / Site User, I can receive an email order confirmation to be notified of a successful order and have a record.
+
+30. As a Store Owner / Admin, I can manage product listings by adding, editing, or removing products from the catalog.
+
+
 ## Credits
 
 ### Code  
@@ -759,12 +939,13 @@ Checked when user was logged in and not logged in
 - Code Institute Slack Community
 - Code Institute Tutor Support
 
+<hr>
 
 
-
-- add code that show product is sold when put in bag/bought, only allow 1 of each into basket
 - can add more details to products details page
 - figure our account and bag in mobile header
 - signup for newsletter, check if sends email
-- finish up to testing readme, need to almost/start testing tommorrow
-- look at agile boards in work
+- make a start on testing
+- fix little styling issues as testing
+- add more products 
+- look at agile boards 

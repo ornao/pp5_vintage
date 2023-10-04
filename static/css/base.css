@@ -993,7 +993,11 @@ section {
   height: 2px;
 }
 
-/* buttons */
+/* error messages */
+
+.errorlist {
+  color: red;
+}
 
 
 /*--------------------------------------------------------------
