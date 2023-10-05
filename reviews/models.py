@@ -25,9 +25,9 @@ class Reviews(models.Model):
         related_name="products_image_url", null=True)
     product_name = models.ForeignKey(
         Product, on_delete=models.CASCADE,
-        related_name="products_name", null=True)
+        related_name="products_name", null=True, limit_choices_to={'orderlineitem__isnull': False})
     created_date = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    status = models.IntegerField(choices=STATUS, default=1)
 
     class Meta:
         ordering = ['-created_date']

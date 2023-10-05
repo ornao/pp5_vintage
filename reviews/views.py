@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django.views import generic
-from .models import Reviews
+from .models import Reviews, Product
 from django.urls import reverse, reverse_lazy
 from .forms import ReviewsForm
 
@@ -18,12 +18,14 @@ class ReviewsCreate(generic.CreateView):
     model = Reviews
     template_name = "reviews/create_reviews.html"
     form_class = ReviewsForm
+
     success_url = reverse_lazy('reviews')
 
     def form_valid(self, form):
         """assigns logged-in user to user field in database"""
-        form.instance.user = self.request.user
+        form.instance.author = self.request.user 
         return super().form_valid(form)
+
 
 class ReviewsEdit(generic.UpdateView):
     """ a class for editing reviews """

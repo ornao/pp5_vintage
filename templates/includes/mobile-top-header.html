@@ -1,3 +1,6 @@
+
+<nav >
+
 <ul>
     {% if request.user.is_authenticated %}
     <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
@@ -25,3 +28,9 @@
     </a>
 </li>
 </ul>
+
+
+<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+</nav>
