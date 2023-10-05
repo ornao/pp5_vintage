@@ -1,5 +1,4 @@
 {% load static %}
-{% load user_agents %}
 
 <!doctype html>
 <html lang="en">
@@ -31,13 +30,11 @@
     <script src="https://kit.fontawesome.com/eef88ca571.js" crossorigin="anonymous"></script>
     <!-- mailchimp -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
+    <style>
         #mc_embed_signup {
             background: black;
-            false;
             clear: left;
             font: 14px Helvetica, Arial, sans-serif;
-            width: ;
             padding: 5px;
         }
 
@@ -210,7 +207,7 @@
             <div class="row gy-3">
 
                 <div class="col-lg-4 col-md-6 footer-links d-flex">
-s                    <i class="bi bi-telephone icon"></i>
+                    s <i class="bi bi-telephone icon"></i>
                     <div>
                         <h4>Contact Us</h4>
                         <p>
@@ -285,23 +282,23 @@ s                    <i class="bi bi-telephone icon"></i>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-               
 
 
 
-                <div class="container mt-4">
-                    <div class="credits">
-                        <!-- All the links in the footer should remain intact. -->
-                        <!-- You can delete the links only if you purchased the pro version. -->
-                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                    </div>
-                </div>
+        <div class="container mt-4">
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
 
     </footer><!-- End Footer -->
-    <!-- End Footer -->
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -310,18 +307,16 @@ s                    <i class="bi bi-telephone icon"></i>
 
     {% endblock %}
 
-</body>
 
-</html>
 
 
 
 {% block postloadjs %}
-<script type="text/javascript">
+<script>
     $('.toast').toast('show');
 </script>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type="text/javascript">
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script>
     (function ($) {
         window.fnames = new Array();
         window.ftypes = new Array();
@@ -340,5 +335,9 @@ s                    <i class="bi bi-telephone icon"></i>
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
 </script>
-</div>
+
 {% endblock %}
+
+</body>
+
+</html>

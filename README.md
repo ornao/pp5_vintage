@@ -476,69 +476,88 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html and index.html
 <details><summary> Home page screenshot</summary>
 
-<img src="" alt="home page html validation check">
+![screenshot]()
+ 
 </details>
 <br>
 
-- This checks base.html and .html
-<details><summary>  page screenshot</summary>
+- This checks base.html, products.html and products_detail.html
+<details><summary>  products, products_details page screenshot</summary>
 
-<img src="" alt=" page html validation check">
+![screenshot]()
+
 </details>
 <br>
 
-- This checks base.html and .html
-<details><summary>  page screenshot</summary>
+- This checks base.html, checkout.html and checkout_success.html
+<details><summary>  checkout, checkout_success page screenshot</summary>
 
-<img src="" alt=" page html validation check">
+![screenshot]()
+![screenshot]()
+
+</details>
+<br>
+
+- This checks base.html, contact.html and contact_success.html
+<details><summary>  contact, contact_success page screenshot</summary>
+
+![screenshot]()
+![screenshot]()
+
+</details>
+<br>
+
+- This checks base.html, profile.html 
+<details><summary>  profile page screenshot</summary>
+
+![screenshot]()
+
+</details>
+<br>
+
+- This checks base.html, reviews.html, edit_reviews.html, create_reviews.html, confirm_delete.html
+<details><summary>  screenshots</summary>
+
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+
 </details>
 <br>
 
 - This checks base.html and account/login.html
 <details><summary> Log In page screenshot</summary>
 
-<img src="" alt="login page html validation check">
+![screenshot]()
 </details>
 <br>
 
 - This checks base.html and accounts/signup.html
 <details><summary> Register page screenshot</summary>
 
-<img src="" alt="signup page html validation check">
+![screenshot]()
 </details>
 <br>
 
 - This checks base.html and account/logout.html
 <details><summary> Log Out page screenshot</summary>
 
-<img src="" alt="logout page html validation check">
+![screenshot]()
 </details>
 <br>
 
-- This checks base.html and reviews.html
-<details><summary> View your Reviews page screenshot</summary>
+- This checks base.html and account/email_confirm.html
+<details><summary> Log Out page screenshot</summary>
 
-<img src="" alt="view reviews page html validation check">
+![screenshot]()
 </details>
 <br>
 
-- This checks base.html and create_reviews.html
-<details><summary> Create reviews page screenshot</summary>
+- This checks base.html and account/verification_sent.html
+<details><summary> Log Out page screenshot</summary>
 
-<img src="" alt="create reviews page html validation check">
-</details>
-<br>
-
-- This checks base.html and edit_reviews.html
-<details><summary> Edit reviews page screenshot</summary>
-
-<img src="" alt="edit reviews page html validation check">
-</details>
-<br>
-
-- This checks base.html and confirm_delete.html
-<details><summary> Delete reviews page screenshot</summary>
-<img src="" alt="confirm delete page html validation check">
+![screenshot]()
 </details>
 <br>
 
