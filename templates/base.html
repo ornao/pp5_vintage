@@ -170,12 +170,11 @@
 
                 </ul>
 
-            {% if request|is_mobile %}
-                {% include 'includes/mobile-top-header.html' %}
-            {% endif %}
-
             </nav>
 
+        {% if request|is_mobile %}
+            {% include 'includes/mobile-top-header.html' %}
+        {% endif %}
         </div>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

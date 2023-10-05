@@ -371,16 +371,14 @@ This contains:
 - quantity = IntegerField()
 - lineitem_total = DecimalField()
 
-#### Contact model ** check and compare
+#### Contact model
 This contains:
 - contact_form_id: AutoField (PK)
-- user_id: ForeignKey
-- first_name: CharField()
-- last_name: CharField()
+- name: CharField()
 - email: EmailField()
 - subject = models.CharField()
 - message = models.TextField()
-- date_submitted: DateField()
+- date_submitted: DateField() -- had issue with models through whole project, would ideally. have this field as site owners know why email was sent --- will have for future iterations of project
 
 #### Category model 
 This contains:
