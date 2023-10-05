@@ -164,11 +164,10 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 | 22 | Shopper / Site User | put in keywords into a search bar | receive a page with all relevant products to my interests | [link](https://github.com/ornao/pp5_vintage/issues/22) | 
 | 23 | Shopper / Site User | search for a product by name or description | find a certain product | [link](https://github.com/ornao/pp5_vintage/issues/23) |                                   
 | Purchasing and Checkout ||||
-| 24 | Shopper / Site User | add items to my basket | keep track of what i want to buy and have total added up | [link](https://github.com/ornao/pp5_vintage/issues/24) | 
-| 25 | Shopper / Site User | make changes to quantities of items | easily update number items according to my needs | [link](https://github.com/ornao/pp5_vintage/issues/25) | 
+| 24 | Shopper / Site User | add items to my bag | keep track of what i want to buy and have total added up | [link](https://github.com/ornao/pp5_vintage/issues/24) | 
+| 25 | Shopper / Site User | make changes to my bag | so I can easily remove selected items according to my needs | [link](https://github.com/ornao/pp5_vintage/issues/25) | 
 | 26 | Shopper / Site User | use a card as the payment method | complete my purchase | [link](https://github.com/ornao/pp5_vintage/issues/26) |                                      |
-| 27 | Shopper / Site User | select the size and quantity of a product | select a size and quantity to my needs | [link](https://github.com/ornao/pp5_vintage/issues/27) | 
-| 28 | Shopper / Site User | view items in my basket | be aware of what I am buying and it's cost | [link](https://github.com/ornao/pp5_vintage/issues/28) | 
+| 28 | Shopper / Site User | view items in my bag | be aware of what I am buying and it's cost | [link](https://github.com/ornao/pp5_vintage/issues/28) | 
 | 29 | Shopper / Site User | receive email order confirmation | be notified of a successful order and have a record | [link](https://github.com/ornao/pp5_vintage/issues/29) | 
 | Admin and Store Management | | | |
 | 30 | Store Owner / Admin | manage product listings | add, edit, or remove products from the catalog | [link](https://github.com/ornao/pp5_vintage/issues/) | 
@@ -782,7 +781,15 @@ Checked when user was logged in and not logged in
 | Ensure compatibility across devices and browsers. | YES | ![screenshot]() |
 
 
-7. As a Shopper / Site User, I can view order history to keep track of past and present purchases.
+7. As a Shopper / Site User, I can view order history to keep track of past purchases.
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Users can easily access their order history. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.2.png)|
+| Order history displays past orders with dates, order numbers, and item details. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.1.png) |
+| Users can click to view more order details. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.2.png) |
+| Works well on different devices and browsers. | YES | ![screenshot]() |
+
 
 9. As a Shopper / Site User I want to understand immediately the purpose of the site so my time is not wasted
 
@@ -805,6 +812,14 @@ Checked when user was logged in and not logged in
 | Fixed navbar for easy access while scrolling  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 
 11. As a Shopper / Site User, I can access social links in the footer section of the site.
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Social links are clearly visible in the footer. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.3.png) |
+| Links lead to the respective social media profiles. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.2.png) |
+| Links open in a new tab or window for user convenience. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.2.png) |
+| The footer design ensures easy access on all devices. | YES | ![screenshot]() |
+
 
 12. As a Shopper / Site User I want to see my login status so I know if I am logged in or not
 
@@ -832,8 +847,6 @@ Checked when user was logged in and not logged in
 | User-friendly navigation and intuitive layout. | YES | ![screenshot]() |
 
 
-
-
 15. As a Shopper / Site User, I can view high-quality images of vintage items to examine their condition and details.
 
 16. As a Shopper / Site User I want to view my bag and total cost from any page on site so i can be aware of total cost of bag as I am browsing
@@ -849,7 +862,7 @@ Checked when user was logged in and not logged in
 
 17. As a Shopper / Site User, I can view individual product details by clicking to make more informed purchase decisions.
 
-18. As a Shopper / Site User, I can read product reviews and ratings to make informed purchases.
+18. As a Shopper / Site User, I can read product reviews to make informed purchases pn similar products.
 
 20. As a Shopper / Site User I want to filter products by category so I can narrow down my search results and easily find items that interest me. 
 
@@ -879,7 +892,7 @@ Acceptance criteria:
 
 23. As a Shopper / Site User, I can search for a product by name or description to find a specific product.
 
-24. As a Shopper / Site User I want to add items to my basket so I can keep track of what i want to buy and have total added up
+24. As a Shopper / Site User I want to add items to my bag so I can keep track of what i want to buy and have total added up
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
@@ -892,11 +905,7 @@ Acceptance criteria:
 | Ensure mobile and desktop responsiveness | YES | ![screenshot]() |
 | Verify smooth functionality | YES | ![screenshot]() |
 
-25. As a Shopper / Site User, I can make changes to the quantities of items for easy updates.
-
 26. As a Shopper / Site User, I can use a card as the payment method to complete the purchase.
-
-27. As a Shopper / Site User, I can select the size and quantity of a product according to needs.
 
 28. As a Shopper / Site User I want to view items in my bag so I can be aware of what I am buying and it's cost
 
@@ -952,13 +961,18 @@ Acceptance criteria:
 <hr>
 
 
-- can add more details to products details page
-- figure our account and bag in mobile header
-- signup for newsletter, check if sends email
-
+- figure our account and bag in mobile header - linked to mobile testing
+- add form validation to profile, reviews, contact
+- 13, 15, 17, 18 
+- add crud reviews user stories
+- 20 can reuse screenshots i think
+- combine 22, 23
 - add more products 
 
+- can add more details to products details page
 
-- show no orders to display when no orders 
+- newsletter, check if sends email
+
 - change email verification to display sites name
 - change formating of email verification confrimation 
+- get order confrimation email working
