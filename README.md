@@ -747,13 +747,14 @@ Checked when user was logged in and not logged in
 | Visible "Log Out" option when logged in  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.8.png) |
 | "Remember Me" option for persistent login  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.6.png) |
 | Logout confirmation screen  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.9.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.10.png) |
-| Session timeout for security  | YES | ![screenshot]() |
-| Thorough testing on various devices and browsers  | YES | ![screenshot]() |
-
-3. As a Shopper / Site User, I can reset the password if login details are forgotten to recover the account and stored information.
+| Session timeout for security  | YES | Times out after 5 mins of inactivity |
+| Thorough testing on various devices and browsers  | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.11.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.12.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.13.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting2.14.png) |
 
 4. As a Shopper / Site User, I receive email verification email after registration to establish account creation.
-| Email verification requirement | YES | ![screenshot]() |
+
+|  **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Email verification requirement | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/emailverification1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/emailverification2.png)|
 
 5. As a Shopper / Site User, I can save billing info to my profile for faster future checkouts.
 
@@ -763,20 +764,18 @@ Checked when user was logged in and not logged in
 | Users can still edit billing details during checkout. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.3.png) |
 | Handle errors in saved billing info. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
 | Clear confirmation messages for actions. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
-| User-friendly interface. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
 | Compatibility and responsiveness across devices and browsers. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
 
 
-6. As a Shopper / Site User, I can update the profile to change shipping information or payment information.
+6. As a Shopper / Site User, I can update the profile to change shipping information
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
 | Users can access their profile settings. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.2.png) |
 | Edit and update shipping information in the profile. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.1.png) |
 | Confirm changes with clear notifications. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.1.png) |
-| Provide error handling for profile updates. | YES | ![screenshot]() |
-| Maintain a user-friendly profile interface. | YES | ![screenshot]() |
-| Ensure compatibility across devices and browsers. | YES | ![screenshot]() |
+| Provide error handling for profile updates. | NO| No required fields as user is allowed to not save their info to their profile if they wish however phone number can be letters currently which is an issue |
+| Ensure compatibility across devices and browsers. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.4.png) |
 
 
 7. As a Shopper / Site User, I can view order history to keep track of past purchases.
@@ -786,7 +785,7 @@ Checked when user was logged in and not logged in
 | Users can easily access their order history. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting6.2.png)|
 | Order history displays past orders with dates, order numbers, and item details. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.1.png) |
 | Users can click to view more order details. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.2.png) |
-| Works well on different devices and browsers. | YES | ![screenshot]() |
+| Works well on different devices and browsers. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.4.png) Alert message can be clicked away to clearly see content ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting7.5.png) |
 
 
 9. As a Shopper / Site User I want to understand immediately the purpose of the site so my time is not wasted
@@ -804,8 +803,7 @@ Checked when user was logged in and not logged in
 | Prominent navbar that matches theme  | YES  | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.1.png) |
 | Positioned at the top for easy access | YES   | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 | Includes functional links to each page | YES | Each link in navbar is working correctly |
-| Responsive design for various devices    | YES | ![screenshot]() |
-| Mobile-friendly menu for smaller screens  | YES    | ![screenshot]() |
+| Mobile-friendly menu for smaller screens  | YES    | issues with gaps beside screen - minimal benefir to fixing and within timeframe decided to leave as did not affected functionality of website. Ideally I would have bag icon and account display i9hn nav header and not in toggle side bar again, left as did turn out to be more complicated to fix that the benefit it gave to users ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.5.png)|
 | Logo/site name links to the homepage  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.3.png) |
 | Fixed navbar for easy access while scrolling  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 
@@ -814,9 +812,9 @@ Checked when user was logged in and not logged in
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
 | Social links are clearly visible in the footer. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.3.png) |
-| Links lead to the respective social media profiles. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.2.png) |
-| Links open in a new tab or window for user convenience. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.2.png) |
-| The footer design ensures easy access on all devices. | YES | ![screenshot]() |
+| Links lead to the respective social media profiles. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtestinh11.2.png)  |
+| Links open in a new tab or window for user convenience. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtestinh11.2.png)  |
+| The footer design ensures easy access on all devices. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting11.5.png) |
 
 
 12. As a Shopper / Site User I want to see my login status so I know if I am logged in or not
@@ -824,8 +822,8 @@ Checked when user was logged in and not logged in
 **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | ------------ | ------------ | ------------ |
 | Visible username under account icon when user logged in | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) |
-| Toast success messages appear when user logs in/logs out | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1..png) |
-| Thorough testing on various devices and browsers | YES | ![screenshot]() |
+| Toast success messages appear when user logs in/logs out | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting1.7.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.3.png) |
+| Thorough testing on various devices and browsers | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.2.png)|
 
 13. As a Shopper / Site User, I can receive notifications of actions through a toast to know if actions are successful.
 
@@ -836,16 +834,19 @@ Checked when user was logged in and not logged in
 | Display a grid or list of available products. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.1.png) |
 | Include clear product images, names, and prices. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.3.png) |
 | Implement filters or categories for easy navigation. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.7.png)|
-| Enable sorting options (e.g., by price, by condition). | YES | ![screenshot](![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png)) |
-| Pagination or infinite scrolling for large product catalogs (will not apply as only limited number of products added). | NO | |
-| Responsive design for mobile and desktop users. | YES | ![screenshot]() |
-| Clickable product cards to view more details. | YES | ![screenshot](![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.9.png)) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.10.png) |
+| Enable sorting options (e.g., by price, by condition). | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png) |
+| Pagination or infinite scrolling for large product catalogs | NO | Will not apply as only limited number of products added |
+| Responsive design for mobile users. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.13.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.14.png)|
+| Clickable product cards to view more details. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.9.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.10.png) |
 | Provide a search bar for specific product searches. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.11.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.12.png)|
 | Fast loading times for product pages. | YES | Used web.p images for quicker loading |
-| User-friendly navigation and intuitive layout. | YES | ![screenshot]() |
 
 
 15. As a Shopper / Site User, I can view high-quality images of vintage items to examine their condition and details.
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Include clear product images, names, and prices. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.3.png)|
 
 16. As a Shopper / Site User I want to view my bag and total cost from any page on site so i can be aware of total cost of bag as I am browsing
 
@@ -854,13 +855,27 @@ Checked when user was logged in and not logged in
 | Display a visible bag icon or link on all site pages | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.1.png) |
 | Show the current total cost of items in the bag | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.2.png) |
 | Update the total cost as users add/remove items | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.4.png) |
-| Ensure responsive design for mobile and desktop | YES | ![screenshot]() |
-| Verify seamless functionality | YES | ![screenshot]() |
+| Ensure responsive design for mobile and desktop | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.6.png)|
 
 
 17. As a Shopper / Site User, I can view individual product details by clicking to make more informed purchase decisions.
 
-18. As a Shopper / Site User, I can read product reviews to make informed purchases pn similar products.
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Users can click on a product to view its detailed information. | YES | ![screenshot]() |
+| Product details include images, description, price, size, era, and condition. | YES | ![screenshot]() |
+| Users can easily navigate back to the product list from the product details page. | YES | ![screenshot]() |
+
+
+18. As a Shopper / Site User, I can read product reviews to make informed purchases on similar products.
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Users can access product reviews from the product details page. | YES | ![screenshot]() |
+| Reviews display information such as ratings, comments, and reviewer names. | YES | ![screenshot]() |
+| Users can sort reviews by date, rating, or relevance. | YES | ![screenshot]() |
+| Users can write their own reviews if they are logged in. | YES | ![screenshot]() |
+
 
 20. As a Shopper / Site User I want to filter products by category so I can narrow down my search results and easily find items that interest me. 
 
