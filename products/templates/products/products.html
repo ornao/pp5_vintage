@@ -79,7 +79,6 @@
                     </div>
                 </div>
 
-
             <hr>
 
             <div class="row gy-4 portfolio-container">
@@ -87,7 +86,7 @@
             {% for product in products %}
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                 <div class="portfolio-wrap">
-                    <a href="" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ product.image_url }}"
+                    <a href="{% url 'product_detail' product.id %}"  class="glightbox"><img src="{{ product.image_url }}"
                             class="img-fluid" alt="{{ product.name }}"></a>
                     <div class="portfolio-info">
                         <h4><a href="{% url 'product_detail' product.id %}" title="More Details">{{ product.name }}</a>

@@ -803,7 +803,7 @@ Checked when user was logged in and not logged in
 | Prominent navbar that matches theme  | YES  | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.1.png) |
 | Positioned at the top for easy access | YES   | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 | Includes functional links to each page | YES | Each link in navbar is working correctly |
-| Mobile-friendly menu for smaller screens  | YES    | issues with gaps beside screen - minimal benefir to fixing and within timeframe decided to leave as did not affected functionality of website. Ideally I would have bag icon and account display i9hn nav header and not in toggle side bar again, left as did turn out to be more complicated to fix that the benefit it gave to users ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.5.png)|
+| Mobile-friendly menu for smaller screens  | YES    | issues with gaps beside screen - minimal benefit to fixing and within timeframe decided to leave as did not affected functionality of website. Ideally I would have bag icon and account display i9hn nav header and not in toggle side bar again, left as did turn out to be more complicated to fix that the benefit it gave to users ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.5.png)|
 | Logo/site name links to the homepage  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting10.3.png) |
 | Fixed navbar for easy access while scrolling  | YES    | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting9.2.png) |
 
@@ -862,31 +862,32 @@ Checked when user was logged in and not logged in
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Users can click on a product to view its detailed information. | YES | ![screenshot]() |
-| Product details include images, description, price, size, era, and condition. | YES | ![screenshot]() |
-| Users can easily navigate back to the product list from the product details page. | YES | ![screenshot]() |
+| Users can click on a product to view its detailed information. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting17.1.png) |
+| Product details include images, description, price, size and condition. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting17.2.png) |
+| Users can easily navigate back to the product list from the product details page. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting17.3.png)  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting17.4.png) |
 
 
-18. As a Shopper / Site User, I can read product reviews to make informed purchases on similar products.
+18. As a Shopper / Site User, I can CRUD product reviews to help users and myself make informed purchases on similar products.
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Users can access product reviews from the product details page. | YES | ![screenshot]() |
-| Reviews display information such as ratings, comments, and reviewer names. | YES | ![screenshot]() |
-| Users can sort reviews by date, rating, or relevance. | YES | ![screenshot]() |
-| Users can write their own reviews if they are logged in. | YES | ![screenshot]() |
+| Users can create new product review of bought product by providing a rating and written comments when logged in. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.3.png) |
+| Validated form for rating numbers | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.5.png)|
+| Users can view and edit their own product reviews if they are logged in. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.7.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.8.png)|
+| Users can delete their own product reviews if needed. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.9.png) |
+| Toasts | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.10.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.11.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting18.12.png)|
 
 
 20. As a Shopper / Site User I want to filter products by category so I can narrow down my search results and easily find items that interest me. 
 
-Acceptance criteria: 
-- Implement filtering options for all categories
-- Provide clear and easy-to-use filter controls.
-- Ensure that applying filters updates the product list instantly.
-- Display relevant filter options based on available products.
-- Include appropriate labels and descriptions for each filter.
-- Ensure responsive design for mobile and desktop users.
-- Test and verify that filtering functions correctly for all products.
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Implement filters or categories for easy navigation. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.7.png)|
+| Provide clear and easy-to-use filter controls. | YES | As above |
+| Display relevant filter options based on available products. | YES | Filter by catgegory and gender displaying relevant producst - issues with skirts and dresses displaying for men categories however no products will display and hence will be a future fix as dies not affect functionality of product category sorting |
+| Include appropriate labels and descriptions for each filter. | YES | As above |
+| Ensure responsive design for mobile and desktop users. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting20.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting20.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting20.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting20.4.png)  |
+
 
 21. As a Shopper / Site User I want to sort items by price, by condition (low to high and vice versa) so I can quickly find what I'm looking for
 
@@ -895,45 +896,51 @@ Acceptance criteria:
 | Implement sorting options for price (low to high and high to low) | YES |  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.4.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.5.png) |
 | Implement sorting options for the condition of clothes (low to high and high to low) | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png)  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.3.png) |
 | Display clear and easy-to-use sorting controls | YES |  ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting14.8.png) | |
-| Ensure that sorting updates the product list instantly | YES | ![screenshot]() |
 | Maintain consistency in sorting across all product categories | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.6.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.7.png) |
-| Ensure responsive design for mobile and desktop users | YES | ![screenshot]() |
-| Test and verify that sorting functions correctly for all products and categories | YES | |
+| Ensure responsive design for mobile and desktop users | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.8.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.9.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.10.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting21.11.png)|
 
+23. As a Shopper / Site User, I can search for a product by name, description or keywords to find a specific product.
 
-22. As a Shopper / Site User, I can enter keywords into a search bar to receive a page with all relevant products of interest.
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| Users can enter keywords, product names, or descriptions into the search bar. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting23.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting23.2.png) |
+| The search function returns relevant products that match the entered keywords. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting23.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting23.4.png) |
 
-23. As a Shopper / Site User, I can search for a product by name or description to find a specific product.
 
 24. As a Shopper / Site User I want to add items to my bag so I can keep track of what i want to buy and have total added up
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Include an "Add to Bag" or "Add to Cart" button on each product | YES | ![screenshot]() |
-| Allow users to click this button to add items | YES | ![screenshot]() |
-| Provide a visual confirmation of the added item | YES | ![screenshot]() |
-| Update the basket icon with item count | YES | ![screenshot]() |
-| Display a running total of the basket value | YES | ![screenshot]() |
-| Enable easy adjustments (removal only in our case) | YES | ![screenshot]() |
-| Ensure mobile and desktop responsiveness | YES | ![screenshot]() |
-| Verify smooth functionality | YES | ![screenshot]() |
+| Include an "Add to Bag" or "Add to Cart" button on each product | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting17.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting17.1.png) |
+| Allow users to click this button to add items | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting24.1.png) |
+| Provide a visual confirmation of the added item | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting24.1.png) |
+| Enable easy adjustments (removal only in our case) | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting24.2.png) |
+| Show the current total cost of items in the bag | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.2.png) |
+| Update the total cost as users add/remove items | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.4.png) |
+| Ensure responsive design for mobile and desktop | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.6.png)|
 
 26. As a Shopper / Site User, I can use a card as the payment method to complete the purchase.
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting26.1.png)
+
 
 28. As a Shopper / Site User I want to view items in my bag so I can be aware of what I am buying and it's cost
 
 | **Acceptance Criteria** | **Accomplished** | **Screenshot** |
 | --- | --- | --- |
-| Allow users to click the bag icon to view its contents | YES | ![screenshot]() |
-| Enable easy item removal | YES | ![screenshot]() |
-| Provide a summary of items with names, quantities, prices, and subtotals | YES | ![screenshot]() |
-| Update the total cost as users add/remove items | YES | ![screenshot]() |
-| Ensure responsive design for mobile and desktop | YES | ![screenshot]() |
-| Verify seamless functionality | YES | ![screenshot]() |
-
-29. As a Shopper / Site User, I can receive an email order confirmation to be notified of a successful order and have a record.
+| Allow users to click the bag icon to view its contents | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting12.2.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.5.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.6.png) |
+| Enable easy adjustments (removal only in our case) | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting24.2.png) |
+| Provide a summary of items with names, quantities, prices, and subtotals | YES | As above |
+| Display a visible bag icon or link on all site pages | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.1.png) |
+| Show the current total cost of items in the bag | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.2.png) |
+| Update the total cost as users add/remove items | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.3.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting16.4.png) |
 
 30. As a Store Owner / Admin, I can manage product listings by adding, editing, or removing products from the catalog.
+
+| **Acceptance Criteria** | **Accomplished** | **Screenshot** |
+| --- | --- | --- |
+| adding through admiin | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting30.1.png) |
+| editing through admiin | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting30.2.png) |
+| deleting through admiin | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting30.3.png) |
 
 ## Bugs
 
