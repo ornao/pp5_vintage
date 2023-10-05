@@ -1,10 +1,3 @@
-<li class="dropdown"><a href="#" id="account-icon" class="text-white nav-link">
-    <div class="text-center"><i class="fas fa-user fa-lg"></i>
-        {% if request.user.is_authenticated %}
-        <p class="my-0">{{ user.username }}</p>
-        {% endif %}
-    </div> <i class="bi bi-chevron-down dropdown-indicator"></i>
-</a>
 <ul>
     {% if request.user.is_authenticated %}
     <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
@@ -14,20 +7,21 @@
     <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
     {% endif %}
 </ul>
-</li>
+
 <li>
-<a id="bag-icon" class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block"
-    href="{% url 'view_bag' %}">
-    <div>
-        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-        <p class="my-0">
-            {% if grand_total %}
-            €{{ grand_total|floatformat:2 }}
-            {% else %}
-            $0.00
-            {% endif %}
-        </p>
-    </div>
-</a>
+    <a id="bag-icon"
+        class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block"
+        href="{% url 'view_bag' %}">
+        <div>
+            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+            <p class="my-0">
+                {% if grand_total %}
+                €{{ grand_total|floatformat:2 }}
+                {% else %}
+                $0.00
+                {% endif %}
+            </p>
+        </div>
+    </a>
 </li>
 </ul>

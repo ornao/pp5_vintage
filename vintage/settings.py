@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     #other
     'crispy_forms',
     'storages',
+    'django_user_agents',
+
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     # other middlewares...
+    'django_user_agents.middleware.UserAgentMiddleware',
 ]
 
 ROOT_URLCONF = 'vintage.urls'

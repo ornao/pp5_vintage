@@ -1,9 +1,8 @@
 {% load static %}
-
+{% load user_agents %}
 
 <!doctype html>
 <html lang="en">
-
 
 <head>
 
@@ -135,7 +134,7 @@
                         </form>
                     </li>
 
-                    <li class="dropdown"><a href="#" id="account-icon" class="text-black nav-link">
+                    <li id="account-icon"class="dropdown"><a href="#" class="text-black nav-link">
                             <div class="text-center"><i class="fas fa-user fa-lg"></i>
                                 {% if request.user.is_authenticated %}
                                 <p class="my-0">{{ user.username }}</p>
@@ -152,8 +151,9 @@
                             {% endif %}
                         </ul>
                     </li>
-                    <li>
-                        <a id="bag-icon" class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block"
+
+                    <li id="bag-icon">
+                        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -169,6 +169,10 @@
                     </li>
 
                 </ul>
+
+            {% if request|is_mobile %}
+                {% include 'includes/mobile-top-header.html' %}
+            {% endif %}
 
             </nav>
 

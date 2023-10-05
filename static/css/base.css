@@ -567,12 +567,13 @@ section {
     height: 100vh;
     inset: 0;
     padding: 50px 0 10px 0;
-    background: rgba(255, 0, 0, 0.9);
-    overflow-x: aut0;
+    background: rgba(0, 0, 0, 0.9);
+    overflow-x: auto;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    margin: -27px;
+    margin-left: 20vh;
+    width: fit-content;
   }
 
   .navbar a,
@@ -643,6 +644,10 @@ section {
     transition: 0.5s;
     z-index: 9999;
     margin-right: 10px;
+  }
+
+  #account-icon, #bag-icon {
+    display: none;
   }
 
   .mobile-nav-hide {

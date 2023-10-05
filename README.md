@@ -963,6 +963,7 @@ Acceptance criteria:
 
 - figure our account and bag in mobile header - linked to mobile testing
 - add form validation to profile, reviews, contact
+
 - 13, 15, 17, 18 
 - add crud reviews user stories
 - 20 can reuse screenshots i think
