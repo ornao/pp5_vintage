@@ -2,10 +2,11 @@ from django.db import models
 
 
 class Category(models.Model):
+    """class for category model"""
 
     class Meta:
         verbose_name_plural = 'Categories'
-     
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -17,7 +18,9 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    """class fro products model"""
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=255, null=True, blank=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -39,7 +42,8 @@ class Product(models.Model):
         ('U', 'Unisex'),
     ]
 
-    gender = models.CharField(max_length=100, null=True, blank=True, choices=GENDER_CHOICES)
+    gender = models.CharField(
+        max_length=100, null=True, blank=True, choices=GENDER_CHOICES)
     size = models.CharField(max_length=20)
     material = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)

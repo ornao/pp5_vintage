@@ -11,110 +11,127 @@
             <h2>Clothes</h2>
 
             {% if 'gender' in request.GET %}
-                {% if request.GET.gender == 'M' %}
-                <a class ="gender-header" href="{% url 'products' %}?gender=M">
-                    <h3>Men</h3></a>
+            {% if request.GET.gender == 'M' %}
+            <a class="gender-header" href="{% url 'products' %}?gender=M">
+                <h3>Men</h3>
+            </a>
 
-                {% elif request.GET.gender == 'F' %}
-                <a class ="gender-header" href="{% url 'products' %}?gender=F">
-                    <h3>Women</h3></a>
-
-                {% endif %}
-
-            {% else %}
-                <a class ="gender-header" href="{% url 'products' %}?gender=M">
-                    <h3>Men</h3></a>
-                <a class ="gender-header" href="{% url 'products' %}?gender=F">
-                    <h3>Women</h3></a>
+            {% elif request.GET.gender == 'F' %}
+            <a class="gender-header" href="{% url 'products' %}?gender=F">
+                <h3>Women</h3>
+            </a>
 
             {% endif %}
 
-            <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
-                
+            {% else %}
+            <a class="gender-header" href="{% url 'products' %}?gender=M">
+                <h3>Men</h3>
+            </a>
+            <a class="gender-header" href="{% url 'products' %}?gender=F">
+                <h3>Women</h3>
+            </a>
+
+            {% endif %}
+
+            <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+                data-portfolio-sort="original-order">
+
                 <div>
                     <ul class="portfolio-flters">
                         {% for c in all_categories %}
                         {% for p in current_genders %}
                         {% if forloop.counter == forloop.parentloop.counter %}
-                        <li data-filter="*"> <a  {% if c in current_categories %}
-                            style="color: var(--color-primary)"
-                            {% endif %} href="{% url 'products' %}?category={{ c.name }}&gender={{p.gender}}">
-                            <span>{{ c.friendly_name }}</span>
-                        </a></li>
+                        <li data-filter="*"> <a {% if c in current_categories %} style="color: var(--color-primary)"
+                                {% endif %} href="{% url 'products' %}?category={{ c.name }}&gender={{p.gender}}">
+                                <span>{{ c.friendly_name }}</span>
+                            </a></li>
                         {% endif %}
                         {% endfor %}
                         {% endfor %}
-                       
+
 
                     </ul><!-- End Portfolio Filters -->
                 </div>
             </div>
-                
-                <div>
-                    <p class="text-center">
-                        {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
-                        {% endif %}
-                        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-                    </p>
-                </div>
 
-                <br>
+            <div>
+                <p class="text-center">
+                    {% if search_term or current_categories or current_sorting != 'None_None' %}
+                    <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                    {% endif %}
+                    {{ products|length }} Products{% if search_term %} found for
+                    <strong>"{{ search_term }}"</strong>{% endif %}
+                </p>
+            </div>
 
-                <div class="product-container">
-                    <div class="row mt-1 mb-2">
-                        <div class="justify-content-center">
-                            <div class="sort-select-wrapper">
-                                <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                                    <option value="condition_asc" {% if current_sorting == 'condition_asc' %}selected{% endif %}>Condition (low to high)</option>
-                                    <option value="condition_desc" {% if current_sorting == 'condition_desc' %}selected{% endif %}>Condition (high to low)</option>
-                                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                                    <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                                </select>
-                            </div>
+            <br>
+
+            <div class="product-container">
+                <div class="row mt-1 mb-2">
+                    <div class="justify-content-center">
+                        <div class="sort-select-wrapper">
+                            <select id="sort-selector"
+                                class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort
+                                    by...</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
+                                    Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>
+                                    Price (high to low)</option>
+                                <option value="condition_asc"
+                                    {% if current_sorting == 'condition_asc' %}selected{% endif %}>Condition (low to
+                                    high)</option>
+                                <option value="condition_desc"
+                                    {% if current_sorting == 'condition_desc' %}selected{% endif %}>Condition (high to
+                                    low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                    (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
+                                    Name (Z-A)</option>
+                            </select>
                         </div>
                     </div>
                 </div>
+            </div>
 
             <hr>
 
             <div class="row gy-4 portfolio-container">
 
-            {% for product in products %}
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <a href="{% url 'product_detail' product.id %}"  class="glightbox"><img src="{{ product.image_url }}"
-                            class="img-fluid" alt="{{ product.name }}"></a>
-                    <div class="portfolio-info">
-                        <h4><a href="{% url 'product_detail' product.id %}" title="More Details">{{ product.name }}</a>
-                        </h4>
-                        <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.get_condition_display }} condition
-                        </small>
-                        {% if product.category %}
-                        <p class="small mt-1 mb-0">
-                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                            </a>
-                        </p>
-                        {% endif %}
-                        {% if product.gender %}
-                        <p class="small mt-1 mb-0">
-                            <a class="text-muted" href="{% url 'products' %}?gender={{ product.gender }}">
-                                <i class="fas fa-tag mr-1"></i>{{ product.get_gender_display }}
-                            </a>
-                        </p>
-                        {% endif %}
+                {% for product in products %}
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="{% url 'product_detail' product.id %}" class="glightbox"><img
+                                src="{{ product.image_url }}" class="img-fluid" alt="{{ product.name }}"></a>
+                        <div class="portfolio-info">
+                            <h4><a href="{% url 'product_detail' product.id %}"
+                                    title="More Details">{{ product.name }}</a>
+                            </h4>
+                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                            <small class="text-muted"><i
+                                    class="fas fa-star mr-1"></i>{{ product.get_condition_display }} condition
+                            </small>
+                            {% if product.category %}
+                            <p class="small mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
+                            {% if product.gender %}
+                            <p class="small mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'products' %}?gender={{ product.gender }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ product.get_gender_display }}
+                                </a>
+                            </p>
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
-            </div><!-- End Portfolio Item -->
-            {% endfor %}
-        </div><!-- End Portfolio Container -->
+                </div><!-- End Portfolio Item -->
+                {% endfor %}
+            </div><!-- End Portfolio Container -->
 
-    </div>
+        </div>
 
 </section><!-- End Portfolio Section -->
 
@@ -122,35 +139,33 @@
 
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-	</script>
-    
-    <script type="text/javascript">
-        $('#sort-selector').change(function() {
-            var selector = $(this);
-            var currentUrl = new URL(window.location);
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 
-            var selectedVal = selector.val();
-            if(selectedVal != "reset"){
-                var sort = selectedVal.split("_")[0];
-                var direction = selectedVal.split("_")[1];
+<script type="text/javascript">
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
 
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
 
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
 
-                window.location.replace(currentUrl);
-            }
-        })
-    </script>
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
 {% endblock %}
-
-

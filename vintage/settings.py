@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 if os.path.exists("env.py"):
-  import env 
+    import env
 import dj_database_url
 
 from pathlib import Path
@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '*')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ornao-pp5vintage-llfji1xzx6w.ws-eu105.gitpod.io', 'vintagepp5-4fbf60af10de.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    '8000-ornao-pp5vintage-llfji1xzx6w.ws-eu105.gitpod.io',
+    'vintagepp5-4fbf60af10de.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -54,8 +56,7 @@ INSTALLED_APPS = [
     'contact',
     'profiles',
     'reviews',
-
-    #other
+    # other
     'crispy_forms',
     'storages',
     'django_user_agents',
@@ -71,7 +72,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-     # other middlewares...
+    # other middlewares...
     'django_user_agents.middleware.UserAgentMiddleware',
 ]
 
@@ -90,7 +91,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
+                'django.template.context_processors.request',  # allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
@@ -169,16 +170,21 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.'
+        'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
@@ -218,7 +224,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'vintagepp5'
     AWS_S3_REGION_NAME = 'eu-west-1'
@@ -253,5 +259,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-

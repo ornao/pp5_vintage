@@ -14,8 +14,9 @@ class ReviewsView(generic.ListView):
     queryset = Reviews.objects.filter(status=1).order_by('-created_date')
     context_object_name = 'reviews'
 
+
 class ReviewsCreate(generic.CreateView):
-    """ a class for creating bookings """
+    """ a class for creating reviews """
     model = Reviews
     template_name = "reviews/create_reviews.html"
     form_class = ReviewsForm
@@ -24,7 +25,7 @@ class ReviewsCreate(generic.CreateView):
 
     def form_valid(self, form):
         """assigns logged-in user to user field in database"""
-        form.instance.author = self.request.user 
+        form.instance.author = self.request.user
         messages.success(self.request, "Review created successfully")
 
         return super().form_valid(form)
@@ -41,6 +42,7 @@ class ReviewsEdit(generic.UpdateView):
         """ Updates the review and adds a success message """
         messages.success(self.request, "Review updated successfully")
         return super().form_valid(form)
+
 
 class ReviewsDelete(generic.DeleteView):
     """ a class for deleting reviews """

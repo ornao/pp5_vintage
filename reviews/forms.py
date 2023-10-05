@@ -5,6 +5,7 @@ from django.shortcuts import redirect
 
 # code adapted django documentation form validation
 
+
 class ReviewsForm(forms.ModelForm):
     """ a class for reviews form """
     def clean(self):
@@ -18,4 +19,3 @@ class ReviewsForm(forms.ModelForm):
         model = Reviews
         fields = (
               "product_name", "rating", "content", )
-
