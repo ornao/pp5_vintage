@@ -118,7 +118,7 @@
                     </li>
                     <li><a href="{% url 'reviews' %}">Reviews</a></li>
                     <li><a href="{% url 'contact' %}">Contact</a></li>
-                    <li>
+                    <li id="search">
                         <form method="GET" action="{% url 'products' %}">
                             <div class="input-group w-100">
                                 <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -134,7 +134,7 @@
                         </form>
                     </li>
 
-                    <li id="account-icon"class="dropdown"><a href="#" class="text-black nav-link">
+                    <li id="account-icon" class="dropdown"><a href="#" class="text-black nav-link">
                             <div class="text-center"><i class="fas fa-user fa-lg"></i>
                                 {% if request.user.is_authenticated %}
                                 <p class="my-0">{{ user.username }}</p>
@@ -155,7 +155,7 @@
                     <li id="bag-icon">
                         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block"
                             href="{% url 'view_bag' %}">
-                            <div class="text-center">
+                            <div>
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
@@ -171,12 +171,7 @@
                 </ul>
 
             </nav>
-
-        {% if request|is_mobile %}
-            {% include 'includes/mobile-top-header.html' %}
-        {% endif %}
         </div>
-
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </header>

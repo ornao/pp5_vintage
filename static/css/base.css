@@ -567,13 +567,12 @@ section {
     height: 100vh;
     inset: 0;
     padding: 50px 0 10px 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(0, 0, 0, 0.9);
     overflow-x: auto;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
     margin-left: 20vh;
-    width: fit-content;
   }
 
   .navbar a,
@@ -646,8 +645,8 @@ section {
     margin-right: 10px;
   }
 
-  #account-icon, #bag-icon {
-    display: none;
+  #account-icon a, #bag-icon a {
+    color: white !important;
   }
 
   .mobile-nav-hide {
@@ -674,7 +673,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(106, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 9996;
   }
 }
