@@ -288,6 +288,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Error Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/errorpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/404pagepp5.png)
 
 </details>
 
@@ -310,7 +311,6 @@ I chose red, black, and white as the main colours for my website because these c
 ### Database
 
 3 custom models were created for this project - Contact, Product and Reviews. My Reviews model contains a form that supports full CRUD functionality. User model was provided for by django allauth. I incorporated Order, OrderLineItem, Category and UserProfile model from Boutique Ado project. 
--- should i mention aws, elephant sequel here?
 
 <details><summary> Database schema screenshot</summary>
 <img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/databaseschema.png" alt="database schema scrennshot">
@@ -523,22 +523,6 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 </details>
 <br>
 
-***add at end 
-
-- This checks base.html and account/email_confirm.html
-<details><summary> Log Out page screenshot</summary>
-
-![screenshot]()
-</details>
-<br>
-
-- This checks base.html and account/verification_sent.html
-<details><summary> Log Out page screenshot</summary>
-
-![screenshot]()
-</details>
-<br>
-
 
 ### CSS - [Jigsaw](https://jigsaw.w3.org/css-validator/)
 
@@ -615,54 +599,53 @@ Checked remaining apps through gitpod's problems tab - no python issues detected
 
 ### Accessibility - [WAVE](https://wave.webaim.org/report)
 
-All page tested with no errors, only some alerts present in some pages. 
-
 <details><summary>  home page screenshot</summary>
-<img src="" alt=" page accessibility check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/wavehome.png" alt=" home page check">
 </details>
 
-<details><summary>  page screenshot</summary>
-<img src="" alt=" page accessibility check">
+<details><summary>  products page screenshot</summary>
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/waveproducts.png" alt=" products page check">
 </details>
 
-<details><summary>  page screenshot</summary>
-<img src="" alt=" page accessibility check">
+<details><summary>  products details page screenshot</summary>
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/waveproductdetails.png" alt=" details page accessibility check">
 </details>
 
-<details><summary> Log In page screenshot</summary>
-<img src="" alt="login page accessibility check">
+<details><summary>  gender page screenshot</summary>
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/wavegender.png" alt=" gender page accessibility check">
 </details>
-
-<details><summary> Register page screenshot</summary>
-<img src="" alt="signup page accessibility check">
-</details>
-
-<details><summary> Log Out page screenshot</summary>
-<img src="" alt="logout page accessibility check">
-</details>
-
 
 <details><summary> View your reviews page screenshot</summary>
-<img src="" alt="view reviews page accessibility check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/wavereviews.png" alt="view reviews page accessibility check">
 </details>
 
 <details><summary> Create review page screenshot</summary>
 Checked when user was logged in and not logged in 
-<img src="" alt="create reviews page accessibility check">
-<img src="" alt="create reviews page accessibility check when user logged in">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/wavecreatereviews.png" alt="create reviews page accessibility check">
 </details>
 
 <details><summary> Edit reviews page screenshot</summary>
-<img src="" alt="edit reviews page accessibility check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/waveeditreviews.png" alt="edit reviews page accessibility check">
 </details>
 
 <details><summary> Delete reviews page screenshot</summary>
-<img src="" alt="delete reviews page accessibility check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/waveconfirmdelete.png" alt="delete reviews page accessibility check">
 </details>
 <br>
 
+Some error were thrown up for form elements in profile and checkout. I have placed aria-label in form for both butv this does not apply to individual elements it appears -- will not to find a workaround in future. 
+
 ### Performance - Lighthouse
 
+My lighthouse testing were quite poor for all site pages which was mostly due t5o the images loaded from aws. I had changed images to .webp to help pages load faster however i will need to reduce images sizes further to help improved score. 
+
+#### SEO 
+On the brightside, my SEO score was 100 percent for almost everypage. This I believe was due to my inlcusion of description and keywords meta tags. I did not include any outside links to other sites but if i did i woiuld have utilised 'nofollow. and 'sponsored' to not affect my SEO. 
+
+<details><summary> SEO screenshot</summary>
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/seo.png" alt="seo screenshot">
+</details>
+<br>
 
 <br>
 
