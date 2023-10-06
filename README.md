@@ -130,7 +130,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 ### Target Audience
 
 - Fashion-conscious individuals of all backgrounds interested in unique and eco-friendly vintage fashion.
-- Individuals seeking engaging content, fashion history insights, and styling tips related to vintage fashion through the blog.
+- Individuals seeking engaging content, fashion history insights, and styling tips related to vintage fashion.
 - Potential vintage fashion sellers looking to contribute their items to the platform (future feature).
 
 ### User Requirements and Expectations
@@ -159,7 +159,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 | 4 | Shopper / Site User | receive email verification email after registration | to establish account creation. | [link](https://github.com/ornao/pp5_vintage/issues/4) | 
 | 5 | Shopper / Site User | create a profile | store my information for faster checkouts in the future | [link](https://github.com/ornao/pp5_vintage/issues/5) | 
 | 6 | Shopper / Site User | update my profile | change my shipping information or payemnt information | [link](https://github.com/ornao/pp5_vintage/issues/6) | 
-| 7 | Shopper / Site User | view my order history | keep track of my past and present purchases | https://github.com/ornao/pp5_vintage/issues/7 |
+| 7 | Shopper / Site User | view my order history | keep track of my past and present purchases | [link](https://github.com/ornao/pp5_vintage/issues/7) |
 | 8 | Shopper / Site User | save items and view my wishlist | keep tabs on purchases I am considering buying | [link](https://github.com/ornao/pp5_vintage/issues/8) | 
 | Viewing and navigation ||||
 | 9 | Shopper / Site User | understand immediadely the purpose of the site | so my time is not wasted | [link](https://github.com/ornao/pp5_vintage/issues/9) | 
@@ -466,7 +466,6 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 <details><summary>  checkout, checkout_success page screenshot</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlcheckout.png)
-![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlcheckoutsuccess.png)
 
 </details>
 <br>
@@ -529,8 +528,8 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - base.css, checkout.ss was validated by direct inputting of contents of file into website. I did not validatorb bootsrap vendor files as 3rd party code.
 
 <details><summary> base.css, checkout.css validation check screenshot</summary>
-<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/basecss.png" alt="base.css validation check">
-<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutcss.png" alt="checkout.css validation check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/cssbase.png" alt="base.css validation check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/csscheckout.png" alt="checkout.css validation check">
 </details>
 <br>
 
@@ -592,7 +591,7 @@ Checked remaining apps through gitpod's problems tab - no python issues detected
 <details><summary> py validation </summary>
 
 
-![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pyvalid)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pyvalid.png)
 
 </details>
 
@@ -883,6 +882,7 @@ On the brightside, my SEO score was 100 percent for almost everypage. This I bel
 - change email verification to display sites name 
 - get order confrimation email working so sends actual email of order, atm just viewable order history in profile
 - automated testing including testing coverage
+- had to make email verification optional at end as 500 server error, made optional so could still use site
 
 ## Deployment
 
