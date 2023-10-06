@@ -101,7 +101,7 @@
                 {% for product in products %}
                 <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <a href="{% url 'product_detail' product.id %}" class="glightbox"><img
+                        <a href="{% url 'product_detail' product.id %}"><img
                                 src="{{ product.image_url }}" class="img-fluid" alt="{{ product.name }}"></a>
                         <div class="portfolio-info">
                             <h4><a href="{% url 'product_detail' product.id %}"
