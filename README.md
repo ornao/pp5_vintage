@@ -459,6 +459,7 @@ This will contain:
 - [BeFunky](https://www.befunky.com/)
 - [AmIResponsive](https://ui.dev/amiresponsive)
 - [Colormind.io](http://colormind.io/)
+- [sitemap generator](https://www.xml-sitemaps.com/)
 
 
 ##### Back to [top](#table-of-contents)

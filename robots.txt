@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://vintagepp5-4fbf60af10de.herokuapp.com//sitemap.xml
