@@ -570,18 +570,19 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 
 ### CSS - [Jigsaw](https://jigsaw.w3.org/css-validator/)
 
-- base.css was validated by direct inputting of contents of file into website.
+- base.css, checkout.ss was validated by direct inputting of contents of file into website. I did not validatorb bootsrap vendor files as 3rd party code.
 
-<details><summary> base.css validation check screenshot</summary>
-<img src="" alt="base.css validation check">
+<details><summary> base.css, checkout.css validation check screenshot</summary>
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/basecss.png" alt="base.css validation check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutcss.png" alt="checkout.css validation check">
 </details>
 <br>
 
 ### Javascript - [JSHint](https://jshint.com/)
-- The js included in this project is from the [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-business-website-template/download/). I did not adapt this code in anyway hence I did not try to fiddle with it and mess up its functionality by trying to fulfil all the validation checks.
+- The js included in this project is from the [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-business-website-template/download/). I did not adapt this code in anyway hence I did not try to fiddle with it and mess up its functionality by trying to fulfil all the validation checks. Additionally, I utilised boutique ado js code and did not 
 <details><summary> main.js validation check screenshot</summary>
 
-<img src="" alt="main.js validation check">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/jsmain.png" alt="main.js validation check">
 </details>
 <br>
 

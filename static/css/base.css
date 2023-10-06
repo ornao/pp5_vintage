@@ -274,7 +274,7 @@ select option[value=""] {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 
@@ -976,7 +976,7 @@ section {
 
 .portfolio-details .portfolio-description .testimonial-item p {
   font-style: italic;
-  margin: 0 0 15px 0 0 0;
+  margin: 0 15px 0 0;
   padding: 0;
 }
 
