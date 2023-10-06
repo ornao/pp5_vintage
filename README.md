@@ -579,7 +579,7 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 <br>
 
 ### Javascript - [JSHint](https://jshint.com/)
-- The js included in this project is from the [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-business-website-template/download/). I did not adapt this code in anyway hence I did not try to fiddle with it and mess up its functionality by trying to fulfil all the validation checks. Additionally, I utilised boutique ado js code and did not 
+- The js included in this project is from the [bootstrap template Impact](https://bootstrapmade.com/impact-bootstrap-business-website-template/download/). I did not adapt this code in anyway hence I did not try to fiddle with it and mess up its functionality by trying to fulfil all the validation checks. Additionally, I utilised boutique ado js code and did trust this was valid.
 <details><summary> main.js validation check screenshot</summary>
 
 <img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/jsmain.png" alt="main.js validation check">
@@ -588,110 +588,58 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 
 ### Python - [https://pep8ci.herokuapp.com/](https://pep8ci.herokuapp.com/)
 
-<details><summary> Vintage app (main app) validation screenshots(2)</summary>
+<details><summary> Vintage app (main app) validation screenshots()</summary>
 settings.py:
-<img src="" alt="settings.py">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/pyvintagesettings.png" alt="settings.py">
 urls.py:
-<img src="" alt="urls.py">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/pyvintageurls.png" alt="urls.py">
 
 </details>
 
-<details><summary> Reviews app validation screenshots(6)</summary>
+<details><summary> Checkout app validation screenshots(9)</summary>
+apps.py: 
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutapps.png)
 admin.py:
-<img src="" alt="admin.py">
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutadmin.png)
 forms.py:
-<img src="" alt="froms.py">
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutforms.png)
 models.py:
-<img src="" alt="models.py">
-test_models.py:
-<img src="" alt="test_models.py">
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutmodels.png)
+signals.py: 
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutsignals.png)
 urls.py:
-<img src="" alt="urls.py">
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckouturls.png)
 views.py:
-<img src="" alt="views.py">
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutviews.png)
+webhooks.py:
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutwebhooks.png)
+webhookshandler.py:
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pycheckoutwebhookhandler.png)
 
 </details>
 
-<details><summary> Checkout app validation screenshots(6)</summary>
-admin.py:
-<img src="" alt="admin.py">
-forms.py:
-<img src="" alt="froms.py">
-models.py:
-<img src="" alt="models.py">
-test_models.py:
-<img src="" alt="test_models.py">
+<details><summary> Bag app validation screenshots(4)</summary>
 urls.py:
-<img src="" alt="urls.py">
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pybagurls.png)
+apps.py:
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pybagapps.png)
+contexts.py:
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pybagcontexts.png)
 views.py:
-<img src="" alt="views.py">
-
-</details>
-
-<details><summary> Products app validation screenshots(5)</summary>
-admin.py:
-<img src="" alt="admin.py">
-forms.py:
-<img src="" alt="froms.py">
-models.py:
-<img src="" alt="models.py">
-test_models.py:
-<img src="" alt="test_models.py">
-urls.py:
-<img src="" alt="urls.py">
-views.py:
-<img src="" alt="views.py">
-
-</details>
-
-<details><summary> Contact app validation screenshots(5)</summary>
-admin.py:
-<img src="" alt="admin.py">
-forms.py:
-<img src="" alt="froms.py">
-models.py:
-<img src="" alt="models.py">
-test_models.py:
-<img src="" alt="test_models.py">
-urls.py:
-<img src="" alt="urls.py">
-views.py:
-<img src="" alt="views.py">
-
-</details>
-
-<details><summary> Profiles app validation screenshots(5)</summary>
-admin.py:
-<img src="" alt="admin.py">
-forms.py:
-<img src="" alt="froms.py">
-models.py:
-<img src="" alt="models.py">
-test_models.py:
-<img src="" alt="test_models.py">
-urls.py:
-<img src="" alt="urls.py">
-views.py:
-<img src="" alt="views.py">
-
-</details>
-
-<details><summary> Home app validation screenshots(2)</summary>
-settings.py:
-<img src="" alt="settings.py">
-urls.py:
-<img src="" alt="urls.py">
-
-</details>
-
-<details><summary> Bag app validation screenshots(2)</summary>
-settings.py:
-<img src="" alt="settings.py">
-urls.py:
-<img src="" alt="urls.py">
-
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pybagviews.png)
 </details>
 <br>
+
+Checked remaining apps through gitpod's problems tab - no python issues detected 
+<details><summary> py validation </summary>
+
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pyvalid)
+
+</details>
+
 
 ### Accessibility - [WAVE](https://wave.webaim.org/report)
 
@@ -736,7 +684,7 @@ Checked when user was logged in and not logged in
 <img src="" alt="edit reviews page accessibility check">
 </details>
 
-<details><summary> Delete Bookings page screenshot</summary>
+<details><summary> Delete reviews page screenshot</summary>
 <img src="" alt="delete reviews page accessibility check">
 </details>
 <br>

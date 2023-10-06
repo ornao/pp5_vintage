@@ -8,6 +8,7 @@
     {% block meta %}
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="google-site-verification" content="ZNrTUecj5XqCjQ08qS3YwNuWYnNtDWcCYqxwh8gtS1Y" />
     {% endblock %}
 
     {% block extra_meta %}
@@ -81,7 +82,7 @@
     <header id="header" class="header d-flex align-items-center">
 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="{% url 'home' %}" class="logo d-flex align-items-center" id="icon">
+            <a href="{% url 'home' %}" aria-label="home button" class="logo d-flex align-items-center" id="icon">
                 <i class="fa-solid fa-heart-crack"></i>
             </a>
             <nav id="navbar" class="navbar">
@@ -118,10 +119,10 @@
                     <li id="search">
                         <form method="GET" action="{% url 'products' %}">
                             <div class="input-group w-100">
-                                <input class="form-control border border-black rounded-0" type="text" name="q"
-                                    placeholder="Search">
+                                <input class="form-control border border-black rounded-0" aria-label="search bar" type="text" name="q"
+                                placeholder="Search">
                                 <div class="input-group-append">
-                                    <button class="search-button" type="submit">
+                                    <button class="search-button" aria-label="search button" type="submit">
                                         <span class="icon">
                                             <i class="fas fa-search"></i>
                                         </span>
@@ -131,13 +132,14 @@
                         </form>
                     </li>
 
-                    <li id="account-icon" class="dropdown"><a href="#" class="text-black nav-link">
-                            <div class="text-center"><i class="fas fa-user fa-lg"></i>
-                                {% if request.user.is_authenticated %}
-                                <p class="my-0">{{ user.username }}</p>
-                                {% endif %}
-                            </div> <i class="bi bi-chevron-down dropdown-indicator"></i>
-                        </a>
+                    <li id="account-icon" class="dropdown"><a href="{% url 'profile' %}"class="text-black nav-link">
+                        <div class="text-center"><i class="fas fa-user fa-lg"></i>
+                            {% if request.user.is_authenticated %}
+                            <p class="my-0">{{ user.username }}</p>
+                            {% endif %}
+                        </div> 
+                        <i class="bi bi-chevron-down dropdown-indicator"></i>
+                    </a>
                         <ul>
                             {% if request.user.is_authenticated %}
                             <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
@@ -241,7 +243,7 @@
                                 <form
                                     action="https://herokuapp.us12.list-manage.com/subscribe/post?u=a123574c1e8243512a23876f9&amp;id=3c8cb1cfef&amp;f_id=0019b5e0f0"
                                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                    class="validate" target="_blank">
+                                    class="validate" target="_blank" aria-label="newsletter form">
                                     <div id="mc_embed_signup_scroll">
                                         <h2>Subscribe</h2>
                                         <div class="indicates-required"><span class="asterisk">*</span> indicates
@@ -259,12 +261,12 @@
                                             /* real people should not fill this in and expect good things - do not
                                             remove this or risk form bot signups */
                                             <input type="text" name="b_a123574c1e8243512a23876f9_3c8cb1cfef"
-                                                tabindex="-1" value="">
+                                                tabindex="-1" value="" aria-label="hidden bot defence">
                                         </div>
                                         <div class="optionalParent">
                                             <div class="clear foot">
-                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                                                    class="button" value="Subscribe">
+                                                <input aria-label="submit button" type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="button" value="Subscribe" style="background-color: white; color: black;">
                                                 <p style="margin: 0px auto;"><a href="http://eepurl.com/iAWm7k"
                                                         title="Mailchimp - email marketing made easy and fun"><span
                                                             style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
@@ -300,7 +302,7 @@
 
     </footer><!-- End Footer -->
 
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+    <a href="#" aria-label="back-to-top button" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
     <div id="preloader"></div>

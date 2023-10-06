@@ -24,7 +24,7 @@ html {
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #D83F31;
+  --color-primary: #e61f0c;
   --color-secondary: #E2532F;
 }
 
@@ -576,7 +576,8 @@ section {
   }
 
   .navbar a,
-  .navbar a:focus {
+  .navbar a:focus,
+  #account-icon span {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -590,7 +591,8 @@ section {
   }
 
   .navbar a i,
-  .navbar a:focus i {
+  .navbar a:focus i,
+  #account-icon span {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
@@ -645,7 +647,7 @@ section {
     margin-right: 10px;
   }
 
-  #account-icon a, #bag-icon a {
+  #bag-icon a, #account-icon a {
     color: white !important;
   }
 
@@ -1333,7 +1335,7 @@ section {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #363636;
   margin: 0;
 }
 
@@ -1409,7 +1411,7 @@ section {
 --------------------------------------------------------------*/ 
 .footer {
   font-size: 14px;
-  background-color: var(--color-primary);
+  background-color: black;
   padding: 50px 0;
   color: white;
   margin-top: 20px;
