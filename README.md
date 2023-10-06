@@ -149,6 +149,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 
 ## User Stories
 
+[My Kanban Board](https://github.com/users/ornao/projects/6). 
 
 | User Story ID                  | As A/AN             | I WANT TO...                                                | SO THAT I CAN...                                          | Kanban Board Link
 |--------------------------------|---------------------|---------------------------------------------------------|-----------------------------------------------------------| -------------------------------------------------|
@@ -924,6 +925,8 @@ connect repo
 Once build is finsihed, the build log will tell you
 build finished deployment
 - Open app to see deployed site
+
+- I feel myself i have much to add to this project, but i do believe it a MVP and am looking forward to improving it :)
 
 ## Credits
 
