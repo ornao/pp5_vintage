@@ -476,7 +476,7 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html and index.html
 <details><summary> Home page screenshot</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlhome.png)
  
 </details>
 <br>
@@ -484,7 +484,8 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html, products.html and products_detail.html
 <details><summary>  products, products_details page screenshot</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlproducts.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlproductsdetails.png)
 
 </details>
 <br>
@@ -492,8 +493,8 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html, checkout.html and checkout_success.html
 <details><summary>  checkout, checkout_success page screenshot</summary>
 
-![screenshot]()
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlcheckout.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlcheckoutsuccess.png)
 
 </details>
 <br>
@@ -501,8 +502,8 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html, contact.html and contact_success.html
 <details><summary>  contact, contact_success page screenshot</summary>
 
-![screenshot]()
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlcontact.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlcontactsuccess.png)
 
 </details>
 <br>
@@ -510,18 +511,18 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html, profile.html 
 <details><summary>  profile page screenshot</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlprofile.png)
 
 </details>
 <br>
 
 - This checks base.html, reviews.html, edit_reviews.html, create_reviews.html, confirm_delete.html
-<details><summary>  screenshots</summary>
+<details><summary> screenshots</summary>
 
-![screenshot]()
-![screenshot]()
-![screenshot]()
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlreviews.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlreviewscreate.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlreviewsdelete.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlreviewsdelete.png)
 
 </details>
 <br>
@@ -529,23 +530,28 @@ The W3S HTML validator checks the HTML through the webpage url. This is because 
 - This checks base.html and account/login.html
 <details><summary> Log In page screenshot</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmllogin.png)
+
 </details>
 <br>
 
 - This checks base.html and accounts/signup.html
 <details><summary> Register page screenshot</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmlsignup.png)
+
 </details>
 <br>
 
 - This checks base.html and account/logout.html
 <details><summary> Log Out page screenshot</summary>
 
-![screenshot]()
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/htmllogout.png)
+
 </details>
 <br>
+
+***add at end 
 
 - This checks base.html and account/email_confirm.html
 <details><summary> Log Out page screenshot</summary>

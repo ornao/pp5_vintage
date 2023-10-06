@@ -53,7 +53,7 @@
       </div>
 
       <div class="col-lg-8">
-        <form action="{% url 'contact' %}" method="POST" role="form" class="php-email-form" id="contact-form">
+        <form action="{% url 'contact' %}" method="POST" class="php-email-form" id="contact-form">
           {% csrf_token %}
           <div class="row">
             <div class="col-md-6 form-group">
