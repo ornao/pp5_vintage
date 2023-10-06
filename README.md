@@ -1,3 +1,10 @@
+**Developer: Orna Reynolds**
+
+<img src = "https://vintagepp5.s3.eu-west-1.amazonaws.com/pp5responsive.png" alt="am i responsive">
+
+💻 [Visit live website](https://vintagepp5-4fbf60af10de.herokuapp.com/)
+
+
 ## Table of Contents
   - [Executive Summary](#executive-summary)
      - [Mission and Vision](#mission-and-vision)
@@ -28,9 +35,6 @@
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
-    - [Automated testing](#automated-testing)
-    - [Tests on various devices](#tests-on-various-devices)
-    - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -41,11 +45,11 @@
 ## Business Plan  
 ### Executive Summary:
 
-Preloved is an online platform dedicated to connecting vintage and second-hand fashion enthusiasts with a curated selection of unique and high-quality clothing. Our mission is to make the world of vintage fashion accessible to all and promote sustainable shopping practices by giving "pre-loved" items a new life. Our platform not only offers a diverse range of vintage treasures but also provides a seamless shopping experience, inspiring a sense of nostalgia and individuality.
+Preloved is an online platform dedicated to connecting vintage and second-hand fashion enthusiasts with a selection of unique and high-quality clothing. Our mission is to make vintage fashion accessible to all and promote sustainable shopping practices by giving "pre-loved" items a new life. Our platform not only offers a diverse range of vintage treasures but also provides a seamless shopping experience, inspiring a sense of nostalgia and individuality. 
 
 ### Mission and Vision:
 
-At Preloved, our mission is to celebrate individuality through timeless fashion pieces that tell stories. We envision a world where vintage and second-hand shopping is the norm, reducing fashion waste and contributing to a more sustainable and eco-friendly future. Our platform serves as a bridge between eras, offering a glimpse into the past while shaping a more conscious and stylish present.
+At Preloved, our mission is to celebrate individuality through timeless fashion pieces that tell stories. We envision a world where vintage and second-hand shopping is the norm, reducing fashion waste and contributing to a more sustainable and eco-friendly future. 
 
 ### Target Market:
 
@@ -61,11 +65,11 @@ Our platform boasts a handpicked selection of vintage clothing, accessories, and
 
 ### Sales Strategy:
 
-Preloved operates as a user-friendly online shop. We prioritize user experience by implementing a responsive and intuitive website design. We offer competitive pricing, secure payment options, and reliable customer support to ensure a seamless shopping journey for our users. Building a sense of trust and community is central to our sales strategy, driving repeat business and word-of-mouth referrals.
+Preloved operates as a user-friendly online shop. We prioritize user experience by implementing a responsive and intuitive website design. We offer competitive pricing, secure payment options, and reliable customer support to ensure a seamless shopping journey for our users. Building a sense of trust and community is central to our sales strategy, driving repeat business and word-of-mouth referrals. This will help us in our B2C approach. 
 
-### Community and Blog
+### Community - Newsletter and Reviews
 
-Preloved extends beyond an online shop; it's a community of fashion enthusiasts and storytellers. Our blog features captivating content, including interviews with vintage collectors, fashion history insights, and styling tips. By fostering a vibrant community, we aim to create lasting relationships and a shared passion for vintage fashion.
+Preloved extends beyond an online shop; it's a community of fashion enthusiasts and storytellers. We hope to nurture this community through newsletters, an active social media presence, and a reviews section on our website. 
 
 ## Marketing Strategy
 
@@ -75,18 +79,28 @@ Recognizing the importance of our website as the heart of Preloved, we've devise
 
 ### Social Media Marketing:
 
-Social media platforms play a crucial role in our marketing efforts. Through well-planned social media marketing campaigns, we connect directly with our target audience. By leveraging platforms like Instagram and Facebook, we share visually captivating content, behind-the-scenes glimpses of vintage fashion curations, and interactive posts that foster a sense of community among our users. Building a strong social media presence allows us to spark conversations, gather valuable feedback, and solidify Preloved as the ultimate vintage fashion destination.
+Social media platforms play a crucial role in our marketing efforts. Through well-planned social media marketing campaigns, we connect directly with our target audience. By utilising platforms like Facebook, we share visually captivating content, behind-the-scenes glimpses of vintage fashion curations, and interactive posts that foster a sense of community among our users. Building a strong social media presence allows us to spark conversations, gather valuable feedback, and solidify Preloved as the ultimate vintage fashion destination.
 
 [Facebook](https://www.facebook.com/)  
-[Instagram](https://www.instagram.com/)
+
+<summary>Facebook Page screenshots</summary>
+<details>
+
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/facebook1.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/facebook2.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/facebook3.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/facebook4.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/facebook5.png)
+
+</details>
 
 ### Customer Engagement:
 
-At Preloved, we place exceptional customer engagement at the heart of our marketing strategy. Our commitment extends to addressing customer inquiries promptly and professionally through our dedicated contact page. We believe that every interaction with our platform is a valuable opportunity to not only meet but exceed customer expectations, ultimately building trust, fostering loyalty, and encouraging positive word-of-mouth recommendations within our vibrant vintage fashion community.
+At Preloved, we place customer engagement at the heart of our marketing strategy. Our commitment extends to addressing customer inquiries promptly and professionally through our dedicated contact page. We believe that every interaction with our platform is a valuable opportunity to build trust, foster loyalty, and encourage positive word-of-mouth recommendations within our vintage fashion community.
 
 ### Newsletter Emails:
 
-Maintaining a strong connection with our audience is vital to nurturing relationships and driving repeat business. Our newsletter emails, powered by an efficient email marketing platform, serve as a powerful tool to keep subscribers informed about new arrivals, upcoming promotions, exciting blog content, and, in the future, exclusive seller highlights. Through personalized and segmented email campaigns, we deliver content that resonates with individual preferences, further deepening engagement with our brand. As we introduce the seller feature, subscribers can anticipate even more exclusive insights and stories behind the vintage treasures they love.s
+Maintaining a strong connection with our audience is vital to nurturing relationships and driving repeat business. Our newsletter emails serve as a powerful tool to keep subscribers informed about new arrivals and upcoming promotions. Through personalized email campaigns, we deliver content that resonates with individual preferences, further deepening engagement with our brand.
 
 ### Conclusion:
 
@@ -175,29 +189,22 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 ---
 
 ### Wireframes
--- include finished pages beside
 
 <details>
 
 <summary>Home Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/homepagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/homepagepp5.1.png)
 
 </details>
 
 <details>
 
-<summary>Blog Page</summary>
+<summary>Review Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/blogpagepp5.png)
-
-</details>
-
-<details>
-
-<summary>Blog Detail Page</summary>
-
-![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/blogdetailspagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/reviewspagepp5.png)
 
 </details>
 
@@ -206,6 +213,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Products Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/productspagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/productspagepp5.1.png)
 
 
 </details>
@@ -215,6 +223,8 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Products Detail Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/productsdetailspagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/pdpage.png)
+
 
 </details>
 
@@ -223,6 +233,8 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Contact Us Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/contactpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/contactpagepp5.1.png)
+
 
 </details>
 
@@ -231,6 +243,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Basket Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/basketpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bagpage.png)
 
 </details>
 
@@ -239,6 +252,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Checkout Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutpage.png)
 
 </details>
 
@@ -248,12 +262,15 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 
 #### Login
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/loginpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/loginpagepp5.1.png)
 
 #### Logout
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/logoutpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/lgpage.png)
 
 #### Register
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/registrationpagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/signuppagepp5.png)
 
 </details>
 
@@ -262,6 +279,7 @@ In conclusion, Preloved is committed to reshaping the fashion industry by connec
 <summary>Profile Page</summary>
 
 ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/profilepagepp5.png)
+![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/profilepageee.png)
 
 </details>
 
@@ -289,48 +307,13 @@ I chose red, black, and white as the main colours for my website because these c
 
 <hr>
 
-## Structure 
-
-## Website pages -- need to check
-
-- Home 
-
-- Products
- - Men's clothes - page further subdivided into categories
-
- - Women's clothes - - page further subdivided into categories
-
-- Products details
-
-- Reviews 
-
-- Log in /Register /Log Out
-
-- Error page (404)
-
-- Bag
-
-- Checkout
-
-User need to Log In to view these page: 
-
-- Create reviews 
-
-- Edit reviews 
-
-- Delete reviews
-
-##### Back to [top](#table-of-contents)
-<hr>
-
-
 ### Database
 
 3 custom models were created for this project - Contact, Product and Reviews. My Reviews model contains a form that supports full CRUD functionality. User model was provided for by django allauth. I incorporated Order, OrderLineItem, Category and UserProfile model from Boutique Ado project. 
 -- should i mention aws, elephant sequel here?
 
 <details><summary> Database schema screenshot</summary>
-<img src="" alt="database schema scrennshot">
+<img src="https://vintagepp5.s3.eu-west-1.amazonaws.com/databaseschema.png" alt="database schema scrennshot">
 </details>
 
 ## Models  
@@ -422,18 +405,6 @@ This contains:
 - product_name = ForeignKey(Product)
 - created_date = DateTimeField()
 - status = IntegerField()
-
-<br>
-
-### Future models 
-<br>
-
-#### Blog model
-This will contain:
-
-#### Blog details model
-This will contain:
-
 
 <hr>
 
@@ -646,7 +617,7 @@ Checked remaining apps through gitpod's problems tab - no python issues detected
 
 All page tested with no errors, only some alerts present in some pages. 
 
-<details><summary>  page screenshot</summary>
+<details><summary>  home page screenshot</summary>
 <img src="" alt=" page accessibility check">
 </details>
 
@@ -737,9 +708,6 @@ Checked when user was logged in and not logged in
 | --- | --- | --- |
 | Users can save billing details during checkout. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.2.png)|
 | Users can still edit billing details during checkout. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting5.3.png) |
-| Handle errors in saved billing info. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
-| Clear confirmation messages for actions. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
-| Compatibility and responsiveness across devices and browsers. | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting.png) |
 
 
 6. As a Shopper / Site User, I can update the profile to change shipping information
@@ -923,10 +891,61 @@ Checked when user was logged in and not logged in
 | --- | --- | --- |
 | content was not filling entire screen | added in missing </div> for container div | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bugfix1.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bugfix1.2.png) |
 
+### Future fixes
+
+- add form validation to profile number field as currently can add text to number field 
+- add more products to site so users can avail of more products
+- add more form validation to reviews as currently any user can make a review on any bought item, would like to restrict this in future to only user who bought item can make review on
+- actually send newsletter with products details to user rather than just subscribe to mailing list
+- change email verification to display sites name 
+- get order confrimation email working so sends actual email of order, atm just viewable order history in profile
+- automated testing including testing coverage
+
+## Deployment
+
+### AWS
+
+- Set up account with [Amazon S3](https://s3.console.aws.amazon.com/s3/home?region=eu-west-1)
+- Once logged in, click on the "Create Bucket" button.
+- Choose a  name and select the region where you want the bucket to be located.
+- Push "Create" button at end of page to create the bucket.
+- Can start to upload files to the bucket through easy to navigate upload button 
+
+### Stripe
+
+- Sign up for a Stripe account
+- Once logged in locate the API keys - publishable and secret keys
+- add these keys to enviromental variables in heroku
+- also create a webhook with events that want to receive and add key for this webhook to enviromental variable also
+*note - do not forget to add all variable mentenioned to env.py so have local access - env.py file shouold not be pushed to github 
+
+### Heroku 
+<!-- used same prodeure as pp4 -->
+
+- Login to heroku account and navigate to the dashboard
+- Click "New" on upper right hand side of screen
+- In dropdown of "New" button, click first option "Create new app"
+- In "Create new app" screen, type in a unique name for your app and choose the region closest to you
+deploymentname
+- Click "Create app"
+- You will be brought to deployment tab, from here naviagte to settings tab
+- Press "Reveal config vars" and add DATABASE_URL, SECRET_KEY and their values to KEY, VALUE fields
+reveal config vars
+- Also add AWS and Stripe APIs of to Environment variable to KEY, VALUE fields
+- In ALLOWED_HOSTS in settings.py file, type in project name url so project can run 
+- Next you need to create a Procfile so heroku knows how to run the project - in my case add "web: gunicorn glamping.wsg" to file
+- In heroku, navigate to deploy tab of project and click github as deployment method
+- Search for repository to connect github to heroku and press connect button beside correct repository
+connect repo
+- Then scroll down to bottom of page and click on deploy branch (can clcik on build log to see deployment progress)
+Once build is finsihed, the build log will tell you
+build finished deployment
+- Open app to see deployed site
+
 ## Credits
 
 ### Code  
-- Code Institute Boutique Ado
+- Code Institute Boutique Ado - relied heavily on checkout, bag functionality and how they incorportaed stripe
 - [Session timeout functionality](https://dev.to/arnopretorius/adding-a-session-timeout-in-django-4l5)
 - [Google sign-in functionality](https://medium.com/powered-by-django/add-social-authentication-django-allauth-google-oauth-example-d8d69a603356)
 - [Displaying the Choices Field in human readable format](https://stackoverflow.com/questions/22366536/displaying-the-choices-field-in-human-readable-format)
@@ -950,28 +969,12 @@ Checked when user was logged in and not logged in
 
 ### Special thanks to the following:
 - My Mentor Martina for her excellent guidance and valuable advice  
+- As always my very patient boyfriend for putting up with me as I struggle on by
 - Code Institute Slack Community
 - Code Institute Tutor Support
 
 <hr>
 
 
-- figure our account and bag in mobile header - linked to mobile testing
 
-- add form validation to profile - can add text to number field 
 
-- reviews, contact
-
-- 13, 15, 17, 18 
-- add crud reviews user stories
-- 20 can reuse screenshots i think
-- combine 22, 23
-- add more products 
-
-- can add more details to products details page
-
-- newsletter, check if sends email
-
-- change email verification to display sites name
-- change formating of email verification confrimation 
-- get order confrimation email working
