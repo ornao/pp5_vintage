@@ -131,23 +131,6 @@ SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 SESSION_TIMEOUT_REDIRECT = '/accounts/login/'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'APP': {
-            'client_id': os.environ.get('CLIENT_ID', ''),
-            'secret': os.environ.get('CLIENT_SECRET', ''),
-            'key': ''
-        },
-        'SCOPE': [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        }
-    }
-}
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
