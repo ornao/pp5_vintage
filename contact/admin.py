@@ -3,6 +3,7 @@ from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
+    """ class for admin contact model """
     list_display = ('name', 'email', 'subject', 'message')
 
 

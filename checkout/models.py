@@ -12,7 +12,7 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
-     """ model that stores information about a customer's purchase """
+    """ model that stores information about a customer's purchase """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
         UserProfile, on_delete=models.SET_NULL,
@@ -73,7 +73,7 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
-     """ model that creates instance of individual item in order  """
+    """ model that creates instance of individual item in order  """
     order = models.ForeignKey(
         Order,
         null=False, blank=False,
