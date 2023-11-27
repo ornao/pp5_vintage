@@ -110,7 +110,11 @@ class OrderLineItemModelTest(TestCase):
         self.assertEqual(saved_order_line_item.lineitem_total, 20.00)
 
 
+class CheckoutUrlTest(TestCase):
+    """creates test case, tests checkout url is 
+    accessing order form correctly"""
+    def test_checkout_view_url_resolves(self):
+        url = reverse('checkout')
+        response = self.client.get(url)
 
-
-
- 
+        self.assertEqual(response.status_code, 302)
