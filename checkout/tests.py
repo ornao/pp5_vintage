@@ -1,8 +1,10 @@
 from django.test import TestCase, Client
 from django.contrib.auth.models import User
+from django.conf import settings
 from .models import Order, OrderLineItem, Product
 from .forms import OrderForm
 from django.urls import reverse
+from decimal import Decimal  
 
 
 class OrderModelTest(TestCase):
@@ -47,6 +49,22 @@ class OrderModelTest(TestCase):
         self.assertEqual(self.order.original_bag, 'test_bag_content')
         self.assertEqual(self.order.stripe_pid, 'test_stripe_pid')
 
+    def test_update_total(self):
+        """Test that update_total method updates order_total, delivery_cost, and grand_total correctly"""
+        self.order.update_total()
+
+        expected_order_total = sum(item.lineitem_total for item in self.order.lineitems.all())
+        expected_delivery_cost = (
+            expected_order_total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        )
+        expected_grand_total = expected_order_total + expected_delivery_cost
+
+        updated_order = Order.objects.get(pk=self.order.pk)
+
+        self.assertEqual(updated_order.order_total, expected_order_total)
+        self.assertEqual(updated_order.delivery_cost, expected_delivery_cost)
+        self.assertEqual(updated_order.grand_total, expected_grand_total)
+
 
 class OrderLineItemModelTest(TestCase):
     """creates product and order test case, saves to database, 
@@ -90,3 +108,9 @@ class OrderLineItemModelTest(TestCase):
         self.assertEqual(saved_order_line_item.product, self.product)
         self.assertEqual(saved_order_line_item.quantity, 1)
         self.assertEqual(saved_order_line_item.lineitem_total, 20.00)
+
+
+
+
+
+ 

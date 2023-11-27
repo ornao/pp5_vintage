@@ -35,6 +35,7 @@
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -406,6 +407,19 @@ This contains:
 - product_name = ForeignKey(Product)
 - created_date = DateTimeField()
 - status = IntegerField()
+
+## Future Model
+
+I had many issues with migration sthrough the production of this project. I would have like to inlcude coupon functionality on resubmission however I was apprenhensive so I included it here instead (a migration error caused my initial subissio. to stop working after submission). 
+
+#### Coupon model
+This contains: 
+- code = models.CharField()
+- discount = models.DecimalField()
+- expiration_date = models.DateTimeField()
+- active = models.BooleanField()
+- order_used = models.ForeignKey(Order)
+
 
 <hr>
 
@@ -867,6 +881,10 @@ On the brightside, my SEO score was 100 percent for almost everypage. This I bel
 | adding through admiin | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting30.1.png) |
 | editing through admiin | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting30.2.png) |
 | deleting through admiin | YES | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/manualtesting30.3.png) |
+
+### Automated testing
+
+I ran a number of test for automated testing. My coverage could be improved and I will look at this in future improvements of the project. 
 
 ## Bugs
 
