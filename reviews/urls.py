@@ -8,5 +8,4 @@ urlpatterns = [
     path(
         "delete/<int:pk>/",
         views.ReviewsDelete.as_view(), name="delete_reviews"),
-
 ]

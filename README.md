@@ -410,7 +410,7 @@ This contains:
 
 ## Future Model
 
-I had many issues with migration sthrough the production of this project. I would have like to inlcude coupon functionality on resubmission however I was apprenhensive so I included it here instead (a migration error caused my initial subissio. to stop working after submission). 
+I had many issues with migration sthrough the production of this project. I would have like to include coupon functionality on resubmission however I was apprenhensive so I included it here instead (a migration error caused my initial project 5 to stop working after submission). 
 
 #### Coupon model
 This contains: 
@@ -884,7 +884,7 @@ On the brightside, my SEO score was 100 percent for almost everypage. This I bel
 
 ### Automated testing
 
-I ran a number of test for automated testing. My coverage could be improved and I will look at this in future improvements of the project. 
+I ran a number of tests for automated testing. My coverage could be improved as was not extensive to include all code in the project however I will look at this in future improvements of the project. 
 
 ## Bugs
 
@@ -900,7 +900,7 @@ I ran a number of test for automated testing. My coverage could be improved and 
 - actually send newsletter with products details to user rather than just subscribe to mailing list
 - change email verification to display sites name 
 - get order confrimation email working so sends actual email of order, atm just viewable order history in profile
-- automated testing including testing coverage
+- increased automated testing including testing coverage
 - had to make email verification optional at end as 500 server error, made optional so could still use site
 
 ## Deployment

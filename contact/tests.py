@@ -5,9 +5,10 @@ from django.urls import reverse
 
 
 class ContactModelTest(TestCase):
-    """creates test case, saves to database, 
+    """creates test case, saves to database,
     retrieves from database and checks they are the same"""
     def test_create_contact(self):
+        """creates test contact"""
         contact = Contact(
             name="John Doe",
             email="john@example.com",
@@ -26,7 +27,7 @@ class ContactModelTest(TestCase):
 
 
 class ContactUrlTest(TestCase):
-    """creates test case, tests contact url is 
+    """creates test case, tests contact url is
     accessing contact form correctly"""
     def test_contact_view_url_resolves(self):
         url = reverse('contact')
@@ -35,21 +36,25 @@ class ContactUrlTest(TestCase):
 
 
 class ContactViewTests(TestCase):
-    """creates test case, tests get contact form functionality, 
+    """creates test case, tests get contact form functionality,
     and tests valid form being sent and success functionality"""
     def setUp(self):
+        """set up"""
         self.client = Client()
 
     def tearDown(self):
+        """tear down"""
         Contact.objects.all().delete()
 
     def test_contact_view_get(self):
+        """test contact view and url working"""
         response = self.client.get(reverse('contact'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'contact/contact.html')
         self.assertIsInstance(response.context['form'], ContactForm)
 
     def test_contact_view_post_valid_form(self):
+        """test correct form used """
         data = {
             'name': 'John Doe',
             'email': 'john@example.com',

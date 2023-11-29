@@ -4,11 +4,11 @@ from django.conf import settings
 from .models import Order, OrderLineItem, Product
 from .forms import OrderForm
 from django.urls import reverse
-from decimal import Decimal  
+from decimal import Decimal
 
 
 class OrderModelTest(TestCase):
-    """creates a test order and tests 
+    """creates a test order and tests
     if created correctly"""
     def setUp(self):
         """creates a test order"""
@@ -30,7 +30,6 @@ class OrderModelTest(TestCase):
             stripe_pid='test_stripe_pid'
         )
 
-
     def test_order_creation(self):
         """Test that an order is created correctly"""
         self.assertEqual(self.order.order_number, '123456')
@@ -50,12 +49,15 @@ class OrderModelTest(TestCase):
         self.assertEqual(self.order.stripe_pid, 'test_stripe_pid')
 
     def test_update_total(self):
-        """Test that update_total method updates order_total, delivery_cost, and grand_total correctly"""
+        """Test that update_total method
+        updates order_total, delivery_cost, and grand_total correctly"""
         self.order.update_total()
 
-        expected_order_total = sum(item.lineitem_total for item in self.order.lineitems.all())
+        expected_order_total = sum(
+            item.lineitem_total for item in self.order.lineitems.all())
         expected_delivery_cost = (
-            expected_order_total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+            expected_order_total *
+            Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         )
         expected_grand_total = expected_order_total + expected_delivery_cost
 
@@ -67,9 +69,10 @@ class OrderModelTest(TestCase):
 
 
 class OrderLineItemModelTest(TestCase):
-    """creates product and order test case, saves to database, 
+    """creates product and order test case, saves to database,
     retrieves from database and checks they are the same"""
     def setUp(self):
+        """creates a test order"""
         self.product = Product.objects.create(
             name='Test Product',
             price=20.00,
@@ -95,14 +98,16 @@ class OrderLineItemModelTest(TestCase):
         )
 
     def test_order_line_item_creation(self):
+        """creates a test order"""
         order_line_item = OrderLineItem.objects.create(
             order=self.order,
             product=self.product,
             quantity=1,
-            lineitem_total=20.00 
+            lineitem_total=20.00
         )
 
-        saved_order_line_item = OrderLineItem.objects.get(pk=order_line_item.pk)
+        saved_order_line_item = OrderLineItem.objects.get(
+            pk=order_line_item.pk)
 
         self.assertEqual(saved_order_line_item.order, self.order)
         self.assertEqual(saved_order_line_item.product, self.product)
@@ -111,9 +116,10 @@ class OrderLineItemModelTest(TestCase):
 
 
 class CheckoutUrlTest(TestCase):
-    """creates test case, tests checkout url is 
+    """creates test case, tests checkout url is
     accessing order form correctly"""
     def test_checkout_view_url_resolves(self):
+        """checks url working"""
         url = reverse('checkout')
         response = self.client.get(url)
 
