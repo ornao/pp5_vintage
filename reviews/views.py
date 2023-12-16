@@ -5,6 +5,7 @@ from .models import Reviews, Product
 from django.urls import reverse, reverse_lazy
 from .forms import ReviewsForm
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class ReviewsView(generic.ListView):
@@ -15,7 +16,7 @@ class ReviewsView(generic.ListView):
     context_object_name = 'reviews'
 
 
-class ReviewsCreate(generic.CreateView):
+class ReviewsCreate(LoginRequiredMixin, generic.CreateView):
     """ a class for creating reviews """
     model = Reviews
     template_name = "reviews/create_reviews.html"
@@ -31,7 +32,7 @@ class ReviewsCreate(generic.CreateView):
         return super().form_valid(form)
 
 
-class ReviewsEdit(generic.UpdateView):
+class ReviewsEdit(LoginRequiredMixin, generic.UpdateView):
     """ a class for editing reviews """
     model = Reviews
     form_class = ReviewsForm
@@ -44,7 +45,7 @@ class ReviewsEdit(generic.UpdateView):
         return super().form_valid(form)
 
 
-class ReviewsDelete(generic.DeleteView):
+class ReviewsDelete(LoginRequiredMixin, generic.DeleteView):
     """ a class for deleting reviews """
     model = Reviews
     template_name = 'reviews/confirm_delete.html'
