@@ -8,7 +8,7 @@
     {% block meta %}
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="google-site-verification" content="ZNrTUecj5XqCjQ08qS3YwNuWYnNtDWcCYqxwh8gtS1Y" />
+    <meta name="google-site-verification" content="ZNrTUecj5XqCjQ08qS3YwNuWYnNtDWcCYqxwh8gtS1Y">
     <meta name="description" content="retro vintage fashion ireland destination">
     <meta name="keywords"
       content="vintage clothes, preloved clothes, 2nd hand clothes, vintage fashion, reduce reuse recycle, irish vintage, retro clothes">
@@ -136,7 +136,7 @@
                         </form>
                     </li>
 
-                    <li id="account-icon" class="dropdown"><a href="{% url 'profile' %}"class="text-black nav-link">
+                    <li id="account-icon" class="dropdown"><a href="{% url 'profile' %}" class="text-black nav-link">
                         <div class="text-center"><i class="fas fa-user fa-lg"></i>
                             {% if request.user.is_authenticated %}
                             <p class="my-0">{{ user.username }}</p>
