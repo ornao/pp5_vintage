@@ -891,6 +891,9 @@ I ran a number of tests for automated testing. My coverage could be improved as 
 | **Bug** | **fix** | **Screenshots** |
 | --- | --- | --- |
 | content was not filling entire screen | added in missing </div> for container div | ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bugfix1.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/bugfix1.2.png) |
+| when debug was set to false sum total and delivery were not calculated and instead return 0. totaling worked correctly when debug set to true somehow | a signal was incorrect labelled duplicate update_on_save instead of seperate update_on_delete |![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutbug1.1.png) ![screenshot](https://vintagepp5.s3.eu-west-1.amazonaws.com/checkoutbug1.2.png)  |
+
+
 
 ### Future fixes
 
