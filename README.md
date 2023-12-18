@@ -82,7 +82,7 @@ Recognizing the importance of our website as the heart of Preloved, we've devise
 
 Social media platforms play a crucial role in our marketing efforts. Through well-planned social media marketing campaigns, we connect directly with our target audience. By utilising platforms like Facebook, we share visually captivating content, behind-the-scenes glimpses of vintage fashion curations, and interactive posts that foster a sense of community among our users. Building a strong social media presence allows us to spark conversations, gather valuable feedback, and solidify Preloved as the ultimate vintage fashion destination.
 
-[Facebook](https://www.facebook.com/)  
+[Facebook](https://www.facebook.com/)  - link to facebook website, my Preloved page has since been deleted; screenshots are included below
 
 <summary>Facebook Page screenshots</summary>
 <details>
