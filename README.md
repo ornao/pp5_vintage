@@ -900,11 +900,8 @@ I ran a number of tests for automated testing. My coverage could be improved as 
 - add form validation to profile number field as currently can add text to number field 
 - add more products to site so users can avail of more products
 - add more form validation to reviews as currently any user can make a review on any bought item, would like to restrict this in future to only user who bought item can make review on
-- actually send newsletter with products details to user rather than just subscribe to mailing list
-- change email verification to display sites name 
-- get order confrimation email working so sends actual email of order, atm just viewable order history in profile
+- have an automated email send to users when they subscribe to newsletter (mailchimp requires paid subscription to avail of this service that is why i have not used it as part of this project)
 - increased automated testing including testing coverage
-- had to make email verification optional at end as 500 server error, made optional so could still use site
 
 ## Deployment
 
