@@ -902,6 +902,7 @@ I ran a number of tests for automated testing. My coverage could be improved as 
 - add more form validation to reviews as currently any user can make a review on any bought item, would like to restrict this in future to only user who bought item can make review on
 - have an automated email send to users when they subscribe to newsletter (mailchimp requires paid subscription to avail of this service that is why i have not used it as part of this project)
 - increased automated testing including testing coverage
+- visual bug with sorting when in desktop mode (products 3 abreast), middle product is not in correct in order. sorting code works correcrly in print statemnets and in mobile (1 product wide) and 2 products wide -- beleive is interaction with bootstrap template, will need to be fixed 
 
 ## Deployment
 
