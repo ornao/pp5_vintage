@@ -180,12 +180,12 @@ def checkout_success(request, order_number):
                 messages.success(
                     request, 'Information saved successfully to your profile!')
 
-        products_to_mark_as_sold = set(
-            item.product for item in order.lineitems.all())
+    products_to_mark_as_sold = set(
+        item.product for item in order.lineitems.all())
 
-        for product in products_to_mark_as_sold:
-            product.is_sold = True
-            product.save()
+    for product in products_to_mark_as_sold:
+        product.is_sold = True
+        product.save()
 
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
