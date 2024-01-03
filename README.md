@@ -27,8 +27,7 @@
   - [Design](#design)
     - [Colors](#colors)
     - [Fonts](#fonts)
-    - [Structure](#structure)
-      - [Website pages](#website-pages)
+  - [Structure](#structure)
       - [Database](#database)
       - [Models](#models)
   - [Technologies Used](#technologies-used)
@@ -900,9 +899,9 @@ I ran a number of tests for automated testing. My coverage could be improved as 
 - add form validation to profile number field as currently can add text to number field 
 - add more products to site so users can avail of more products
 - add more form validation to reviews as currently any user can make a review on any bought item, would like to restrict this in future to only user who bought item can make review on
-- have an automated email send to users when they subscribe to newsletter (mailchimp requires paid subscription to avail of this service that is why i have not used it as part of this project)
 - increased automated testing including testing coverage
 - visual bug with sorting when in desktop mode (products 3 abreast), middle product is not in correct in order. sorting code works correcrly in print statemnets and in mobile (1 product wide) and 2 products wide -- beleive is interaction with bootstrap template, will need to be fixed 
+- Full CRUD is not included in products bag as the idea of a vintage shop is the products are one of a kind and hence will revert to SOLD once a user puts through their order and hence can only have one of each product in their bag - if i was to do this project again yes ideally I would not go with this idea as it limits my CRUD functionality to the site.
 
 ## Deployment
 
@@ -945,8 +944,6 @@ Once build is finsihed, the build log will tell you
 build finished deployment
 - Open app to see deployed site
 
-- I feel myself i have much to add to this project, but i do believe it a MVP and am looking forward to improving it :)
-
 ## Credits
 
 ### Code  
@@ -971,6 +968,8 @@ build finished deployment
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Acknowledgements
+
+- I have struggled so much with this project from the beginning and have probably made every possible blunder with connecting all the differing functionalities. While personally I have been very disappointed and frustrated with myself with the mistakes I have made, I do see (begrudingly) see the learnring moments from this project esepcially surrounding testing and small bugs having a huge impact on the needs of the user. There are so many improvements to be made to this project in small impactful ways but I hope this can be seen as a solid MVP.
 
 ### Special thanks to the following:
 - My Mentor Martina for her excellent guidance and valuable advice  
