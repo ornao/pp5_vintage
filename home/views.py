@@ -10,7 +10,7 @@ def index(request):
 
 
 # error handling found on slack without need for url, /
-# adapted to include 403 and 400 error and work on /
+# adapted to include 500 and 400 error and work on /
 # this version of django (Django==3.2.19)
 
 def handler404(request, *args, **argv):
@@ -18,4 +18,11 @@ def handler404(request, *args, **argv):
     response = render_to_response('404.html', {},
                                   context_instance=RequestContext(request))
     response.status_code = 404
+    return response
+
+def handler500(request, *args, **argv):
+    """ handles 500 error """
+    response = render_to_response('500.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 500
     return response
