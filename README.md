@@ -902,6 +902,7 @@ I ran a number of tests for automated testing. My coverage could be improved as 
 - increased automated testing including testing coverage
 - visual bug with sorting when in desktop mode (products 3 abreast), middle product is not in correct in order. sorting code works correcrly in print statemnets and in mobile (1 product wide) and 2 products wide -- beleive is interaction with bootstrap template, will need to be fixed 
 - Full CRUD is not included in products bag as the idea of a vintage shop is the products are one of a kind and hence will revert to SOLD once a user puts through their order and hence can only have one of each product in their bag - if i was to do this project again yes ideally I would not go with this idea as it limits my CRUD functionality to the site.
+- i am unhappy with the mobile nav bar as my headings interact badly and changes are needed to be made to vendor css. as it stands the mobile nav is functional and do not want to jeopardise that for the save of a more streamlined look 
 
 ## Deployment
 
